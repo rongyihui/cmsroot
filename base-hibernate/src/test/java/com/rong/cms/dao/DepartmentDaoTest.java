@@ -6,10 +6,8 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -33,6 +31,11 @@ public class DepartmentDaoTest extends BaseDaoTest{
         Department dep = new Department("射击部", "1", 1);
         Assert.assertEquals("添加部门失败", dep, departmentDao.add(dep));
     }
+    @Test
+    public void load() {
+        Department dep = departmentDao.load(1);
+        Assert.assertEquals("load失败","管理部",dep.getDepName());
+    }
 
     @Test
     //延迟加载的问题还没解决，
@@ -42,8 +45,6 @@ public class DepartmentDaoTest extends BaseDaoTest{
         System.out.println(department.getDepName());
     }
     @Test
-    @Transactional
-    @Rollback
     //延迟加载的问题还没解决，
     public void update(){
         Department dep = departmentDao.load(1);

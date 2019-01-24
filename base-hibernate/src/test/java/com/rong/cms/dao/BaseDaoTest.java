@@ -18,6 +18,7 @@ import org.junit.runner.RunWith;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 import org.xml.sax.InputSource;
 
 import javax.annotation.Resource;
@@ -30,6 +31,7 @@ import java.sql.SQLException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/beans.xml")
+@Transactional
 public abstract class BaseDaoTest {
 
     /**
