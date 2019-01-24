@@ -38,7 +38,7 @@
     </bean>
 
     <aop:config>
-        <aop:pointcut expression="execution(* com.rong.cms.dao.*.*(..)))" id="txPo"/>
+        <aop:pointcut expression="execution(* com.rong.cms.*.*(..)))" id="txPo"/>
         <aop:advisor advice-ref="txPoo" pointcut-ref="txPo"/>
     </aop:config>
     <aop:aspectj-autoproxy proxy-target-class="true"/>

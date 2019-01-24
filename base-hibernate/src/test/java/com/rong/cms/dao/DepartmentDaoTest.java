@@ -6,8 +6,10 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -33,10 +35,21 @@ public class DepartmentDaoTest extends BaseDaoTest{
     }
 
     @Test
+    //延迟加载的问题还没解决，
     public void delete() {
         departmentDao.delete(3);
         Department department = departmentDao.load(3);
-        //延迟加载的问题还没解决，
         System.out.println(department.getDepName());
+    }
+    @Test
+    @Transactional
+    @Rollback
+    //延迟加载的问题还没解决，
+    public void update(){
+        Department dep = departmentDao.load(1);
+        dep.setDepName("游戏部");
+        departmentDao.update(dep);
+        dep = departmentDao.load(1);
+        Assert.assertEquals("更新失败","游戏部",dep.getDepName());
     }
 }
