@@ -1,0 +1,15 @@
+通过使用
+spring
+springmvc
+hibernate
+maven
+
+
+1.maven分模块
+    cms-root
+        base-hibernate
+        cms-core      model dao
+        cms-user      user role group
+        cms-article   channel article
+        cme-system    link backup info
+        cms-web
