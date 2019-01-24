@@ -13,3 +13,5 @@ maven
         cms-article   channel article
         cme-system    link backup info
         cms-web
+2.base-hibernate
+    基本的一些basedao的创建和测试

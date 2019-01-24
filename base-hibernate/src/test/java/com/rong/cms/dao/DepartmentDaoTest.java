@@ -36,7 +36,7 @@ public class DepartmentDaoTest extends BaseDaoTest{
     public void delete() {
         departmentDao.delete(3);
         Department department = departmentDao.load(3);
-        //延迟加载的问题还没解决
+        //延迟加载的问题还没解决，
         System.out.println(department.getDepName());
     }
 }
