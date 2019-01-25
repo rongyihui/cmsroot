@@ -23,13 +23,10 @@ import java.util.Map;
 @SuppressWarnings("unchecked")
 public class BaseDao<T> implements IBaseDao<T> {
     private Class<T> clz;
-    private SessionFactory sessionFactory;
 
     @Autowired()
-    public BaseDao(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
-    }
-
+    @Qualifier("sessionFactory")
+    private SessionFactory sessionFactory;
 
     protected Session getSession() {
         return sessionFactory.getCurrentSession();
@@ -129,7 +126,7 @@ public class BaseDao<T> implements IBaseDao<T> {
 
     //为分页添加属性
     private Pager<Object> getPagerPro() {
-        Pager<Object> pager = new Pager<>();
+        Pager<Object> pager = new Pager<Object>();
         int pageSize = 20;
         try {
             pageSize = SystemContext.getPageSize();
