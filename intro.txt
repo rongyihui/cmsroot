@@ -4,6 +4,8 @@ springmvc
 hibernate
 maven
 
+对项目进行学习
+
 
 1.maven分模块
     cms-root
@@ -15,4 +17,6 @@ maven
         cms-web
 2.base-hibernate
     基本的一些basedao的创建和department类的测试：仅仅成功了add测试，load存在延迟加载，还没解决
-    1.25已经解决junit spring延迟加载
+    1月25日 -----------已经解决junit spring延迟加载--------
+            -----------解决大部分basedao的测试---------
+            关联表fetch测试没做

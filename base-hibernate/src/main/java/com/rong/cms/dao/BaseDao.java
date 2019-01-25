@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.math.BigInteger;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -235,6 +236,7 @@ public class BaseDao<T> implements IBaseDao<T> {
         return listBysql(sql, null, null, clz, hasEntity);
     }
 
+
     //通过原生sql获取
     private NativeQuery getSqlQuery(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
         NativeQuery<Object> nq = getSession().createNativeQuery(changeSortHql(sql));
@@ -248,11 +250,11 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     @Override
-    public Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
+    public Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class clz, boolean hasEntity) {
         //获取总数
         NativeQuery<Object> totalQ = getSession().createNativeQuery(getCountHql(sql));
         totalQ = (NativeQuery<Object>) setParametersQuery(totalQ, args, alias);
-        long totalPage = (long) totalQ.uniqueResult();
+        long totalPage = ((BigInteger) totalQ.uniqueResult()).longValue();
         //获取分页数据
         List<Object> datas = getSqlQuery(sql, args, alias, clz, hasEntity).list();
         Pager<Object> pager = getPagerPro();
@@ -262,18 +264,28 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     @Override
-    public Pager<Object> findBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
-        return findBysql(sql,null, alias, clz, hasEntity);
+    public Pager<Object> findBysql(String sql, Object arg, Map<String, Object> alias, Class clz, boolean hasEntity) {
+        return findBysql(sql,new Object[]{arg},alias,clz,hasEntity);
     }
 
     @Override
-    public Pager<Object> findBysql(String sql, Object args, Class<Object> clz, boolean hasEntity) {
-        return findBysql(sql,new Object[]{args}, null, clz, hasEntity);
+    public Pager<Object> findBysql(String sql, Map<String, Object> alias, Class clz, boolean hasEntity) {
+        return findBysql(sql,null,alias,clz,hasEntity);
     }
 
     @Override
-    public Pager<Object> findBysql(String sql, Class<Object> clz, boolean hasEntity) {
-        return findBysql(sql,null, null, clz, hasEntity);
+    public Pager<Object> findBysql(String sql, Object[] args, Class clz, boolean hasEntity) {
+        return findBysql(sql,args,null,clz,hasEntity);
+    }
+
+    @Override
+    public Pager<Object> findBysql(String sql, Object arg, Class clz, boolean hasEntity) {
+        return findBysql(sql,new Object[]{arg},null,clz,hasEntity);
+    }
+
+    @Override
+    public Pager<Object> findBysql(String sql, Class clz, boolean hasEntity) {
+        return findBysql(sql,null,null,clz,hasEntity);
     }
 
     //获取泛型的class

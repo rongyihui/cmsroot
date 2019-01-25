@@ -99,4 +99,10 @@ public class DepartmentDaoTest extends BaseDaoTest{
             SystemContext.removeSort();
         }
     }
+    @Test
+    public void findBySql(){
+        String sql = "select * from t_department dep where dep.status=?0 ";
+        Pager<Object> deps = departmentDao.findBysql(sql,new Object[]{1},null,Department.class,true);
+        Assert.assertEquals("sql通配符？查询出错",new Long(3),deps.getTotalRecord());
+    }
 }

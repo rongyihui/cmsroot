@@ -150,11 +150,15 @@ public interface IBaseDao<T> {
      * @param hasEntity 是否是一个hibernate管理的实体，例如DTO就需要通过setResultTransform
      * @return 分页对象
      */
-    public Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
+    public Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
+    public Pager<Object> findBysql(String sql, Object arg, Map<String, Object> alias, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Object args, Class<Object> clz, boolean hasEntity);
+    public Pager<Object> findBysql(String sql, Map<String, Object> alias, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Class<Object> clz, boolean hasEntity);
+    public Pager<Object> findBysql(String sql, Object[] args, Class clz, boolean hasEntity);
+
+    public Pager<Object> findBysql(String sql, Object arg, Class clz, boolean hasEntity);
+
+    public Pager<Object> findBysql(String sql, Class clz, boolean hasEntity);
 }
