@@ -4,7 +4,6 @@ import org.dbunit.DatabaseUnitException;
 import org.dbunit.database.DatabaseConnection;
 import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.database.QueryDataSet;
-import org.dbunit.dataset.DataSetException;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
 import org.dbunit.dataset.xml.FlatXmlProducer;
@@ -20,7 +19,6 @@ import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.orm.hibernate5.SessionHolder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.xml.sax.InputSource;
 
@@ -40,6 +38,7 @@ public abstract class BaseDaoTest {
      * 设置table名称
      */
     protected static String tableName;
+    protected static String tableTestName;
 
     @Resource
     private DataSource dataSource;
@@ -49,12 +48,12 @@ public abstract class BaseDaoTest {
     private IDatabaseConnection iDatabaseConnection;
 
     @Before
-    public void backup() throws DatabaseUnitException, IOException {
+    public void backup() throws DatabaseUnitException, IOException, SQLException {
         iDatabaseConnection = new DatabaseConnection(DataSourceUtils.getConnection(dataSource));
         //解决延迟加载
         Session s = sessionFactory.openSession();
         TransactionSynchronizationManager.bindResource(sessionFactory, new SessionHolder(s));
-        backupOneTable();
+        backupOneTable(tableName);
     }
 
     @Test
@@ -64,7 +63,7 @@ public abstract class BaseDaoTest {
     public void resetTable() throws SQLException, DatabaseUnitException {
         //SessionHolder holder = (SessionHolder) TransactionSynchronizationManager.getResource(sessionFactory);
         //Session s = holder.getSession();
-        createDataSet();
+        createDataSet(tableName);
         //s.flush();
         TransactionSynchronizationManager.unbindResource(sessionFactory);
         if (iDatabaseConnection != null) iDatabaseConnection.close();
@@ -72,12 +71,16 @@ public abstract class BaseDaoTest {
     }
 
     //备份一张表
-    private void backupOneTable() throws IOException, DataSetException {
+    private void backupOneTable(String name) throws IOException, DatabaseUnitException, SQLException {
         QueryDataSet ds = new QueryDataSet(iDatabaseConnection);
         ds.addTable(tableName);
-        file = new File(this.getClass().getResource("/data/" + tableName + ".xml").getPath());
+        //将数据库的数据存到t_department.xml中
+        file = new File(this.getClass().getResource("/data/" + name + ".xml").getPath());
         Assert.assertNotNull(tableName+".xml配置文件不存在",file);
         FlatXmlDataSet.write(ds, new FileWriter(file));
+
+        //将测试数据写入数据库
+        createDataSet(tableTestName);
     }
 
     /**通过表创建数据库
@@ -87,8 +90,8 @@ public abstract class BaseDaoTest {
      * @throws DatabaseUnitException
      * @throws SQLException
      */
-    protected IDataSet createDataSet() throws DatabaseUnitException, SQLException {
-        InputStream is = this.getClass().getResourceAsStream("/data/" + tableName + ".xml");
+    protected IDataSet createDataSet(String name) throws DatabaseUnitException, SQLException {
+        InputStream is = this.getClass().getResourceAsStream("/data/" + name + ".xml");
         Assert.assertNotNull("数据文件不存在", is);
         IDataSet ds = new FlatXmlDataSet(new FlatXmlProducer(new InputSource(is)));
         DatabaseOperation.TRUNCATE_TABLE.execute(iDatabaseConnection, ds);

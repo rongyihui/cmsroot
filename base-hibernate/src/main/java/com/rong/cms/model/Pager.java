@@ -8,7 +8,7 @@ public class Pager<T> {
      */
     private int pageIndex;
     /**
-     * 每页显示多少条
+     * 每页显示多少条  默认20
      */
     private int pageSize;
     /**

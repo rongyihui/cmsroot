@@ -1,6 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dataset>
   <t_department id="1" depName="射击部" level="1" status="1"/>
-  <t_department id="2" depName="战斗部" level="1" status="1"/>
-  <t_department id="3" depName="管理部" level="1" status="1"/>
 </dataset>

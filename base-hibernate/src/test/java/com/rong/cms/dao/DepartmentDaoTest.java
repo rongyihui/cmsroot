@@ -2,6 +2,8 @@ package com.rong.cms.dao;
 
 
 import com.rong.cms.model.Department;
+import com.rong.cms.model.Pager;
+import com.rong.cms.model.SystemContext;
 import org.hibernate.ObjectNotFoundException;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -11,7 +13,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/beans.xml")
@@ -26,6 +30,7 @@ public class DepartmentDaoTest extends BaseDaoTest{
     @BeforeClass
     public static void init() {
         tableName ="t_department";
+        tableTestName ="t_department_test";
     }
 
     @Test
@@ -36,7 +41,7 @@ public class DepartmentDaoTest extends BaseDaoTest{
     @Test
     public void load() {
         Department dep = departmentDao.load(1);
-        Assert.assertEquals("load失败","管理部",dep.getDepName());
+        Assert.assertEquals("load失败","管理部2",dep.getDepName());
     }
 
     @Test(expected = ObjectNotFoundException.class)
@@ -56,10 +61,42 @@ public class DepartmentDaoTest extends BaseDaoTest{
     @Test
     public void listByObject(){
         List<Object> deps = departmentDao.listbyObj("from Department");
-        Assert.assertEquals("list的size有误",3,deps.size());
+        Assert.assertEquals("list的size有误",21,deps.size());
     }
     @Test
     public void find(){
+        //通配符测试
+        String hql = "from Department dep where dep.status=?0";
+        Pager<Object> deps = departmentDao.find(hql,new Object[]{1});
+        Assert.assertEquals("通配符？查询出错",new Long(3),deps.getTotalRecord());
 
+        //别名测试
+        Map<String,Object> alias = new HashMap<>();
+        alias.put("status",1);
+        hql = "from Department dep where dep.status=:status";
+        deps = departmentDao.find(hql,alias);
+        Assert.assertEquals("别名 查询出错",new Long(3),deps.getTotalRecord());
+
+        //分页测试
+        try {
+            hql = "from Department";
+            SystemContext.setPageOffset(20);
+            deps = departmentDao.find(hql);
+            Assert.assertEquals("分页出错",1,deps.getDatas().size());
+        } finally {
+            SystemContext.removePageOffset();
+        }
+
+        //排序测试
+        try {
+            hql = "from Department";
+            SystemContext.setOrder("desc");
+            SystemContext.setSort("depName");
+            deps = departmentDao.find(hql);
+            Assert.assertEquals("排序出错","管理部9",((Department)deps.getDatas().get(0)).getDepName());
+        } finally {
+            SystemContext.removeOrder();
+            SystemContext.removeSort();
+        }
     }
 }

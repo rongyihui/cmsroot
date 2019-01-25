@@ -101,9 +101,10 @@ public class BaseDao<T> implements IBaseDao<T> {
         String s = chql.substring(0, chql.indexOf("from"));
         if (s == null || "".equals(s)) {
             chql = "select count(*) " + chql;
+        } else {
+            chql = chql.replace(s, "select count(*) ");
         }
-        chql = chql.replace(s, "select count(*)")
-                .replace("fetch", "");
+        chql = chql.replace("fetch", "");
         return chql;
     }
 
@@ -125,8 +126,16 @@ public class BaseDao<T> implements IBaseDao<T> {
     //为分页添加属性
     private Pager<Object> getPagerPro() {
         Pager<Object> pager = new Pager<Object>();
-        int pageSize = SystemContext.getPageSize();
-        int pageOffset = SystemContext.getPageOffset();
+        int pageSize = 20;
+        try {
+            pageSize = SystemContext.getPageSize();
+        } catch (NullPointerException e) {
+        }
+        int pageOffset = 0;
+        try {
+            pageOffset = SystemContext.getPageOffset();
+        } catch (NullPointerException e) {
+        }
         if (pageSize <= 0) pageSize = 20;
         if (pageOffset < 0) pageOffset = 0;
         pager.setPageSize(pageSize);
@@ -285,8 +294,6 @@ public class BaseDao<T> implements IBaseDao<T> {
             hql += " order by " + sort;
             if ("desc".equals(order)) {
                 hql += " desc";
-            } else {
-                hql += " asc";
             }
         }
         return hql;

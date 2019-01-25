@@ -3,4 +3,5 @@
   <t_department id="1" depName="管理部" level="1" status="1"/>
   <t_department id="2" depName="维修部" level="1" status="1"/>
   <t_department id="3" depName="搜索部" level="1" status="0"/>
+  <t_department id="4" depName="金融部" level="2" status="1"/>
 </dataset>

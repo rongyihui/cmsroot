@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="1月25日 解决junit延迟加载">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/BaseDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/BaseDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/BaseDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/DepartmentDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/DepartmentDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/intro.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,54 +54,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#915#916#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1230#1231#0" expanded="true" />
-                <element signature="e#1280#1281#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#2465#2466#0" expanded="true" />
-                <element signature="e#2519#2520#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,6 +75,7 @@
       <find>defaultRollback</find>
       <find>rollback</find>
       <find>writer</find>
+      <find>changeSortHql</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +87,6 @@
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com.rong.cms.model/Pager.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com.rong.cms.model/SystemContext.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/dao.fxml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/User.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/Department.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/61b88b7c-58b2-47eb-9481-6f8e39bf74d1/console.sql" />
@@ -150,19 +103,22 @@
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_data.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/pom.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/DbunitAbstractUtil.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/DbunitAbstractBase.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DbunitAbstractBase.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/unit/DbunitUtil.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/Department.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml" />
         <option value="$PROJECT_DIR$/intro.txt" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_test.xml" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" />
       </list>
     </option>
   </component>
@@ -188,7 +144,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1758" />
+    <option name="width" value="1724" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -254,6 +210,16 @@
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
               <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -289,16 +255,9 @@
               <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,7 +271,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548386665879" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548401559672" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -323,20 +282,21 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\target\test-classes\data" />
+      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
+      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.rong.cms.dao" />
       <recent name="com.rong.cms.model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rong.cms.model" />
       <recent name="com.rong.cms.dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\target\test-classes\data" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\idea-wordspace\cmsroot\base-hibernate\src\test\resources\data" />
       <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
       <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources" />
     </key>
@@ -353,7 +313,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentDaoTest.listByObject">
+  <component name="RunManager" selected="JUnit.DepartmentDaoTest">
+    <configuration name="DepartmentDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rong.cms.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DepartmentDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="base-hibernate" />
       <extension name="coverage">
@@ -366,12 +340,11 @@
       <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
       <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DepartmentDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentDaoTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="base-hibernate" />
       <extension name="coverage">
         <pattern>
@@ -379,13 +352,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="E:\jdk1.8.0_191\jre" />
       <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
       <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="METHOD_NAME" value="find" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -401,22 +371,6 @@
       <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
       <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
       <option name="METHOD_NAME" value="listByObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentDaoTest.load" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-hibernate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
-      <option name="METHOD_NAME" value="load" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -489,20 +443,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DepartmentDaoTest.add" />
-      <item itemvalue="JUnit.DepartmentDaoTest.delete" />
       <item itemvalue="JUnit.DepartmentDaoTest.update" />
-      <item itemvalue="JUnit.DepartmentDaoTest.load" />
       <item itemvalue="Maven.base-hibernate [test]" />
       <item itemvalue="JUnit.DepartmentDaoTest.listByObject" />
+      <item itemvalue="JUnit.DepartmentDaoTest.find" />
+      <item itemvalue="JUnit.DepartmentDaoTest.add" />
+      <item itemvalue="JUnit.DepartmentDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepartmentDaoTest" />
+        <item itemvalue="JUnit.DepartmentDaoTest.find" />
+        <item itemvalue="JUnit.DepartmentDaoTest.add" />
         <item itemvalue="JUnit.DepartmentDaoTest.listByObject" />
         <item itemvalue="JUnit.DepartmentDaoTest.update" />
-        <item itemvalue="JUnit.DepartmentDaoTest.delete" />
-        <item itemvalue="JUnit.DepartmentDaoTest.load" />
-        <item itemvalue="JUnit.DepartmentDaoTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -526,7 +480,7 @@
       <workItem from="1548316571608" duration="12000" />
       <workItem from="1548316626686" duration="1553000" />
       <workItem from="1548318410352" duration="1266000" />
-      <workItem from="1548382274744" duration="4229000" />
+      <workItem from="1548382274744" duration="13884000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -549,49 +503,55 @@
       <option name="project" value="LOCAL" />
       <updated>1548319629841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1月25日 解决junit延迟加载">
+      <created>1548386692242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548386692242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DepartmentDaoTest_load - 2019.01.25 at 10h 43m 15s.xml">
-      <configuration name="DepartmentDaoTest.load" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 18m 22s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_load - 2019.01.25 at 10h 44m 04s.xml">
-      <configuration name="DepartmentDaoTest.load" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 20m 35s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_load - 2019.01.25 at 10h 44m 50s.xml">
-      <configuration name="DepartmentDaoTest.load" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 21m 50s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_load - 2019.01.25 at 10h 45m 11s.xml">
-      <configuration name="DepartmentDaoTest.load" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 24m 34s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_delete - 2019.01.25 at 10h 45m 22s.xml">
-      <configuration name="DepartmentDaoTest.delete" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 26m 37s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_delete - 2019.01.25 at 10h 52m 11s.xml">
-      <configuration name="DepartmentDaoTest.delete" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 27m 26s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_update - 2019.01.25 at 10h 53m 02s.xml">
-      <configuration name="DepartmentDaoTest.update" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 29m 15s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_listByObject - 2019.01.25 at 11h 12m 22s.xml">
-      <configuration name="DepartmentDaoTest.listByObject" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 30m 41s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_listByObject - 2019.01.25 at 11h 13m 16s.xml">
-      <configuration name="DepartmentDaoTest.listByObject" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 31m 43s.xml">
+      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_listByObject - 2019.01.25 at 11h 13m 34s.xml">
-      <configuration name="DepartmentDaoTest.listByObject" configurationId="JUnit" />
+    <history-entry file="DepartmentDaoTest - 2019.01.25 at 15h 32m 13s.xml">
+      <configuration name="DepartmentDaoTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65822000" />
+    <option name="totallyTimeSpent" value="75477000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1758" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1724" height="1087" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21319199" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21754807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -600,7 +560,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3487621" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47255114" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -613,7 +573,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
-      <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" weight="0.32831" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32831" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -622,7 +582,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.3291829" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.3203769" />
+      <window_info anchor="right" id="Database" order="8" weight="0.15625" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2723133" />
@@ -667,18 +627,6 @@
     <MESSAGE value="1月25日 解决junit延迟加载" />
     <option name="LAST_COMMIT_MESSAGE" value="1月25日 解决junit延迟加载" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -695,25 +643,11 @@
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DbunitAbstractBase.java" />
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/unit/DbunitUtil.java" />
     <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/OrderedTableNameMap.class" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/annotation/Lazy.java" />
     <entry file="file://$PROJECT_DIR$/base-hibernate/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
           <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -734,20 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://61b88b7c-58b2-47eb-9481-6f8e39bf74d1/schema/rong/table/t_department">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -765,17 +685,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intro.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -786,6 +727,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="84" column="8" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://05eb1725-0c51-48c9-89a5-d27b5b7baf2f/schema/rong/table/t_department">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -793,17 +748,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml">
+    <entry file="file://$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department_test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding>
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/SystemContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#1815#1816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+        <state relative-caret-position="256">
+          <caret line="295" column="20" lean-forward="true" selection-start-line="295" selection-start-column="20" selection-end-line="295" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#915#916#0" expanded="true" />
@@ -814,26 +803,27 @@
             <element signature="e#1363#1364#0" expanded="true" />
             <element signature="e#2465#2466#0" expanded="true" />
             <element signature="e#2519#2520#0" expanded="true" />
+            <element signature="e#4197#4198#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4312#4313#0" expanded="true" />
+            <element signature="e#4369#4370#0" expanded="true" />
+            <element signature="e#4611#4612#0" expanded="true" />
+            <element signature="e#4656#4657#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="658">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
