@@ -15,41 +15,41 @@ public interface IBaseDao<T> {
     /**
      * 添加对象
      *
-     * @param t
-     * @return
+     * @param t 需要添加的对象
+     * @return 返回添加的这个对象，方便操作
      */
-    public T add(T t);
+    T add(T t);
 
     /**
      * 添加任意一个对象
      *
-     * @param obj
-     * @return
+     * @param obj 需要添加的任意对象
+     * @return 返回添加的这个对象，方便操作
      */
-    public Object addByObject(Object obj);
+    Object addByObject(Object obj);
 
     /**
      * 删除一个对象
      *
      * @param id
      */
-    public void delete(int id);
+    void delete(int id);
 
     /**
      * 更新一个对象
      *
-     * @param t
+     * @param t 需要更新的对象
      */
-    public void update(T t);
+    void update(T t);
 
     /**
      * 更新任意一个对象
      *
      * @param obj
      */
-    public void updateByObject(Object obj);
+    void updateByObject(Object obj);
 
-    public T load(int id);
+    T load(int id);
 
     /**
      * 不分页的查询，通过通配符？、：xx等查询
@@ -59,17 +59,17 @@ public interface IBaseDao<T> {
      * @param alias
      * @return
      */
-    public List<Object> listbyObj(String hql, Object[] args, Map<String, Object> alias);
+    List<Object> listbyObj(String hql, Object[] args, Map<String, Object> alias);
 
-    public List<Object> listbyObj(String hql, Object[] args);
+    List<Object> listbyObj(String hql, Object[] args);
 
-    public List<Object> listbyObj(String hql, Object arg);
+    List<Object> listbyObj(String hql, Object arg);
 
-    public List<Object> listbyObj(String hql, Object arg, Map<String, Object> alias);
+    List<Object> listbyObj(String hql, Object arg, Map<String, Object> alias);
 
-    public List<Object> listbyObj(String hql, Map<String, Object> alias);
+    List<Object> listbyObj(String hql, Map<String, Object> alias);
 
-    public List<Object> listbyObj(String hql);
+    List<Object> listbyObj(String hql);
 
     /**
      * 分页查询，通过通配符=？
@@ -78,17 +78,17 @@ public interface IBaseDao<T> {
      * @param args
      * @return
      */
-    public Pager<Object> find(String hql, Object[] args, Map<String, Object> alias);
+    Pager<Object> find(String hql, Object[] args, Map<String, Object> alias);
 
-    public Pager<Object> find(String hql, Object[] args);
+    Pager<Object> find(String hql, Object[] args);
 
-    public Pager<Object> find(String hql, Object arg);
+    Pager<Object> find(String hql, Object arg);
 
-    public Pager<Object> find(String hql, Object arg, Map<String, Object> alias);
+    Pager<Object> find(String hql, Object arg, Map<String, Object> alias);
 
-    public Pager<Object> find(String hql, Map<String, Object> alias);
+    Pager<Object> find(String hql, Map<String, Object> alias);
 
-    public Pager<Object> find(String hql);
+    Pager<Object> find(String hql);
 
     /**
      * 通过hql 查询对象
@@ -98,17 +98,17 @@ public interface IBaseDao<T> {
      * @param alias
      * @return
      */
-    public Object queryByHql(String hql, Object[] args, Map<String, Object> alias);
+    Object queryByHql(String hql, Object[] args, Map<String, Object> alias);
 
-    public Object queryByHql(String hql, Object[] args);
+    Object queryByHql(String hql, Object[] args);
 
-    public Object queryByHql(String hql, Object arg);
+    Object queryByHql(String hql, Object arg);
 
-    public Object queryByHql(String hql, Object arg, Map<String, Object> alias);
+    Object queryByHql(String hql, Object arg, Map<String, Object> alias);
 
-    public Object queryByHql(String hql, Map<String, Object> alias);
+    Object queryByHql(String hql, Map<String, Object> alias);
 
-    public Object queryByHql(String hql);
+    Object queryByHql(String hql);
 
     /**
      * 通过hql 增删改对象
@@ -116,11 +116,11 @@ public interface IBaseDao<T> {
      * @param hql hql
      * @param args
      */
-    public void excuteByHql(String hql, Object[] args);
+    void excuteByHql(String hql, Object[] args);
 
-    public void excuteByHql(String hql, Object arg);
+    void excuteByHql(String hql, Object arg);
 
-    public void excuteByHql(String hql);
+    void excuteByHql(String hql);
 
     /**
      * 根据sql查询对象，不包含关联对象
@@ -132,13 +132,13 @@ public interface IBaseDao<T> {
      * @param hasEntity 是否是一个hibernate管理的实体，例如DTO就需要通过setResultTransform
      * @return 分页对象
      */
-    public List<Object> listBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
+    List<Object> listBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
 
-    public List<Object> listBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
+    List<Object> listBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
 
-    public List<Object> listBysql(String sql, Object arg, Class<Object> clz, boolean hasEntity);
+    List<Object> listBysql(String sql, Object arg, Class<Object> clz, boolean hasEntity);
 
-    public List<Object> listBysql(String sql, Class<Object> clz, boolean hasEntity);
+    List<Object> listBysql(String sql, Class<Object> clz, boolean hasEntity);
 
     /**
      * 根据sql分页查询对象，不包含关联对象
@@ -150,15 +150,15 @@ public interface IBaseDao<T> {
      * @param hasEntity 是否是一个hibernate管理的实体，例如DTO就需要通过setResultTransform
      * @return 分页对象
      */
-    public Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class clz, boolean hasEntity);
+    Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Object arg, Map<String, Object> alias, Class clz, boolean hasEntity);
+    Pager<Object> findBysql(String sql, Object arg, Map<String, Object> alias, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Map<String, Object> alias, Class clz, boolean hasEntity);
+    Pager<Object> findBysql(String sql, Map<String, Object> alias, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Object[] args, Class clz, boolean hasEntity);
+    Pager<Object> findBysql(String sql, Object[] args, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Object arg, Class clz, boolean hasEntity);
+    Pager<Object> findBysql(String sql, Object arg, Class clz, boolean hasEntity);
 
-    public Pager<Object> findBysql(String sql, Class clz, boolean hasEntity);
+    Pager<Object> findBysql(String sql, Class clz, boolean hasEntity);
 }

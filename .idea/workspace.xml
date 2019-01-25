@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="1月25日 解决baseDao大部分方法的测试">
+    <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="1月25日 解决baseDao 原生sql的小部分测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/IBaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/IBaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/DepartmentDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/DepartmentDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/intro.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,13 +51,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
+        <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -90,6 +81,7 @@
       <find>rollback</find>
       <find>writer</find>
       <find>changeSortHql</find>
+      <find>public</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,8 +123,8 @@
         <option value="$PROJECT_DIR$/intro.txt" />
         <option value="$PROJECT_DIR$/base-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
       </list>
     </option>
   </component>
@@ -275,7 +267,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548405464277" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548406330269" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -424,7 +416,7 @@
       <workItem from="1548316571608" duration="12000" />
       <workItem from="1548316626686" duration="1553000" />
       <workItem from="1548318410352" duration="1266000" />
-      <workItem from="1548382274744" duration="17763000" />
+      <workItem from="1548382274744" duration="18593000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -461,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548401633915</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1月25日 解决baseDao 原生sql的小部分测试">
+      <created>1548405492111</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548405492111</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1月25日 解决baseDao 原生sql的小部分测试">
+      <created>1548405498516</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548405498516</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -497,7 +503,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79356000" />
+    <option name="totallyTimeSpent" value="80186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1724" height="1087" extended-state="0" />
@@ -532,7 +538,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3291829" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.2638221" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.15625" />
@@ -605,7 +611,8 @@
     <MESSAGE value="1月24日 测试功能提交" />
     <MESSAGE value="1月25日 解决junit延迟加载" />
     <MESSAGE value="1月25日 解决baseDao大部分方法的测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="1月25日 解决baseDao大部分方法的测试" />
+    <MESSAGE value="1月25日 解决baseDao 原生sql的小部分测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="1月25日 解决baseDao 原生sql的小部分测试" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -763,6 +770,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="140" column="10" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -773,30 +806,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="267" column="46" selection-start-line="267" selection-start-column="46" selection-end-line="267" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="154" column="29" lean-forward="true" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="293">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
         </state>
       </provider>
     </entry>
