@@ -15,3 +15,4 @@ maven
         cms-web
 2.base-hibernate
     基本的一些basedao的创建和department类的测试：仅仅成功了add测试，load存在延迟加载，还没解决
+    1.25已经解决junit spring延迟加载

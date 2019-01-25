@@ -2,6 +2,7 @@ package com.rong.cms.dao;
 
 
 import com.rong.cms.model.Department;
+import org.hibernate.ObjectNotFoundException;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,6 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/beans.xml")
@@ -37,20 +39,27 @@ public class DepartmentDaoTest extends BaseDaoTest{
         Assert.assertEquals("load失败","管理部",dep.getDepName());
     }
 
-    @Test
-    //延迟加载的问题还没解决，
+    @Test(expected = ObjectNotFoundException.class)
     public void delete() {
-        departmentDao.delete(3);
-        Department department = departmentDao.load(3);
+        departmentDao.delete(1);
+        Department department = departmentDao.load(1);
         System.out.println(department.getDepName());
     }
     @Test
-    //延迟加载的问题还没解决，
     public void update(){
         Department dep = departmentDao.load(1);
         dep.setDepName("游戏部");
         departmentDao.update(dep);
         dep = departmentDao.load(1);
         Assert.assertEquals("更新失败","游戏部",dep.getDepName());
+    }
+    @Test
+    public void listByObject(){
+        List<Object> deps = departmentDao.listbyObj("from Department");
+        Assert.assertEquals("list的size有误",3,deps.size());
+    }
+    @Test
+    public void find(){
+
     }
 }

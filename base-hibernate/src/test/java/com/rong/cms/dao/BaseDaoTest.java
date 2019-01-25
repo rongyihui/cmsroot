@@ -9,6 +9,7 @@ import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
 import org.dbunit.dataset.xml.FlatXmlProducer;
 import org.dbunit.operation.DatabaseOperation;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.After;
 import org.junit.Assert;
@@ -16,9 +17,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+import org.springframework.orm.hibernate5.SessionHolder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.xml.sax.InputSource;
 
 import javax.annotation.Resource;
@@ -31,7 +34,6 @@ import java.sql.SQLException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/beans.xml")
-@Transactional
 public abstract class BaseDaoTest {
 
     /**
@@ -48,11 +50,10 @@ public abstract class BaseDaoTest {
 
     @Before
     public void backup() throws DatabaseUnitException, IOException {
-        //解决延迟加载
-        //Session s = sessionFactory.openSession();
-        //TransactionSynchronizationManager.bindResource(sessionFactory, new SessionHolder(s));
-
         iDatabaseConnection = new DatabaseConnection(DataSourceUtils.getConnection(dataSource));
+        //解决延迟加载
+        Session s = sessionFactory.openSession();
+        TransactionSynchronizationManager.bindResource(sessionFactory, new SessionHolder(s));
         backupOneTable();
     }
 
@@ -63,9 +64,9 @@ public abstract class BaseDaoTest {
     public void resetTable() throws SQLException, DatabaseUnitException {
         //SessionHolder holder = (SessionHolder) TransactionSynchronizationManager.getResource(sessionFactory);
         //Session s = holder.getSession();
-        //s.flush();
-        //TransactionSynchronizationManager.unbindResource(sessionFactory);
         createDataSet();
+        //s.flush();
+        TransactionSynchronizationManager.unbindResource(sessionFactory);
         if (iDatabaseConnection != null) iDatabaseConnection.close();
 
     }
@@ -82,7 +83,7 @@ public abstract class BaseDaoTest {
     /**通过表创建数据库
      * 在开发过程中，由于备份的表格存在于项目中，所以不会同步开发中的配置
      *
-     * @return
+     * @return 返回IDataSet
      * @throws DatabaseUnitException
      * @throws SQLException
      */

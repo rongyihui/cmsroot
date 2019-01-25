@@ -38,15 +38,15 @@
     </bean>
 
     <aop:config>
-        <aop:pointcut expression="execution(* com.rong.cms.*.*(..)))" id="txPo"/>
+        <aop:pointcut expression="execution(* com.rong.cms.dao.*.*(..)))" id="txPo"/>
         <aop:advisor advice-ref="txPoo" pointcut-ref="txPo"/>
     </aop:config>
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <tx:advice id="txPoo">
         <tx:attributes>
             <tx:method name="*" propagation="REQUIRED" read-only="true"/>
-            <!--&lt;!&ndash; 让所有的方法都加入事务管理，为了提高效率，可以把一些查询之类的方法设置为只读的事务
-             以下方法都是可能设计修改的方法，就无法设置为只读 &ndash;&gt;-->
+            <!--让所有的方法都加入事务管理，为了提高效率，可以把一些查询之类的方法设置为只读的事务
+             以下方法都是可能设计修改的方法，就无法设置为只读-->
             <tx:method name="add*" propagation="REQUIRED"/>
             <tx:method name="delete*" propagation="REQUIRED"/>
             <tx:method name="update*" propagation="REQUIRED"/>
