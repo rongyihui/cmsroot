@@ -25,10 +25,7 @@ import org.xml.sax.InputSource;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.sql.SQLException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -54,7 +51,10 @@ public abstract class BaseDaoTest {
         //解决延迟加载
         Session s = sessionFactory.openSession();
         TransactionSynchronizationManager.bindResource(sessionFactory, new SessionHolder(s));
-        backupOneTable(tableName);
+        //1.备份表
+        backupAllTable(tableName);
+        //2.将测试数据写入数据库
+        createDataSet(tableTestName);
     }
 
     @Test
@@ -64,6 +64,7 @@ public abstract class BaseDaoTest {
     public void resetTable() throws SQLException, DatabaseUnitException {
         //SessionHolder holder = (SessionHolder) TransactionSynchronizationManager.getResource(sessionFactory);
         //Session s = holder.getSession();
+        //3.将备份的表恢复到数据库
         createDataSet(tableName);
         //s.flush();
         TransactionSynchronizationManager.unbindResource(sessionFactory);
@@ -71,24 +72,24 @@ public abstract class BaseDaoTest {
 
     }
     //备份所有的表
-    private void backupAllTable() throws IOException, SQLException, DataSetException {
+    private void backupAllTable(String name) throws IOException, SQLException, DataSetException {
         IDataSet ids = iDatabaseConnection.createDataSet();
-        file = new File(this.getClass().getResource("/data/" + tableName + ".xml").getPath());
-        Assert.assertNotNull(tableName+".xml配置文件不存在",file);
-        FlatXmlDataSet.write(ids, new FileWriter(file));
+        QueryDataSet ds = new QueryDataSet(iDatabaseConnection);
+        for(String tablen:ids.getTableNames()){
+            if(!"sys_config".equals(tablen))
+            ds.addTable(tablen);
+        }
+        FlatXmlDataSet.write(ds, new FileOutputStream(new File(this.getClass().getResource("/data/" + name + ".xml").getPath())));
     }
 
     //备份一张表
     private void backupOneTable(String name) throws IOException, DatabaseUnitException, SQLException {
         QueryDataSet ds = new QueryDataSet(iDatabaseConnection);
         ds.addTable(tableName);
-        //将数据库的数据存到t_department.xml中
+        //将数据库的数据存到t_.xml中
         file = new File(this.getClass().getResource("/data/" + name + ".xml").getPath());
         Assert.assertNotNull(tableName+".xml配置文件不存在",file);
         FlatXmlDataSet.write(ds, new FileWriter(file));
-
-        //将测试数据写入数据库
-        createDataSet(tableTestName);
     }
 
     /**通过表创建数据库
