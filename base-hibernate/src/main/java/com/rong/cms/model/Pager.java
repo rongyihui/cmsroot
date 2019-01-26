@@ -2,7 +2,7 @@ package com.rong.cms.model;
 
 import java.util.List;
 
-public class Pager<T> {
+public class Pager {
     /**
      * 第几页
      */
@@ -26,7 +26,7 @@ public class Pager<T> {
     /**
      * 放置具体数据的列表
      */
-    private List<T> datas;
+    private List datas;
 
     public int getPageIndex() {
         return pageIndex;
@@ -52,10 +52,10 @@ public class Pager<T> {
     public void setTotalPage(int totalPage) {
         this.totalPage = totalPage;
     }
-    public List<T> getDatas() {
+    public List getDatas() {
         return datas;
     }
-    public void setDatas(List<T> datas) {
+    public void setDatas(List datas) {
         this.datas = datas;
     }
     public int getPageOffset() {

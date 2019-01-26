@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="base-hibernate" />
         <module name="basehibernate" />
+        <module name="cmscore" />
       </profile>
     </annotationProcessing>
   </component>

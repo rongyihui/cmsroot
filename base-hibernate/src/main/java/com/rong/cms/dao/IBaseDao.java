@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 公共dao，包含hibernate基本操作
  *
- * @param <T>
+ * @param
  */
 public interface IBaseDao<T> {
     /**
@@ -59,17 +59,17 @@ public interface IBaseDao<T> {
      * @param alias
      * @return
      */
-    List<Object> listbyObj(String hql, Object[] args, Map<String, Object> alias);
+    List listbyObj(String hql, Object[] args, Map<String, Object> alias);
 
-    List<Object> listbyObj(String hql, Object[] args);
+    List listbyObj(String hql, Object[] args);
 
-    List<Object> listbyObj(String hql, Object arg);
+    List listbyObj(String hql, Object arg);
 
-    List<Object> listbyObj(String hql, Object arg, Map<String, Object> alias);
+    List listbyObj(String hql, Object arg, Map<String, Object> alias);
 
-    List<Object> listbyObj(String hql, Map<String, Object> alias);
+    List listbyObj(String hql, Map<String, Object> alias);
 
-    List<Object> listbyObj(String hql);
+    List listbyObj(String hql);
 
     /**
      * 分页查询，通过通配符=？
@@ -78,17 +78,17 @@ public interface IBaseDao<T> {
      * @param args
      * @return
      */
-    Pager<Object> find(String hql, Object[] args, Map<String, Object> alias);
+    Pager find(String hql, Object[] args, Map<String, Object> alias);
 
-    Pager<Object> find(String hql, Object[] args);
+    Pager find(String hql, Object[] args);
 
-    Pager<Object> find(String hql, Object arg);
+    Pager find(String hql, Object arg);
 
-    Pager<Object> find(String hql, Object arg, Map<String, Object> alias);
+    Pager find(String hql, Object arg, Map<String, Object> alias);
 
-    Pager<Object> find(String hql, Map<String, Object> alias);
+    Pager find(String hql, Map<String, Object> alias);
 
-    Pager<Object> find(String hql);
+    Pager find(String hql);
 
     /**
      * 通过hql 查询对象
@@ -132,13 +132,13 @@ public interface IBaseDao<T> {
      * @param hasEntity 是否是一个hibernate管理的实体，例如DTO就需要通过setResultTransform
      * @return 分页对象
      */
-    List<Object> listBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
+    List listBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
 
-    List<Object> listBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
+    List listBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity);
 
-    List<Object> listBysql(String sql, Object arg, Class<Object> clz, boolean hasEntity);
+    List listBysql(String sql, Object arg, Class<Object> clz, boolean hasEntity);
 
-    List<Object> listBysql(String sql, Class<Object> clz, boolean hasEntity);
+    List listBysql(String sql, Class<Object> clz, boolean hasEntity);
 
     /**
      * 根据sql分页查询对象，不包含关联对象
@@ -150,15 +150,15 @@ public interface IBaseDao<T> {
      * @param hasEntity 是否是一个hibernate管理的实体，例如DTO就需要通过setResultTransform
      * @return 分页对象
      */
-    Pager<Object> findBysql(String sql, Object[] args, Map<String, Object> alias, Class clz, boolean hasEntity);
+    Pager findBysql(String sql, Object[] args, Map<String, Object> alias, Class<?> clz, boolean hasEntity);
 
-    Pager<Object> findBysql(String sql, Object arg, Map<String, Object> alias, Class clz, boolean hasEntity);
+    Pager findBysql(String sql, Object arg, Map<String, Object> alias, Class<?> clz, boolean hasEntity);
 
-    Pager<Object> findBysql(String sql, Map<String, Object> alias, Class clz, boolean hasEntity);
+    Pager findBysql(String sql, Map<String, Object> alias, Class<?> clz, boolean hasEntity);
 
-    Pager<Object> findBysql(String sql, Object[] args, Class clz, boolean hasEntity);
+    Pager findBysql(String sql, Object[] args, Class<?> clz, boolean hasEntity);
 
-    Pager<Object> findBysql(String sql, Object arg, Class clz, boolean hasEntity);
+    Pager findBysql(String sql, Object arg, Class<?> clz, boolean hasEntity);
 
-    Pager<Object> findBysql(String sql, Class clz, boolean hasEntity);
+    Pager findBysql(String sql, Class<?> clz, boolean hasEntity);
 }

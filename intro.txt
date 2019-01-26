@@ -1,3 +1,6 @@
+
+*************这是我的学习项目********
+
 通过使用
 spring
 springmvc
@@ -20,3 +23,7 @@ maven
     1月25日 -----------已经解决junit spring延迟加载--------
             -----------解决大部分basedao的测试---------
             关联表fetch测试没做
+3.cms-core
+    model
+        Group
+        User

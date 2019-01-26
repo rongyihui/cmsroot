@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="1月25日 解决baseDao 原生sql的小部分测试">
+    <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cms-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/GroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IGroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/RoleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/UserGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/test/resources/data/t_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-core/src/test/resources/data/t_user_test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/61b88b7c-58b2-47eb-9481-6f8e39bf74d1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/BaseDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/IBaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/dao/IBaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/model/Pager.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/classes/com/rong/cms/model/Pager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/BaseDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/BaseDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/DepartmentDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/target/test-classes/com/rong/cms/dao/DepartmentDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/intro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/base-hibernate/target/" />
+    <ignored path="$PROJECT_DIR$/cms-core/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,93 +87,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
+        <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="348">
+              <caret line="81" column="126" selection-start-line="81" selection-start-column="126" selection-end-line="81" selection-end-column="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_group">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_role">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user_group">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user_role">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
+        <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/data/t_user.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#1464#1465#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1608#1609#0" expanded="true" />
-                <element signature="e#1662#1663#0" expanded="true" />
-                <element signature="e#2007#2008#0" expanded="true" />
-                <element signature="e#2056#2057#0" expanded="true" />
-                <element signature="e#2131#2132#0" expanded="true" />
-                <element signature="e#2193#2194#0" expanded="true" />
-                <element signature="e#2448#2449#0" expanded="true" />
-                <element signature="e#2503#2504#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
-                <element signature="e#2620#2621#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-hibernate/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="43" selection-start-line="43" selection-end-line="44" />
+            <state relative-caret-position="160">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -151,6 +158,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -168,7 +177,22 @@
       <find>writer</find>
       <find>changeSortHql</find>
       <find>public</find>
+      <find>&lt;?&gt;</find>
+      <find>List&lt;Object&gt;</find>
+      <find>Pager&lt;Object&gt;</find>
+      <find>&lt;T&gt;</find>
+      <find>Pager&lt;?&gt;</find>
+      <find>List&lt;?&gt;</find>
+      <find>tableTestName</find>
+      <find>maxi</find>
     </findStrings>
+    <replaceStrings>
+      <replace>List&lt;?&gt;</replace>
+      <replace>Pager&lt;?&gt;</replace>
+      <replace />
+      <replace>Pager</replace>
+      <replace>List</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -176,14 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com.rong.cms.model/Pager.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com.rong.cms.model/SystemContext.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/dao.fxml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/User.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/Department.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/61b88b7c-58b2-47eb-9481-6f8e39bf74d1/console.sql" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/IUserDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/IDepDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/IDepartmentDao.java" />
@@ -192,7 +208,6 @@
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/AbstractDbunitUtil.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_add.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_data.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/DbunitAbstractUtil.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/DbunitAbstractBase.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DbunitAbstractBase.java" />
@@ -200,17 +215,42 @@
         <option value="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/Department.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_test.xml" />
-        <option value="$PROJECT_DIR$/intro.txt" />
         <option value="$PROJECT_DIR$/base-hibernate/pom.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDao.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/RoleType.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/UserRole.java" />
+        <option value="$PROJECT_DIR$/intro.txt" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IGroupDao.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/GroupDao.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IRoleDao.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Role.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/java/dao/IDepartmentDao.java" />
+        <option value="$PROJECT_DIR$/cms-core/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/java/dao/DepartmentDaoTest.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/java/dao/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/resources/beans.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Group.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/UserGroup.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/resources/data/t_user_test.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/resources/t_user.xml" />
+        <option value="$PROJECT_DIR$/cms-core/target/test-classes/t_user.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/java/dao/BaseDaoTest.java" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/resources/data/t_user.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java" />
       </list>
     </option>
   </component>
@@ -236,7 +276,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1724" />
+    <option name="width" value="1608" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -245,8 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,141 +292,52 @@
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="base-hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548419911150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548520531617" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21540178" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\target\test-classes\data" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources\data" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources" />
       <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\target\test-classes\data" />
       <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rong.cms" />
       <recent name="com.rong.cms.dao" />
       <recent name="com.rong.cms.model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dao" />
       <recent name="com.rong.cms.model" />
       <recent name="com.rong.cms.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\java" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\main\resources" />
       <recent name="E:\project\idea-wordspace\cmsroot\base-hibernate\src\test\resources\data" />
       <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,8 +352,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentDaoTest.add">
-    <configuration name="DepartmentDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserDaoTest.add (1)">
+    <configuration name="DepartmentDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basehibernate" />
       <extension name="coverage">
         <pattern>
@@ -414,6 +363,52 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
       <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentDaoTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basehibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rong.cms.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
+      <option name="METHOD_NAME" value="find" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.add (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmscore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rong.cms.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmscore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
       <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -471,12 +466,18 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.DepartmentDaoTest.find" />
+      <item itemvalue="JUnit.DepartmentDaoTest" />
       <item itemvalue="Maven.base-hibernate [test]" />
-      <item itemvalue="JUnit.DepartmentDaoTest.add" />
+      <item itemvalue="JUnit.UserDaoTest.add" />
+      <item itemvalue="JUnit.UserDaoTest.add (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DepartmentDaoTest.add" />
+        <item itemvalue="JUnit.UserDaoTest.add (1)" />
+        <item itemvalue="JUnit.UserDaoTest.add" />
+        <item itemvalue="JUnit.DepartmentDaoTest" />
+        <item itemvalue="JUnit.DepartmentDaoTest.find" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +503,10 @@
       <workItem from="1548318410352" duration="1266000" />
       <workItem from="1548382274744" duration="18593000" />
       <workItem from="1548418664150" duration="329000" />
-      <workItem from="1548419009083" duration="759000" />
+      <workItem from="1548419009083" duration="3326000" />
+      <workItem from="1548481214581" duration="5235000" />
+      <workItem from="1548496984084" duration="3222000" />
+      <workItem from="1548508750457" duration="11877000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -553,49 +557,92 @@
       <option name="project" value="LOCAL" />
       <updated>1548405498516</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1月25日 解决baseDao 原生sql的小部分测试">
+      <created>1548419928413</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1548419928413</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 29m 15s.xml">
-      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 03m 26s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 30m 41s.xml">
-      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 05m 15s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_find - 2019.01.25 at 15h 31m 43s.xml">
-      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 09m 08s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest - 2019.01.25 at 15h 32m 13s.xml">
-      <configuration name="DepartmentDaoTest" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 21m 52s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest - 2019.01.25 at 15h 39m 08s.xml">
-      <configuration name="DepartmentDaoTest" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 23m 45s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_base-hibernate - 2019.01.25 at 15h 44m 41s.xml">
-      <configuration name="All in base-hibernate" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 24m 51s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_findBySql - 2019.01.25 at 15h 58m 42s.xml">
-      <configuration name="DepartmentDaoTest.findBySql" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 26m 24s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_findBySql - 2019.01.25 at 16h 06m 12s.xml">
-      <configuration name="DepartmentDaoTest.findBySql" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 33m 16s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest_findBySql - 2019.01.25 at 16h 10m 49s.xml">
-      <configuration name="DepartmentDaoTest.findBySql" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 33m 39s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest - 2019.01.25 at 20h 29m 17s.xml">
-      <configuration name="DepartmentDaoTest" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_add_(1) - 2019.01.27 at 00h 33m 54s.xml">
+      <configuration name="UserDaoTest.add (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81274000" />
+    <option name="totallyTimeSpent" value="104175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1724" height="1087" extended-state="0" />
+    <frame x="-7" y="0" width="1608" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20607235" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938644" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40258342" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935413" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32938644" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32938644" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32831" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.2638221" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.13242894" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20492789" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2562249" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -604,7 +651,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.74381053" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26480085" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -617,7 +664,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32938644" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
-      <window_info anchor="bottom" id="Messages" order="15" visible="true" weight="0.32831" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32831" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -626,42 +673,9 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.2638221" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.15625" />
+      <window_info anchor="right" id="Database" order="8" weight="0.16064256" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20492789" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2723133" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29666665" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
-      <window_info anchor="bottom" id="Messages" order="15" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3291829" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info active="true" anchor="right" id="Database" order="8" visible="true" weight="0.32604736" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,181 +743,408 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE-sources.jar!/org/springframework/test/context/junit4/AbstractTransactionalJUnit4SpringContextTests.java" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_data.xml" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_add.xml" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE-sources.jar!/org/springframework/test/annotation/Rollback.java" />
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_191/src.zip!/java/io/File.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/operation/DatabaseOperation.class" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/xml/FlatXmlDataSet.class" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DbunitAbstractBase.java" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/unit/DbunitUtil.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/OrderedTableNameMap.class" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/annotation/Lazy.java" />
-    <entry file="das://61b88b7c-58b2-47eb-9481-6f8e39bf74d1/schema/rong/table/t_user" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://61b88b7c-58b2-47eb-9481-6f8e39bf74d1/schema/rong/table/t_department" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/05eb1725-0c51-48c9-89a5-d27b5b7baf2f/console.sql" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.jar!/org/hibernate/Session.class">
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IRoleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jdk1.8.0_191/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://05eb1725-0c51-48c9-89a5-d27b5b7baf2f/schema/rong/table/t_department" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department_test.xml" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/target/surefire-reports/com.rong.cms.dao.DepartmentDaoTest.txt" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding>
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/SystemContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="43" selection-start-line="43" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state relative-caret-position="80">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/IDepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="293">
+          <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#2007#2008#0" expanded="true" />
-            <element signature="e#2056#2057#0" expanded="true" />
-            <element signature="e#2131#2132#0" expanded="true" />
-            <element signature="e#2193#2194#0" expanded="true" />
-            <element signature="e#2448#2449#0" expanded="true" />
-            <element signature="e#2503#2504#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2388#2389#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#4349#4350#0" expanded="true" />
+            <element signature="e#4407#4408#0" expanded="true" />
+            <element signature="e#4979#4980#0" expanded="true" />
+            <element signature="e#5029#5030#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#154#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/dao/DepartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/dao/IDepartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1019">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="70" column="21" selection-start-line="40" selection-start-column="8" selection-end-line="70" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/RoleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar!/org/apache/commons/dbcp/BasicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="304" column="25" selection-start-line="304" selection-start-column="18" selection-end-line="304" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#1111#1136#0" expanded="true" />
+            <element signature="e#1174#1187#0" expanded="true" />
+            <element signature="e#1230#1248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/UserGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/t_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/xml/FlatXmlWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="e#2049#2050#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/xml/FlatXmlDataSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="82" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/data/t_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/IDataSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/data/t_user.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/data/t_user_test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/data/t_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/data/t_user_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="81" column="126" selection-start-line="81" selection-start-column="126" selection-end-line="81" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/data/t_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -924,7 +1165,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (basehibernate)|Spring</last-edited>
+          <last-edited>Spring (cmscore)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -959,11 +1200,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|basehibernate</last-edited>
+          <last-edited>cmscore</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.21540178" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

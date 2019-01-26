@@ -13,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,14 +61,14 @@ public class DepartmentDaoTest extends BaseDaoTest{
     }
     @Test
     public void listByObject(){
-        List<Object> deps = departmentDao.listbyObj("from Department");
+        List deps = departmentDao.listbyObj("from Department");
         Assert.assertEquals("list的size有误",21,deps.size());
     }
     @Test
     public void find(){
         //通配符测试
         String hql = "from Department dep where dep.status=?0";
-        Pager<Object> deps = departmentDao.find(hql,new Object[]{1});
+        Pager deps = departmentDao.find(hql,new Object[]{1});
         Assert.assertEquals("通配符？查询出错",new Long(3),deps.getTotalRecord());
 
         //别名测试
@@ -87,6 +88,13 @@ public class DepartmentDaoTest extends BaseDaoTest{
             SystemContext.removePageOffset();
         }
 
+        //别名测试list
+        alias.clear();
+        alias.put("id", Arrays.asList(1,2,3,5,6));
+        hql = "from Department dep where dep.id in (:id)";
+        deps = departmentDao.find(hql,alias);
+        Assert.assertEquals("别名 查询出错",new Long(5),deps.getTotalRecord());
+
         //排序测试
         try {
             hql = "from Department";
@@ -102,7 +110,7 @@ public class DepartmentDaoTest extends BaseDaoTest{
     @Test
     public void findBySql(){
         String sql = "select * from t_department dep where dep.status=?0 ";
-        Pager<Object> deps = departmentDao.findBysql(sql,new Object[]{1},null,Department.class,true);
+        Pager deps = departmentDao.findBysql(sql,new Object[]{1},null,Department.class,true);
         Assert.assertEquals("sql通配符？查询出错",new Long(3),deps.getTotalRecord());
     }
 }

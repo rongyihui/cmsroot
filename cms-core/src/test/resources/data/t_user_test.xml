@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <t_user id="1" username="admin1" password="123" nickname="管理员1"
+          email="54188@qq.com" phone="12345678901" status="0" born_date="1991-01-02" create_date="1991-01-02"/>
+  <t_user id="2" username="admin2" password="123" nickname="管理员2"
+          email="54188@qq.com" phone="12345678901" status="0" born_date="1991-01-02" create_date="1991-01-02"/>
+  <t_user id="3" username="admin3" password="123" nickname="管理员3"
+          email="54188@qq.com" phone="12345678901" status="0" born_date="1991-01-02" create_date="1991-01-02"/>
+
+  <t_group id="1" name="财务处1" intro="负责财务部门的工作" create_date="1991-01-02"/>
+  <t_group id="2" name="财务处2" intro="负责财务部门的工作" create_date="1991-01-02"/>
+  <t_group id="3" name="财务处3" intro="负责财务部门的工作" create_date="1991-01-02"/>
+
+  <t_role id="1" name="日常支出角色" role_type="0"/>
+  <t_role id="2" name="日常收入角色" role_type="1"/>
+  <t_role id="3" name="外出支出角色" role_type="2"/>
+
+  <t_user_role id="1" u_id="1" r_id="1"/>
+  <t_user_role id="2" u_id="2" r_id="2"/>
+  <t_user_role id="3" u_id="2" r_id="3"/>
+  <t_user_role id="4" u_id="3" r_id="1"/>
+  <t_user_role id="5" u_id="3" r_id="2"/>
+
+  <t_user_group id="1" u_id="1" g_id="1"/>
+  <t_user_group id="2" u_id="2" g_id="2"/>
+  <t_user_group id="3" u_id="2" g_id="3"/>
+  <t_user_group id="4" u_id="3" g_id="1"/>
+  <t_user_group id="5" u_id="3" g_id="3"/>
+</dataset>
