@@ -11,8 +11,8 @@ import java.util.List;
 public class UserDao extends BaseDao<User> implements IUserDao<User> {
     @Override
     public List<Role> listUserRoles(int userId) {
-        String hql = "select r from UserRole ur right join fetch ur.role r" +
-                " left join fetch ur.user u where u.id=?0";
+        String hql = "select r from UserRole ur right join ur.role r" +
+                " left join ur.user u where u.id=?0";
         return this.listObj(hql, userId);
     }
 
