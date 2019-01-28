@@ -27,3 +27,6 @@ maven
     model
         Group
         User
+4.cms-user
+    service
+        UserService

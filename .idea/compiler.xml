@@ -10,6 +10,7 @@
         <module name="basehibernate" />
         <module name="cms-core" />
         <module name="cmscore" />
+        <module name="cmsuser" />
       </profile>
     </annotationProcessing>
   </component>

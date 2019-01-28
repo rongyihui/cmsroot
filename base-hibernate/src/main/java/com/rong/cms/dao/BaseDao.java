@@ -66,36 +66,36 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
 
-    @Override
-    public List listbyObj(String hql, Object[] args, Map<String, Object> alias) {
+    
+    public List listObj(String hql, Object[] args, Map<String, Object> alias) {
         hql = changeSortHql(hql);
         Query q = this.getSession().createQuery(hql);
         return setParametersQuery(q, args, alias).getResultList();
     }
 
-    @Override
-    public List listbyObj(String hql, Object[] args) {
-        return listbyObj(hql, args, null);
+    
+    public List listObj(String hql, Object[] args) {
+        return listObj(hql, args, null);
     }
 
-    @Override
-    public List listbyObj(String hql, Object arg) {
-        return listbyObj(hql, new Object[]{arg}, null);
+    
+    public List listObj(String hql, Object arg) {
+        return listObj(hql, new Object[]{arg}, null);
     }
 
-    @Override
-    public List listbyObj(String hql, Object arg, Map<String, Object> alias) {
-        return listbyObj(hql, new Object[]{arg}, alias);
+    
+    public List listObj(String hql, Object arg, Map<String, Object> alias) {
+        return listObj(hql, new Object[]{arg}, alias);
     }
 
-    @Override
-    public List listbyObj(String hql, Map<String, Object> alias) {
-        return this.listbyObj(hql, null, alias);
+    
+    public List listObj(String hql, Map<String, Object> alias) {
+        return this.listObj(hql, null, alias);
     }
 
-    @Override
-    public List listbyObj(String hql) {
-        return this.listbyObj(hql, null, null);
+    
+    public List listObj(String hql) {
+        return this.listObj(hql, null, null);
     }
 
     private String getCountHql(String chql) {
@@ -109,7 +109,7 @@ public class BaseDao<T> implements IBaseDao<T> {
         return chql;
     }
 
-    @Override
+    
     public Pager find(String hql, Object[] args, Map<String, Object> alias) {
         Query cQ = setParametersQuery(getSession().createQuery(getCountHql(hql)), args, alias);
         long totalCount = (Long) cQ.getSingleResult();
@@ -144,94 +144,94 @@ public class BaseDao<T> implements IBaseDao<T> {
         return pager;
     }
 
-    @Override
+    
     public Pager find(String hql, Object[] args) {
         return find(hql, args, null);
     }
 
-    @Override
+    
     public Pager find(String hql, Object arg) {
         return find(hql, new Object[]{arg}, null);
     }
 
-    @Override
+    
     public Pager find(String hql, Object arg, Map<String, Object> alias) {
         return find(hql, new Object[]{arg}, alias);
     }
 
-    @Override
+    
     public Pager find(String hql, Map<String, Object> alias) {
         return find(hql, null, alias);
     }
 
-    @Override
+    
     public Pager find(String hql) {
         return find(hql, null, null);
     }
 
-    @Override
+    
     public Object queryByHql(String hql, Object[] args, Map<String, Object> alias) {
         List list = setParametersQuery(getSession().createQuery(hql), args, alias).getResultList();
         if (list.size() > 0) return list.get(0);
         else return null;
     }
 
-    @Override
+    
     public Object queryByHql(String hql, Object[] args) {
         return queryByHql(hql, args, null);
     }
 
-    @Override
+    
     public Object queryByHql(String hql, Object arg) {
         return queryByHql(hql, new Object[]{arg}, null);
     }
 
-    @Override
+    
     public Object queryByHql(String hql, Object arg, Map<String, Object> alias) {
         return queryByHql(hql, new Object[]{arg}, alias);
     }
 
-    @Override
+    
     public Object queryByHql(String hql, Map<String, Object> alias) {
         return queryByHql(hql, null, alias);
     }
 
-    @Override
+    
     public Object queryByHql(String hql) {
         return queryByHql(hql, null, null);
     }
 
-    @Override
+    
     public void excuteByHql(String hql, Object[] args) {
         setParametersQuery(getSession().createQuery(hql), args, null).executeUpdate();
     }
 
-    @Override
+    
     public void excuteByHql(String hql, Object arg) {
         excuteByHql(hql, new Object[]{arg});
     }
 
-    @Override
+    
     public void excuteByHql(String hql) {
         excuteByHql(hql, null);
     }
 
-    @Override
+    
     public List listBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
         return getSqlQuery(sql, args, alias, clz, hasEntity).list();
     }
 
-    @Override
+    
     public List listBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
         return listBysql(sql, null, alias, clz, hasEntity);
     }
 
-    @Override
+    
     public List listBysql(String sql, Object arg, Class<Object> clz, boolean hasEntity) {
         return listBysql(sql, new Object[]{arg}, null, clz, hasEntity);
     }
 
-    @Override
+    
     public List listBysql(String sql, Class<Object> clz, boolean hasEntity) {
         return listBysql(sql, null, null, clz, hasEntity);
     }
@@ -249,7 +249,7 @@ public class BaseDao<T> implements IBaseDao<T> {
         return nq;
     }
 
-    @Override
+    
     public Pager findBysql(String sql, Object[] args, Map<String, Object> alias, Class<?> clz, boolean hasEntity) {
         //获取总数
         NativeQuery<Object> totalQ = getSession().createNativeQuery(getCountHql(sql));
@@ -263,27 +263,27 @@ public class BaseDao<T> implements IBaseDao<T> {
         return pager;
     }
 
-    @Override
+    
     public Pager findBysql(String sql, Object arg, Map<String, Object> alias, Class<?> clz, boolean hasEntity) {
         return findBysql(sql,new Object[]{arg},alias,clz,hasEntity);
     }
 
-    @Override
+    
     public Pager findBysql(String sql, Map<String, Object> alias, Class<?> clz, boolean hasEntity) {
         return findBysql(sql,null,alias,clz,hasEntity);
     }
 
-    @Override
+    
     public Pager findBysql(String sql, Object[] args, Class<?> clz, boolean hasEntity) {
         return findBysql(sql,args,null,clz,hasEntity);
     }
 
-    @Override
+    
     public Pager findBysql(String sql, Object arg, Class<?> clz, boolean hasEntity) {
         return findBysql(sql,new Object[]{arg},null,clz,hasEntity);
     }
 
-    @Override
+    
     public Pager findBysql(String sql, Class<?> clz, boolean hasEntity) {
         return findBysql(sql,null,null,clz,hasEntity);
     }

@@ -11,6 +11,7 @@
     <modules>
         <module>base-hibernate</module>
         <module>cms-core</module>
+        <module>cms-user</module>
     </modules>
 
     <!--常量定义-->

@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-hibernate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cms-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cms-user" charset="UTF-8" />
   </component>
 </project>
