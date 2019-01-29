@@ -36,7 +36,7 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   <!--解决页面pager传值-->
-  <filter>
+<!--  <filter>
     <filter-name>SystemContextFilter</filter-name>
     <filter-class>com.rong.web.SystemContextFilter</filter-class>
     <init-param>
@@ -47,7 +47,7 @@
   <filter-mapping>
     <filter-name>SystemContextFilter</filter-name>
     <url-pattern>/*</url-pattern>
-  </filter-mapping>
+  </filter-mapping>-->
 
   <servlet>
     <servlet-name>cms</servlet-name>
@@ -55,7 +55,7 @@
     <!--正数的值越小，启动该servlet的优先级越高。-->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:cms-servlet.xml</param-value>
+      <param-value>/WEB-INF/cms-servlet.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
@@ -63,3 +63,4 @@
     <servlet-name>cms</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+</web-app>

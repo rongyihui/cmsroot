@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.rong.cms.service</groupId>
     <artifactId>cms-user</artifactId>
 
     <dependencies>

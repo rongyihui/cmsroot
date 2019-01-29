@@ -22,11 +22,13 @@
         <dependency>
             <groupId>com.rong.cms</groupId>
             <artifactId>cms-user</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <!--引入cms-core包-->
         <dependency>
             <groupId>com.rong.cms</groupId>
             <artifactId>cms-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <!--spring-->
         <dependency>
