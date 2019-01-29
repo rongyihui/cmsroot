@@ -1,7 +1,6 @@
 package com.rong.cms.dao;
 
 
-import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.*;
 import org.junit.Assert;
 import org.junit.BeforeClass;

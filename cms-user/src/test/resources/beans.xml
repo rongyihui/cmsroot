@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="userDao" class="org.easymock.EasyMock" factory-method="createStrictMock">
+        <constructor-arg value="com.rong.cms.dao.IUserDao"/>
+    </bean>
+    <bean id="roleDao" class="org.easymock.EasyMock" factory-method="createStrictMock">
+        <constructor-arg value="com.rong.cms.dao.IRoleDao"/>
+    </bean>
+    <bean id="groupDao" class="org.easymock.EasyMock" factory-method="createStrictMock">
+        <constructor-arg value="com.rong.cms.dao.IGroupDao"/>
+    </bean>
+
+    <bean id="userService" class="com.rong.cms.service.UserService">
+        <property name="userDao" ref="userDao"/>
+        <property name="roleDao" ref="roleDao"/>
+        <property name="groupDao" ref="groupDao"/>
+    </bean>
+</beans>

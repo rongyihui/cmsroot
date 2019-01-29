@@ -2,16 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cms-user/src/test/java/com/rong/cms/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user/src/test/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/cms-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/layui/layui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-core/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/test/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-core/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/test/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-core/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/test/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/intro.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,6 +135,7 @@
     <ignored path="$PROJECT_DIR$/base-hibernate/target/" />
     <ignored path="$PROJECT_DIR$/cms-core/target/" />
     <ignored path="$PROJECT_DIR$/cms-user/target/" />
+    <ignored path="$PROJECT_DIR$/cms-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,85 +157,19 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rong@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rong@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rong@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rong: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3170#3171#0" expanded="true" />
-                <element signature="e#3255#3256#0" expanded="true" />
-                <element signature="e#3364#3365#0" expanded="true" />
-                <element signature="e#3475#3476#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3701#3702#0" expanded="true" />
-                <element signature="e#3746#3747#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="78" selection-end-column="25" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/beans.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -138,7 +189,6 @@
       <find>an</find>
       <find>st</find>
       <find>tx</find>
-      <find>dbcp</find>
       <find>com</find>
       <find>orm</find>
       <find>defaultRollback</find>
@@ -158,7 +208,7 @@
       <find>byObj</find>
       <find>listbyObj</find>
       <find>listObj</find>
-      <find>public</find>
+      <find>dbcp</find>
     </findStrings>
     <replaceStrings>
       <replace>List&lt;?&gt;</replace>
@@ -175,12 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_add.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_data.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/DbunitAbstractUtil.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/DbunitAbstractBase.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DbunitAbstractBase.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/unit/DbunitUtil.java" />
         <option value="$PROJECT_DIR$/base-hibernate/target/test-classes/data/t_department.xml" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/model/Department.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/beans.xml" />
@@ -207,7 +251,6 @@
         <option value="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" />
         <option value="$PROJECT_DIR$/cms-core/pom.xml" />
-        <option value="$PROJECT_DIR$/intro.txt" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/IDepartmentDao.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDao.java" />
@@ -220,21 +263,28 @@
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" />
         <option value="$PROJECT_DIR$/cms-core/src/test/resources/data/t_user_test.xml" />
         <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cms-user/pom.xml" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" />
         <option value="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/cms-user/src/test/resources/beans.xml" />
+        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" />
+        <option value="$PROJECT_DIR$/cms-user/src/test/java/com/rong/cms/service/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/intro.txt" />
+        <option value="$PROJECT_DIR$/cms-user/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-web/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/cms-servlet.xml" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\project\maven-repository" />
+        <option name="localRepository" value="D:\java\maven-repository" />
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-        <option name="userSettingsFile" value="E:\project\apache-maven-3.6.0\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -251,8 +301,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1869" />
-    <option name="height" value="1087" />
+    <option name="width" value="1358" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -260,6 +310,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,51 +342,7 @@
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
               <item name="cms-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
@@ -347,60 +355,104 @@
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548744808293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548775376216" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -408,32 +460,32 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21540178" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-user\src\test\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-user\src\test\java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.rong.cms" />
       <recent name="com.rong.cms.dao" />
       <recent name="com.rong.cms.model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\java" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\main\resources" />
-      <recent name="E:\project\idea-wordspace\cmsroot\base-hibernate\src\test\resources\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rong.cms.dao" />
       <recent name="dao" />
       <recent name="com.rong.cms.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\target\test-classes\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\target\test-classes\data" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\resources\data" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-user\src\test\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -448,97 +500,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cms-core" />
+  <component name="RunManager" selected="JUnit.UserServiceTest">
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmsuser" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
+          <option name="PATTERN" value="com.rong.cms.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cmscore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.deleteGroupRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cms-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="deleteGroupRole" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.deleteUserGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cms-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="deleteUserGroups" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.deleteUserRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cms-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="deleteUserRoles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.findUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cms-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="findUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.rong.cms.service" />
+      <option name="MAIN_CLASS_NAME" value="com.rong.cms.service.UserServiceTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -554,7 +526,8 @@
             </option>
             <option name="goals">
               <list>
-                <option value="test" />
+                <option value="clean" />
+                <option value="install" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -562,13 +535,13 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/base-hibernate" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="base-hibernate [test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="cms-root [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -579,7 +552,8 @@
             </option>
             <option name="goals">
               <list>
-                <option value="test" />
+                <option value="clean" />
+                <option value="install" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -587,27 +561,19 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/base-hibernate" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="Maven.base-hibernate [test]" />
-      <item itemvalue="JUnit.UserDaoTest.deleteGroupRole" />
-      <item itemvalue="JUnit.UserDaoTest.findUser" />
-      <item itemvalue="JUnit.UserDaoTest.deleteUserRoles" />
-      <item itemvalue="JUnit.UserDaoTest.deleteUserGroups" />
+      <item itemvalue="Maven.cms-root [clean,install]" />
+      <item itemvalue="JUnit.UserServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserDaoTest.deleteUserGroups" />
-        <item itemvalue="JUnit.UserDaoTest.deleteUserRoles" />
-        <item itemvalue="JUnit.UserDaoTest.findUser" />
-        <item itemvalue="JUnit.UserDaoTest.deleteGroupRole" />
+        <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -641,6 +607,7 @@
       <workItem from="1548637023228" duration="1689000" />
       <workItem from="1548677544957" duration="15150000" />
       <workItem from="1548723639602" duration="14162000" />
+      <workItem from="1548757304137" duration="14377000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -716,39 +683,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest_deleteUserRole - 2019.01.29 at 10h 17m 59s.xml">
-      <configuration name="UserDaoTest.deleteUserRole" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 08m 45s.xml">
+      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_deleteUserRole - 2019.01.29 at 10h 34m 21s.xml">
-      <configuration name="UserDaoTest.deleteUserRole" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testAddNotHasUser - 2019.01.29 at 22h 10m 16s.xml">
+      <configuration name="UserServiceTest.testAddNotHasUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_deleteGroupRole - 2019.01.29 at 10h 34m 40s.xml">
-      <configuration name="UserDaoTest.deleteGroupRole" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testAddNotHasUser - 2019.01.29 at 22h 10m 26s.xml">
+      <configuration name="UserServiceTest.testAddNotHasUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest - 2019.01.29 at 11h 06m 01s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 10m 44s.xml">
+      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest - 2019.01.29 at 11h 18m 59s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 11m 07s.xml">
+      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_findUser - 2019.01.29 at 11h 27m 57s.xml">
-      <configuration name="UserDaoTest.findUser" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 11m 49s.xml">
+      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_deleteUserRoles - 2019.01.29 at 14h 50m 35s.xml">
-      <configuration name="UserDaoTest.deleteUserRoles" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 12m 05s.xml">
+      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_deleteUserGroups - 2019.01.29 at 14h 51m 44s.xml">
-      <configuration name="UserDaoTest.deleteUserGroups" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 12m 48s.xml">
+      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_deleteUserGroups - 2019.01.29 at 14h 52m 22s.xml">
-      <configuration name="UserDaoTest.deleteUserGroups" configurationId="JUnit" />
+    <history-entry file="UserServiceTest - 2019.01.29 at 22h 13m 55s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest - 2019.01.29 at 14h 52m 54s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest - 2019.01.29 at 22h 39m 00s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135410000" />
+    <option name="totallyTimeSpent" value="149787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,10 +727,47 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1869" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1358" height="1057" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14040907" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21879815" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.96662956" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935413" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32938644" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32938644" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32925472" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32814237" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.2638221" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.41155234" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20492789" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32930514" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30522564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -771,8 +775,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32938644" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.401507" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32929516" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40044492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -795,42 +799,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.24543947" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20492789" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2562249" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26480085" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32938644" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32938644" />
-      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32831" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.2638221" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.16064256" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20492789" />
       <window_info anchor="right" id="Bean Validation" order="10" />
     </layout-to-restore>
@@ -902,52 +870,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/t_user.xml" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/xml/FlatXmlWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-          <folding>
-            <element signature="e#2049#2050#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/xml/FlatXmlDataSet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="82" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/dbunit/dbunit/2.5.4/dbunit-2.5.4.jar!/org/dbunit/dataset/IDataSet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/data/t_user_test.xml" />
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/data/t_user.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user_group" />
-    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user_role" />
-    <entry file="file://$PROJECT_DIR$/cms-core/target/test-classes/data/t_user.xml" />
-    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_group" />
-    <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_role" />
     <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_user" />
     <entry file="das://4750813e-cfcb-40eb-b8a6-c526ec7d55aa/schema/rong/table/t_department" />
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department_test.xml">
@@ -970,20 +892,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1058,13 +966,6 @@
     <entry file="das://80236647-b72b-4c95-bde1-d9be6a0d2f02/schema/rong/table/t_user" />
     <entry file="das://80236647-b72b-4c95-bde1-d9be6a0d2f02/schema/rong/table/t_user_group" />
     <entry file="das://80236647-b72b-4c95-bde1-d9be6a0d2f02/schema/rong/table/t_user_role" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1072,13 +973,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1128,9 +1022,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d12e6f3-5166-4600-b6f7-d88354f76ecd/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d12e6f3-5166-4600-b6f7-d88354f76ecd/console.sql" />
     <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1157,49 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3701#3702#0" expanded="true" />
-            <element signature="e#3746#3747#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/data/t_user_test.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1207,19 +1056,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
+        <state relative-caret-position="720">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3170#3171#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
-            <element signature="e#3475#3476#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="82" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/target/surefire-reports/com.rong.cms.service.UserServiceTest.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/target/surefire-reports/TEST-com.rong.cms.service.UserServiceTest.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/test/java/com/rong/cms/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="160" column="12" selection-start-line="160" selection-start-column="12" selection-end-line="164" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/cms-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/test/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1227,10 +1214,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>cmsweb:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.21540178" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1273,12 +1262,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cms-core</last-edited>
+          <last-edited>Spring|cmsuser</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.21540178" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

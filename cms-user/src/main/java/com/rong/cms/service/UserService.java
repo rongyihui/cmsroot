@@ -97,7 +97,7 @@ public class UserService implements IUserService {
         }
         for(Integer ugid:ugids){
             if (!ArrayUtils.contains(gids,ugid)){
-                userDao.deleteUserRole(user.getId(),ugid);
+                userDao.deleteUserGroup(user.getId(),ugid);
             }
         }
     }

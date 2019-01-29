@@ -13,11 +13,22 @@
     <artifactId>cms-user</artifactId>
 
     <dependencies>
-        <!--引入base-hibernate包-->
+        <!--junit-->
         <dependency>
-            <groupId>com.rong.cms</groupId>
-            <artifactId>base-hibernate</artifactId>
-            <version>${project.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--easymock-->
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <!--引入cms-core包-->
         <dependency>

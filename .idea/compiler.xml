@@ -12,6 +12,7 @@
         <module name="cms-user" />
         <module name="cmscore" />
         <module name="cmsuser" />
+        <module name="cmsweb" />
       </profile>
     </annotationProcessing>
   </component>
