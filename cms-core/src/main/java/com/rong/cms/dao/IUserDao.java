@@ -4,20 +4,21 @@ import com.rong.cms.model.*;
 
 import java.util.List;
 
-public interface IUserDao<User> extends IBaseDao<User>{
+public interface IUserDao extends IBaseDao<User>{
     /**
      * 对于某个用户获取他的role信息
      * @param userId 用户id
      * @return 一组role
      */
     List<Role> listUserRoles(int userId);
-
+    List<Integer> listUserRolesId(int userId);
     /**
      * 对于某个用户获取他的group信息
      * @param userId 用户id
      * @return 一组group
      */
     List<Group> listUserGroups(int userId);
+    List<Integer> listUserGroupsId(int userId);
 
     /**
      * 通过一个用户和角色获取UserRole对象
@@ -41,7 +42,7 @@ public interface IUserDao<User> extends IBaseDao<User>{
      * @param name username
      * @return User对象
      */
-    com.rong.cms.model.User loadByUsername(String name);
+    User loadByUsername(String name);
 
     /**
      * 通过角色id获取用户列表
@@ -76,4 +77,14 @@ public interface IUserDao<User> extends IBaseDao<User>{
      * @param group 组
      */
     void addUserGroup(User user,Group group);
+
+    void deleteUserRole(int uid);
+
+    void deleteUserRole(int uid,int rid);
+
+    void deleteUserGroup(int uid);
+
+    void deleteUserGroup(int uid,int gid);
+
+    Pager findUser();
 }

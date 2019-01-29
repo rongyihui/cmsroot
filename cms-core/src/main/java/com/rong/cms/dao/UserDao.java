@@ -1,6 +1,5 @@
 package com.rong.cms.dao;
 
-import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.*;
 import org.springframework.stereotype.Repository;
 
@@ -8,7 +7,7 @@ import java.util.List;
 
 @Repository("userDao")
 @SuppressWarnings("unchecked")
-public class UserDao extends BaseDao<User> implements IUserDao<User> {
+public class UserDao extends BaseDao<User> implements IUserDao {
     @Override
     public List<Role> listUserRoles(int userId) {
         String hql = "select r from UserRole ur right join ur.role r" +
@@ -17,8 +16,23 @@ public class UserDao extends BaseDao<User> implements IUserDao<User> {
     }
 
     @Override
+    public List<Integer> listUserRolesId(int userId) {
+        String hql = "select r.id from UserRole ur right join ur.role r" +
+                " left join ur.user u where u.id=?0";
+        return this.listObj(hql, userId);
+    }
+
+    @Override
+    public List<Integer> listUserGroupsId(int userId) {
+        String hql = "select g.id from UserGroup ug left join ug.user u" +
+                " right join ug.group g where u.id=?0";
+        return this.listObj(hql, userId);
+    }
+
+    @Override
     public List<Group> listUserGroups(int userId) {
-        String hql = "select ug.group from UserGroup ug where ug.user.id=?0";
+        String hql = "select g from UserGroup ug left join ug.user u" +
+                " right join ug.group g where u.id=?0";
         return this.listObj(hql, userId);
     }
 
@@ -79,4 +93,34 @@ public class UserDao extends BaseDao<User> implements IUserDao<User> {
         userGroup.setUser(user);
         addByObject(userGroup);
     }
+
+    @Override
+    public void deleteUserRole(int uid) {
+        String hql = "delete UserRole ur where ur.user.id=?0";
+        this.excuteByHql(hql, uid);
+    }
+
+    @Override
+    public void deleteUserRole(int uid, int rid) {
+        String hql = "delete UserRole ur where ur.user.id=?0 and ur.role.id=?1";
+        this.excuteByHql(hql, new Object[]{uid, rid});
+    }
+
+    @Override
+    public void deleteUserGroup(int uid) {
+        String hql = "delete UserGroup ug where ug.user.id=?0";
+        this.excuteByHql(hql, uid);
+    }
+
+    @Override
+    public void deleteUserGroup(int uid, int gid) {
+        String hql = "delete UserGroup ug where ug.user.id=?0 and ug.group.id=?1";
+        this.excuteByHql(hql, new Object[]{uid, gid});
+    }
+
+    @Override
+    public Pager findUser() {
+        return this.find("from User");
+    }
+
 }

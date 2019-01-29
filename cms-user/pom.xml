@@ -25,5 +25,10 @@
             <artifactId>cms-core</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--数组工具-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
     </dependencies>
 </project>

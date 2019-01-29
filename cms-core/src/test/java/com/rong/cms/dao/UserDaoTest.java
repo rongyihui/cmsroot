@@ -20,7 +20,7 @@ import java.util.List;
 public class UserDaoTest extends BaseDaoTest {
 
     @Resource(name = "userDao")
-    private UserDao userDao;
+    private IUserDao userDao;
     @Resource
     private IRoleDao roleDao;
     @Resource
@@ -38,7 +38,7 @@ public class UserDaoTest extends BaseDaoTest {
     @Test
     public void add() {
         User user = new User("admin", "123", "管理员"
-                , "5418@qq.com", "12345678901", "0"
+                , "5418@qq.com", "12345678901", 0
                 , new Date(), new Date());
         userDao.add(user);
         Assert.assertEquals("用户添加失败", user.getNickname(), userDao.load(user.getId()).getNickname());
@@ -116,5 +116,40 @@ public class UserDaoTest extends BaseDaoTest {
         UserGroup userGroup = userDao.loadUserGroup(user.getId(),group.getId());
         Assert.assertNotNull("用户、组添加关联失败",userGroup);
         Assert.assertEquals("关联对象错误",6,userGroup.getId());
+    }
+    @Test
+    public void deleteUserRole(){
+        int uid= 1;
+        userDao.deleteUserRole(uid);
+        List<Role> userRoles = userDao.listUserRoles(uid);
+        Assert.assertTrue("删除用户所有角色失败",userRoles.size()<=0);
+    }
+    @Test
+    public void deleteUserGroup(){
+        int gid= 1;
+        userDao.deleteUserGroup(gid);
+        List<Group> userGroups = userDao.listUserGroups(gid);
+        Assert.assertTrue("删除用户所有组失败",userGroups.size()<=0);
+    }
+    @Test
+    public void findUser(){
+        Pager users = userDao.findUser();
+        Assert.assertEquals("用户pager失败",3,users.getDatas().size());
+    }
+    @Test
+    public void deleteUserRoles(){
+        int uid= 2;
+        int rid= 2;
+        userDao.deleteUserRole(uid,rid);
+        UserRole userRole = userDao.loadUserRole(uid,rid);
+        Assert.assertNull("删除失败",userRole);
+    }
+    @Test
+    public void deleteUserGroups(){
+        int uid= 2;
+        int gid= 2;
+        userDao.deleteUserGroup(uid,gid);
+        UserGroup userGroup = userDao.loadUserGroup(uid,gid);
+        Assert.assertNull("删除失败",userGroup);
     }
 }

@@ -9,6 +9,7 @@
         <module name="base-hibernate" />
         <module name="basehibernate" />
         <module name="cms-core" />
+        <module name="cms-user" />
         <module name="cmscore" />
         <module name="cmsuser" />
       </profile>

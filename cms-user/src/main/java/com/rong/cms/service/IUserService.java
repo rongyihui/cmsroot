@@ -1,6 +1,7 @@
 package com.rong.cms.service;
 
 import com.rong.cms.model.Group;
+import com.rong.cms.model.Pager;
 import com.rong.cms.model.Role;
 import com.rong.cms.model.User;
 
@@ -34,12 +35,12 @@ public interface IUserService {
      * 更新用户的状态
      * @param id 用户
      */
-    void updateStatus(int id);
+    void updateStatus(int id,int status);
 
     /**
      * 获取用户列表
      */
-    void finUser();
+    Pager findUser();
     /**
      * 获取用户信息，并获取角色、组
      */

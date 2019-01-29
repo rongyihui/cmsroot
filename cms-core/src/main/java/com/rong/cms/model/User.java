@@ -20,7 +20,7 @@ public class User {
     /**
      * 0表示管理员，1表示正常用户，-1表示黑名单
      */
-    private String status;
+    private int status;
     private Date bornDate;
     private Date createDate;
 
@@ -76,11 +76,11 @@ public class User {
         this.phone = phone;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
     @Column(name = "born_date")
@@ -100,7 +100,7 @@ public class User {
         this.createDate = createDate;
     }
 
-    public User(String username, String password, String nickname, String email, String phone, String status, Date bornDate, Date createDate) {
+    public User(String username, String password, String nickname, String email, String phone, int status, Date bornDate, Date createDate) {
         this.username = username;
         this.password = password;
         this.nickname = nickname;

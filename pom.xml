@@ -71,6 +71,12 @@
                 <version>2.5.4</version>
                 <scope>test</scope>
             </dependency>
+            <!--数组工具-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.8.1</version>
+            </dependency>
             <!--spring-->
             <dependency>
                 <groupId>org.springframework</groupId>
