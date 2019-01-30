@@ -55,7 +55,7 @@
     <!--正数的值越小，启动该servlet的优先级越高。-->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>/WEB-INF/cms-servlet.xml</param-value>
+      <param-value>classpath:cms-servlet.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
