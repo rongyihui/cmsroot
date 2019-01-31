@@ -35,17 +35,22 @@
     <%--左侧--%>
     <div class="layui-side layui-bg-black">
         <div class="layui-side-scroll">
-            <ul class="layui-nav layui-nav-tree">
+            <ul class="layui-nav layui-nav-tree" lay-filter="navDemo">
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">所有用户</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
+                    <a href="javascript:;">所有用户</a>
+                    <dl class="layui-nav-child" >
+                        <dd><a href="javascript:;">用户列表</a></dd>
+                        <dd><a href="javascript:;">角色列表</a></dd>
+                        <dd><a href="javascript:;">组列表</a></dd>
+                        <dd><a href="javascript:">超链接</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">云市场</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:">商品管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">商品列表</a></dd>
+                    </dl>
+                </li>
             </ul>
         </div>
     </div>
@@ -53,19 +58,10 @@
         <!-- 内容主体区域 -->
         <div class="layui-tab layui-tab-brief" lay-allowClose="true" lay-filter="work">
             <ul class="layui-tab-title">
-                <li class="layui-this">网站设置</li>
-                <li lay-id="1">用户管理</li>
-                <li lay-id="2">权限分配</li>
-                <li lay-id="3">商品管理</li>
-                <li lay-id="4">订单管理</li>
+                <li class="layui-this" lay-id="1">网站设置</li>
             </ul>
             <div class="layui-tab-content" style="height: 100px;">
                 <div class="layui-tab-item layui-show">1</div>
-                <div class="layui-tab-item">2</div>
-                <div class="layui-tab-item">3</div>
-                <div class="layui-tab-item">4</div>
-                <div class="layui-tab-item">5</div>
-                <div class="layui-tab-item">6</div>
             </div>
         </div>
     </div>
