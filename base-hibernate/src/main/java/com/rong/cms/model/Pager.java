@@ -18,7 +18,7 @@ public class Pager {
     /**
      * 总共多少条记录
      */
-    private Long totalRecord;
+    private Long count;
     /**
      * 总共多少页
      */
@@ -26,41 +26,52 @@ public class Pager {
     /**
      * 放置具体数据的列表
      */
-    private List datas;
+    private List data;
 
     public int getPageIndex() {
         return pageIndex;
     }
+
     public void setPageIndex(int pageIndex) {
         this.pageIndex = pageIndex;
     }
+
     public int getPageSize() {
         return pageSize;
     }
+
     public void setPageSize(int pageSize) {
         this.pageSize = pageSize;
     }
-    public Long getTotalRecord() {
-        return totalRecord;
+
+    public Long getCount() {
+        return count;
     }
-    public void setTotalRecord(Long totalRecord) {
-        this.totalRecord = totalRecord;
+
+    public void setCount(Long count) {
+        this.count = count;
     }
+
     public int getTotalPage() {
         return totalPage;
     }
+
     public void setTotalPage(int totalPage) {
         this.totalPage = totalPage;
     }
-    public List getDatas() {
-        return datas;
+
+    public List getData() {
+        return data;
     }
-    public void setDatas(List datas) {
-        this.datas = datas;
+
+    public void setData(List data) {
+        this.data = data;
     }
+
     public int getPageOffset() {
         return pageOffset;
     }
+
     public void setPageOffset(int pageOffset) {
         this.pageOffset = pageOffset;
     }

@@ -9,12 +9,18 @@
 <html>
 <head>
     <title>部门列表</title>
-    <link rel="stylesheet" href="../../../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/layui/css/layui.css" media="all">
 </head>
 <body>
 
 <table class="layui-hide" id="demo" lay-filter="test"></table>
-<script src="../../../layui/layui.js" charset="utf-8"></script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
 <script>
     layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function(){
         var laydate = layui.laydate //日期
@@ -22,21 +28,30 @@
             ,table = layui.table //表格
             ,upload = layui.upload //上传
 
-
-
         table.render({
             elem: '#demo'
             ,height: 520
-            ,url: '/department/' //数据接口
+            ,url: '/cms/admin/user' //数据接口
             ,title: '部门列表'
             ,page: true //开启分页
             ,toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
             ,totalRow: true //开启合计行
+            ,parseData: function(res){
+                return {
+                    "code": 0
+                };
+            }
             ,cols: [[ //表头
                 {type: 'checkbox', fixed: 'left'}
                 ,{field: 'id', title: 'ID', width:80, sort: true, fixed: 'left', totalRowText: '合计：'}
-                ,{field: 'depName', title: '部门名称', width:80}
-                ,{field: 'level', title: '等级', width: 90, sort: true, totalRow: true}
+                ,{field: 'username', title: '用户账号', width:80}
+                ,{field: 'password', title: '密码', width: 80, totalRow: true}
+                ,{field:'nickname', title: '用户名称', width:80}
+                ,{field: 'email', title: '邮箱', width:80}
+                ,{field: 'phone', title: '电话', width:80}
+                ,{field: 'status', title: '用户状态', width:80}
+                ,{field: 'bornDate', title: '出生日期', width:80}
+                ,{field: 'createDate', title: '创建日期', width:80}
             ]]
         });
     });

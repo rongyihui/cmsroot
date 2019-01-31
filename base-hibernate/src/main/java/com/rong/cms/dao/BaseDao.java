@@ -119,8 +119,8 @@ public class BaseDao<T> implements IBaseDao<T> {
 
         Pager pager = getPagerPro();
         List datas = q.setFirstResult(pager.getPageOffset()).setMaxResults(pager.getPageSize()).getResultList();
-        pager.setTotalRecord(totalCount);
-        pager.setDatas(datas);
+        pager.setCount(totalCount);
+        pager.setData(datas);
         return pager;
     }
 
@@ -258,8 +258,8 @@ public class BaseDao<T> implements IBaseDao<T> {
         //获取分页数据
         List datas = getSqlQuery(sql, args, alias, clz, hasEntity).list();
         Pager pager = getPagerPro();
-        pager.setTotalRecord(totalPage);
-        pager.setDatas(datas);
+        pager.setCount(totalPage);
+        pager.setData(datas);
         return pager;
     }
 

@@ -3,13 +3,13 @@ package com.rong.cms.controller;
 import com.rong.cms.model.Pager;
 import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
 @Controller
 @RequestMapping("/admin/user")
+//@SessionAttributes(value = {"user"})  这种每份都会存user，效率不高
 public class UserController {
 
     private IUserService userService;
@@ -19,17 +19,16 @@ public class UserController {
         this.userService = userService;
     }
 
-    /**
-     * Spring MVC中使用RequestMapping处理URL请求，
-     * GET：表示查询；POST：表示添加操作
-     * PUT：表示修改操作；DELETE：表示删除操作
-     * consumes: 表示前端传过来的数据格式;
-     * produces：表示返回数据格式
-     *
-     * @return
-     */
-    @RequestMapping(method = RequestMethod.GET, consumes = "application/json", produces = "application/json")
-    public Pager list() {
+    @RequestMapping(method = RequestMethod.GET)
+    @ResponseBody
+    public Pager list(
+            @RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
+            @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
         return userService.findUser();
+    }
+
+    @RequestMapping("/users")
+    public String listPage() {
+        return "admin/list";
     }
 }

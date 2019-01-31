@@ -69,21 +69,21 @@ public class DepartmentDaoTest extends BaseDaoTest{
         //通配符测试
         String hql = "from Department dep where dep.status=?0";
         Pager deps = departmentDao.findUser(hql,new Object[]{1});
-        Assert.assertEquals("通配符？查询出错",new Long(3),deps.getTotalRecord());
+        Assert.assertEquals("通配符？查询出错",new Long(3),deps.getCount());
 
         //别名测试
         Map<String,Object> alias = new HashMap<>();
         alias.put("status",1);
         hql = "from Department dep where dep.status=:status";
         deps = departmentDao.findUser(hql,alias);
-        Assert.assertEquals("别名 查询出错",new Long(3),deps.getTotalRecord());
+        Assert.assertEquals("别名 查询出错",new Long(3),deps.getCount());
 
         //分页测试
         try {
             hql = "from Department";
             SystemContext.setPageOffset(20);
             deps = departmentDao.findUser(hql);
-            Assert.assertEquals("分页出错",1,deps.getDatas().size());
+            Assert.assertEquals("分页出错",1,deps.getData().size());
         } finally {
             SystemContext.removePageOffset();
         }
@@ -93,7 +93,7 @@ public class DepartmentDaoTest extends BaseDaoTest{
         alias.put("id", Arrays.asList(1,2,3,5,6));
         hql = "from Department dep where dep.id in (:id)";
         deps = departmentDao.findUser(hql,alias);
-        Assert.assertEquals("别名 查询出错",new Long(5),deps.getTotalRecord());
+        Assert.assertEquals("别名 查询出错",new Long(5),deps.getCount());
 
         //排序测试
         try {
@@ -101,7 +101,7 @@ public class DepartmentDaoTest extends BaseDaoTest{
             SystemContext.setOrder("desc");
             SystemContext.setSort("depName");
             deps = departmentDao.findUser(hql);
-            Assert.assertEquals("排序出错","管理部9",((Department)deps.getDatas().get(0)).getDepName());
+            Assert.assertEquals("排序出错","管理部9",((Department)deps.getData().get(0)).getDepName());
         } finally {
             SystemContext.removeOrder();
             SystemContext.removeSort();
@@ -111,6 +111,6 @@ public class DepartmentDaoTest extends BaseDaoTest{
     public void findBySql(){
         String sql = "select * from t_department dep where dep.status=?0 ";
         Pager deps = departmentDao.findUserBysql(sql,new Object[]{1},null,Department.class,true);
-        Assert.assertEquals("sql通配符？查询出错",new Long(3),deps.getTotalRecord());
+        Assert.assertEquals("sql通配符？查询出错",new Long(3),deps.getCount());
     }
 }

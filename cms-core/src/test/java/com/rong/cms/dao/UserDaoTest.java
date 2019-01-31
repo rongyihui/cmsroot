@@ -133,7 +133,7 @@ public class UserDaoTest extends BaseDaoTest {
     @Test
     public void findUser(){
         Pager users = userDao.findUser();
-        Assert.assertEquals("用户pager失败",3,users.getDatas().size());
+        Assert.assertEquals("用户pager失败",3,users.getData().size());
     }
     @Test
     public void deleteUserRoles(){

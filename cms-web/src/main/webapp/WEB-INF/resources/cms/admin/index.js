@@ -18,7 +18,7 @@ layui.use(['element', 'laydate', 'laypage', 'layer', 'table', 'carousel', 'uploa
         if (hasTab < 0) {
             element.tabAdd('work', {
                 title: titleTab
-                , content: '内容' + (Math.random() * 1000 | 0)
+                , content: '<table class="layui-hide" id="tableUser"></table>'
                 , id: layId //实际使用一般是规定好的id，这里以时间戳模拟下
             })
         }

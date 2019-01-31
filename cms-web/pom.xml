@@ -18,6 +18,11 @@
     <url>http://www.example.com</url>
 
     <dependencies>
+        <!--json工具 @ResponseBody依赖-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
         <!--引入cms-user包-->
         <dependency>
             <groupId>com.rong.cms</groupId>
