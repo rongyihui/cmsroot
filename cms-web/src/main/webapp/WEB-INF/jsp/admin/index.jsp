@@ -14,7 +14,7 @@
     <div class="layui-header">
         <div class="layui-logo">cms管理</div>
         <ul class="layui-nav layui-layout-left" lay-filter="demo">
-            <li class="layui-nav-item"><a href="javascript:;">用户管理</a></li>
+            <li class="layui-nav-item"><a href="/admin/user">用户管理</a></li>
             <li class="layui-nav-item"><a href="javascript:;">角色管理</a></li>
             <li class="layui-nav-item"><a href="javascript:;">信息管理</a></li>
         </ul>

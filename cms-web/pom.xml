@@ -35,6 +35,11 @@
             <artifactId>cms-core</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--上传文件-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>

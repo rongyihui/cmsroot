@@ -10,10 +10,7 @@ layui.use(['element', 'laydate', 'laypage', 'layer', 'table', 'carousel', 'uploa
     $(".layui-nav-child dd").on("click", function () {
         var titleTab = $(this).text();
         var li = $(".layui-tab-title li");
-        var layId = parseInt(li.last().attr('lay-id')) + 1;
-        if (isNaN(layId)) {
-            layId = 1;
-        }
+        var layId = new Date().getTime();
         var hasTab = li.text().indexOf(titleTab);
         if (hasTab < 0) {
             element.tabAdd('work', {

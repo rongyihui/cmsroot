@@ -3,7 +3,9 @@ package com.rong.cms.controller;
 import com.rong.cms.model.Pager;
 import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 
@@ -19,7 +21,14 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping(value = "/users", method = RequestMethod.GET)
+    @RequestMapping(value = "/user",method = RequestMethod.GET)
+    @ResponseBody
+    public Pager list(@RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
+                      @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
+        return userService.findUser();
+    }
+
+/*    @RequestMapping(value = "/users", method = RequestMethod.GET)
     public String listAll(
             @RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
             @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
@@ -50,4 +59,15 @@ public class UserController {
     public String update() {
         return "redirect:/users";
     }
+
+    //异常处理,可以指定捕获的异常
+    @ExceptionHandler(NullPointerException.class)
+    public String handleException(Exception ex,Model model){
+        model.addAttribute("exception",ex);
+        return "error";
+    }
+
+    public String fileUpload(String desc, MultipartFile file){
+        return "";
+    }*/
 }

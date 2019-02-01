@@ -134,7 +134,7 @@ public class BaseDao<T> implements IBaseDao<T> {
         }
         int pageOffset = 0;
         try {
-            pageOffset = SystemContext.getPageOffset();
+            pageOffset = SystemContext.getPageOffset()-1;
         } catch (NullPointerException e) {
         }
         if (pageSize <= 0) pageSize = 20;

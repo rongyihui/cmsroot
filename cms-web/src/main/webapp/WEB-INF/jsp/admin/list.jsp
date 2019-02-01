@@ -38,20 +38,21 @@
             ,totalRow: true //开启合计行
             ,parseData: function(res){
                 return {
-                    "code": 0
+                    "code": 0,
+                    "data":res.data
                 };
             }
             ,cols: [[ //表头
-                {type: 'checkbox', fixed: 'left'}
-                ,{field: 'id', title: 'ID', width:80, sort: true, fixed: 'left', totalRowText: '合计：'}
+                {type: 'checkbox', fixed: 'left', totalRowText: '合计：'}
+                ,{field: 'id', title: 'ID', width:60, sort: true, fixed: 'left', totalRow: true}
                 ,{field: 'username', title: '用户账号', width:80}
-                ,{field: 'password', title: '密码', width: 80, totalRow: true}
-                ,{field:'nickname', title: '用户名称', width:80}
-                ,{field: 'email', title: '邮箱', width:80}
-                ,{field: 'phone', title: '电话', width:80}
-                ,{field: 'status', title: '用户状态', width:80}
-                ,{field: 'bornDate', title: '出生日期', width:80}
-                ,{field: 'createDate', title: '创建日期', width:80}
+                ,{field: 'password', title: '密码', width: 80}
+                ,{field:'nickname', title: '用户名称', width:100}
+                ,{field: 'email', title: '邮箱', width:180}
+                ,{field: 'phone', title: '电话', width:130}
+                ,{field: 'status', title: '用户状态', width:100}
+                ,{field: 'bornDate', title: '出生日期', width:120}
+                ,{field: 'createDate', title: '创建日期', width:120}
             ]]
         });
     });
