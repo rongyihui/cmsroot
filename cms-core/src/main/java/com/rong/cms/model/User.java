@@ -2,6 +2,7 @@ package com.rong.cms.model;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -21,6 +22,7 @@ public class User {
      * 0表示管理员，1表示正常用户，-1表示黑名单
      */
     private int status;
+    //@DateTimeFormat(pattern = "yyyy-MM-dd")  建议通过String传递
     private Date bornDate;
     private Date createDate;
 

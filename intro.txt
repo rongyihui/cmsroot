@@ -35,3 +35,6 @@ dbunit
     service
         UserService
 5.cms-web
+    controller
+    converter 自定义类型转换器,并再xxx-servlet.xml中配置   Date
+    web
