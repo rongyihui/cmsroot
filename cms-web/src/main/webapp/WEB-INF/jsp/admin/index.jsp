@@ -1,19 +1,26 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>layui</title>
-    <meta name="renderer" content="webkit">
+    <title>cms</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/layui/css/layui.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/layui/css/layui.css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/cms/css/cms.css" media="all" charset="utf-8">
     <script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
-    <script src="<%=request.getContextPath()%>/resources/cms/js/admin/index.js"></script>
+    <script src="<%=request.getContextPath()%>/resources/cms/js/admin/index.js" charset="utf-8"></script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
         <div class="layui-logo">layui 后台布局</div>
+        <!-- 左侧栏 -->
+        <div title="展开左侧栏" class="left_open">
+            <i class="layui-icon">&#xe668;</i>
+        </div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-left">
             <li class="layui-nav-item"><a href="">控制台</a></li>
@@ -50,7 +57,7 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">所有用户</a>
                     <ul class="layui-nav-child">
-                        <li><a _href="user">用户列表</a></li>
+                        <li><a _href="users">用户列表</a></li>
                         <li><a _href="javascript:;">列表二</a></li>
                         <li><a _href="javascript:;">列表三</a></li>
                         <li><a _href="">超链接</a></li>
@@ -71,9 +78,9 @@
     </div>
 
     <div class="layui-body">
-        <div class="layui-tab tab" lay-filter="nav_tab" id="tabTip" lay-allowclose="true">
+        <div class="layui-tab" lay-filter="nav_tab" id="tabTip" lay-allowclose="true">
             <ul class="layui-tab-title" id="tabName">
-                <li>我的桌面</li>
+                <li>首页</li>
             </ul>
             <div class="layui-tab-content">
                 <div class="layui-tab-item layui-show">

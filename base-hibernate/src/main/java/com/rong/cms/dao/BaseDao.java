@@ -116,7 +116,6 @@ public class BaseDao<T> implements IBaseDao<T> {
 
         hql = changeSortHql(hql);
         Query q = setParametersQuery(getSession().createQuery(hql), args, alias);
-
         Pager pager = getPagerPro();
         List datas = q.setFirstResult(pager.getPageOffset()).setMaxResults(pager.getPageSize()).getResultList();
         pager.setCount(totalCount);
@@ -137,10 +136,10 @@ public class BaseDao<T> implements IBaseDao<T> {
             pageOffset = SystemContext.getPageOffset()-1;
         } catch (NullPointerException e) {
         }
-        if (pageSize <= 0) pageSize = 20;
+        if (pageSize <= 0) pageSize = 15;
         if (pageOffset < 0) pageOffset = 0;
         pager.setPageSize(pageSize);
-        pager.setPageOffset(pageOffset);
+        pager.setPageOffset(pageOffset*pageSize);
         return pager;
     }
 

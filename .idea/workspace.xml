@@ -7,11 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/addInput.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/resources/beans.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/admin/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/layedit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/lay/modules/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/layui.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,25 +65,73 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rong@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rong@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rong@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="rong: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1556#1557#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/addInput.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -75,19 +144,16 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
-        <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>an</find>
-      <find>st</find>
-      <find>tx</find>
-      <find>com</find>
-      <find>orm</find>
       <find>defaultRollback</find>
       <find>rollback</find>
       <find>writer</find>
@@ -108,10 +174,16 @@
       <find>dbcp</find>
       <find>jstl</find>
       <find>id</find>
-      <find>layui-tab-title</find>
-      <find>layui-nav</find>
       <find>layui-nav-child</find>
       <find>layui-nav-tree</find>
+      <find>layui-tab-title</find>
+      <find>layui-nav</find>
+      <find>checkbox</find>
+      <find>attr</find>
+      <find>console</find>
+      <find>getPagerPro</find>
+      <find>jackson</find>
+      <find>layui-btn-group</find>
     </findStrings>
     <replaceStrings>
       <replace>List&lt;?&gt;</replace>
@@ -128,13 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cms-core/target/test-classes/t_user.xml" />
-        <option value="$PROJECT_DIR$/cms-core/src/test/java/dao/BaseDaoTest.java" />
-        <option value="$PROJECT_DIR$/cms-core/src/test/resources/data/t_user.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/resources/data/t_department.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/IDepartmentDao.java" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDao.java" />
         <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/exception/CmsException.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/resources/beans.xml" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IRoleDao.java" />
@@ -144,41 +209,48 @@
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/cms-user/src/test/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" />
         <option value="$PROJECT_DIR$/cms-user/src/test/java/com/rong/cms/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/cms-servlet.xml" />
-        <option value="$PROJECT_DIR$/cms-core/pom.xml" />
         <option value="$PROJECT_DIR$/cms-user/pom.xml" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.js" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/AdminController.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/UserController.java" />
         <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/filter/SystemContextFilter.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/filter/SystemContextFilter.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com.rong.cms.controller/SystemContextFilter.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/filter/SystemContextFilter.java" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java" />
         <option value="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/converter/DateConverter.java" />
         <option value="$PROJECT_DIR$/intro.txt" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/interceptor/SystemContextInterceptor.java" />
-        <option value="$PROJECT_DIR$/cms-web/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cms-web/src/main/resources/cms-servlet.xml" />
-        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/admin/index.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/cms.html" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.mobile.css" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/test.html" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css" />
+        <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp" />
+        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/resources/beans.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-core/pom.xml" />
+        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -215,13 +287,19 @@
           <item name="cms-web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cms-web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.fasterxml.jackson.core:jackson-databind:2.9.8" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="643" />
-    <option name="width" value="1284" />
+    <option name="x" value="-7" />
+    <option name="width" value="1321" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -376,9 +454,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549114261136" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549805863613" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="D:/学习/java/java文件包/layui-lizi/layuiCMS-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -390,18 +469,18 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\js" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\admin" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.rong.cms.controller" />
       <recent name="com.rong.cms" />
       <recent name="com.rong.cms.dao" />
       <recent name="com.rong.cms.model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\resources" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-user\src\test\resources" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rong.cms.filter" />
@@ -409,12 +488,12 @@
       <recent name="dao" />
       <recent name="com.rong.cms.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\js" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\admin" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\resources" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -430,34 +509,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Maven.cms-root [clean,jetty:run]">
-    <configuration name="DepartmentDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basehibernate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.DepartmentDaoTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cms-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rong.cms.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rong.cms.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.rong.cms.dao.UserDaoTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -509,6 +560,80 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="D:\java\jdk1.8.0_191\jre" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cms/admin/index" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="cmsweb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/cms" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_cmsroot_3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49863" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="cmsweb:war exploded" />
+        </option>
+      </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
@@ -572,12 +697,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.DepartmentDaoTest" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Maven.cms-root [clean,jetty:run]" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.12" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -617,7 +740,16 @@
       <workItem from="1548982638836" duration="10853000" />
       <workItem from="1549024381990" duration="8368000" />
       <workItem from="1549105754541" duration="9017000" />
-      <workItem from="1549121072670" duration="278000" />
+      <workItem from="1549121072670" duration="381000" />
+      <workItem from="1549180070776" duration="518000" />
+      <workItem from="1549180613184" duration="28381000" />
+      <workItem from="1549281566418" duration="16481000" />
+      <workItem from="1549373083274" duration="713000" />
+      <workItem from="1549433254301" duration="45000" />
+      <workItem from="1549528877492" duration="2159000" />
+      <workItem from="1549553328913" duration="35000" />
+      <workItem from="1549599691396" duration="2076000" />
+      <workItem from="1549784089868" duration="10350000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -703,43 +835,50 @@
       <option name="project" value="LOCAL" />
       <updated>1548778613937</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2月2日 layui标签，功能还是没实现。。">
+      <created>1549121423764</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1549121423764</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 10m 44s.xml">
-      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 41m 46s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 11m 07s.xml">
-      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 42m 16s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 11m 49s.xml">
-      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 42m 54s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 12m 05s.xml">
-      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 53m 31s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_testUpdateUser - 2019.01.29 at 22h 12m 48s.xml">
-      <configuration name="UserServiceTest.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 54m 29s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2019.01.29 at 22h 13m 55s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 55m 55s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2019.01.29 at 22h 39m 00s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 56m 42s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest - 2019.01.31 at 20h 06m 54s.xml">
-      <configuration name="DepartmentDaoTest" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 57m 59s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DepartmentDaoTest - 2019.01.31 at 20h 07m 09s.xml">
-      <configuration name="DepartmentDaoTest" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 21h 59m 53s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest - 2019.01.31 at 20h 08m 53s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
+    <history-entry file="AddUser_addUser - 2019.02.04 at 22h 00m 11s.xml">
+      <configuration name="AddUser.addUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217312000" />
+    <option name="totallyTimeSpent" value="278173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,7 +893,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.18656716" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.14712153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -764,33 +903,33 @@
       <window_info id="Web" order="7" sideWeight="0.50278085" side_tool="true" weight="0.23005319" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3272921" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32488987" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935413" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3072687" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39867842" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32925472" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3277592" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32925472" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32819384" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32925472" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32925472" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3278328" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3295964" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295964" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32814237" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3277592" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.32925472" />
-      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.32929516" />
+      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980545" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.44857767" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.44804215" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.39151874" />
+      <window_info anchor="right" id="Database" order="8" weight="0.23117469" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20469083" />
-      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32930514" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32894737" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30522564" />
@@ -891,354 +1030,25 @@
     <MESSAGE value="1月28日 增加了cms-user模块" />
     <MESSAGE value="1月29日 增加了cms-web模块" />
     <MESSAGE value="1月29日 增加了cms-web模块   jetty嵌入服务运行" />
-    <option name="LAST_COMMIT_MESSAGE" value="1月29日 增加了cms-web模块   jetty嵌入服务运行" />
+    <MESSAGE value="2月2日 layui标签，功能还是没实现。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="2月2日 layui标签，功能还是没实现。。" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/data/t_user_test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="82" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/target/surefire-reports/TEST-com.rong.cms.service.UserServiceTest.xml" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/target/surefire-reports/com.rong.cms.service.UserServiceTest.txt" />
-    <entry file="file://$PROJECT_DIR$/cms-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/src/test/java/com/rong/cms/service/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3940">
-          <caret line="216" selection-start-line="216" selection-end-line="216" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/src/test/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/layui.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://1705f45a-f928-4124-88e8-7cfb20a8f1ee/schema/rong/table/t_user_group" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1705f45a-f928-4124-88e8-7cfb20a8f1ee/console.sql" />
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/Pager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1705f45a-f928-4124-88e8-7cfb20a8f1ee/schema/rong/table/t_user" />
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="135" column="57" selection-start-line="135" selection-start-column="57" selection-end-line="135" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/dao/DepartmentDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2260">
-          <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/BaseDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ResponseBody.java" />
-    <entry file="uml://MAVEN/com.rong.cms:cms-web:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.rong.cms:cms-web:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.rong.cms:cms-web:1.0-SNAPSHOT</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.9.8</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.9.8/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.9.8/com.fasterxml.jackson.core:jackson-core:jar:2.9.8</node>
-            <node x="" y="">com.rong.cms:cms-user:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.rong.cms:cms-user:jar:1.0-SNAPSHOT/org.apache.commons:commons-lang3:jar:3.8.1</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/javax.persistence:javax.persistence-api:jar:2.2</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.javassist:javassist:jar:3.23.1-GA</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/net.bytebuddy:byte-buddy:jar:1.8.17</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/antlr:antlr:jar:2.7.7</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.jboss:jandex:jar:2.0.5.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/com.fasterxml:classmate:jar:1.3.4</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/javax.activation:javax.activation-api:jar:1.2.0</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.dom4j:dom4j:jar:2.1.1</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/org.hibernate:hibernate-core:jar:5.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final/org.jboss.logging:jboss-logging:jar:3.3.1.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:8.0.12</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/com.rong.cms:base-hibernate:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:8.0.12/com.google.protobuf:protobuf-java:jar:2.6.0</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.4.2.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.4.2.Final/javax.validation:validation-api:jar:1.1.0.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.4.2.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.4.2.Final/com.fasterxml:classmate:jar:1.3.1</node>
-            <node x="" y="">com.rong.cms:cms-core:jar:1.0-SNAPSHOT/org.springframework:spring-tx:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:5.1.3.RELEASE/org.springframework:spring-core:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:5.1.3.RELEASE/org.springframework:spring-core:jar:5.1.3.RELEASE/org.springframework:spring-jcl:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:5.1.3.RELEASE/org.springframework:spring-expression:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aop:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aspects:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aspects:jar:5.1.3.RELEASE/org.aspectj:aspectjweaver:jar:1.9.2</node>
-            <node x="" y="">org.springframework:spring-beans:jar:5.1.3.RELEASE</node>
-            <node x="" y="">javax.servlet:javax.servlet-api:jar:4.0.1</node>
-            <node x="" y="">org.springframework:spring-orm:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-orm:jar:5.1.3.RELEASE/org.springframework:spring-jdbc:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:5.1.3.RELEASE/org.springframework:spring-web:jar:5.1.3.RELEASE</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0009966777408639" x="893.0" y="753.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com.rong.cms:base-hibernate:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.rong.cms:base-hibernate:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.rong.cms:base-hibernate:1.0-SNAPSHOT</node>
-            <node x="" y="">junit:junit:jar:4.12</node>
-            <node x="" y="">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/javax.persistence:javax.persistence-api:jar:2.2</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.javassist:javassist:jar:3.23.1-GA</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/net.bytebuddy:byte-buddy:jar:1.8.17</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/antlr:antlr:jar:2.7.7</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.jboss:jandex:jar:2.0.5.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/com.fasterxml:classmate:jar:1.3.4</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/javax.activation:javax.activation-api:jar:1.2.0</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.dom4j:dom4j:jar:2.1.1</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final/org.jboss.logging:jboss-logging:jar:3.3.1.Final</node>
-            <node x="" y="">mysql:mysql-connector-java:jar:8.0.12</node>
-            <node x="" y="">mysql:mysql-connector-java:jar:8.0.12/com.google.protobuf:protobuf-java:jar:2.6.0</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.slf4j:slf4j-api:jar:1.7.21</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/commons-collections:commons-collections:jar:3.2.2</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14/org.apache.poi:poi:jar:3.14</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14/org.apache.poi:poi:jar:3.14/commons-codec:commons-codec:jar:1.10</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14/org.apache.poi:poi-ooxml-schemas:jar:3.14</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14/org.apache.poi:poi-ooxml-schemas:jar:3.14/org.apache.xmlbeans:xmlbeans:jar:2.6.0</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14/org.apache.poi:poi-ooxml-schemas:jar:3.14/org.apache.xmlbeans:xmlbeans:jar:2.6.0/stax:stax-api:jar:1.0.1</node>
-            <node x="" y="">org.dbunit:dbunit:jar:2.5.4/org.apache.poi:poi-ooxml:jar:3.14/com.github.virtuald:curvesapi:jar:1.03</node>
-            <node x="" y="">org.springframework:spring-beans:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-beans:jar:5.1.3.RELEASE/org.springframework:spring-core:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-beans:jar:5.1.3.RELEASE/org.springframework:spring-core:jar:5.1.3.RELEASE/org.springframework:spring-jcl:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:5.1.3.RELEASE/org.springframework:spring-expression:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-tx:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-orm:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-orm:jar:5.1.3.RELEASE/org.springframework:spring-jdbc:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-test:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aop:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aspects:jar:5.1.3.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aspects:jar:5.1.3.RELEASE/org.aspectj:aspectjweaver:jar:1.9.2</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.29377431906614787" x="2769.0" y="342.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">com</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">data</node>
-            <node x="" y="">org</node>
-            <node x="" y="">repackage</node>
-            <node x="" y="">antlr</node>
-            <node x="" y="">aj</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">groovyjarjarasm</node>
-            <node x="" y="">java</node>
-            <node x="" y="">groovy</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">schemaorg_apache_xmlbeans</node>
-            <node x="" y="">groovyjarjarcommonscli</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">net</node>
-            <node x="" y="">groovyjarjarantlr</node>
-            <node x="" y="">javassist</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="264.0" y="278.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JIGSAW/com.fasterxml.jackson.databind">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JIGSAW</ID>
-          <OriginalElement>com.fasterxml.jackson.databind</OriginalElement>
-          <nodes>
-            <node x="" y="">com.fasterxml.jackson.databind</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="108.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JavaScript-modules-diagram/E:/project/maven-repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1258,16 +1068,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/converter/DateConverter.java" />
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/interceptor/SystemContextInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
@@ -1278,42 +1078,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/383e36f0-21dc-41df-841d-1ccb26c985ec/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://383e36f0-21dc-41df-841d-1ccb26c985ec/schema/rong/table/t_user" />
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/cms.html" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="68" column="82" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
+        <state relative-caret-position="20">
+          <caret line="14383" column="4" selection-start-line="14383" selection-start-column="4" selection-end-line="14383" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/layui.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="4" column="23798" selection-start-line="4" selection-start-column="23798" selection-end-line="4" selection-end-column="23798" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="436" column="16" selection-start-line="436" selection-start-column="16" selection-end-line="436" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="174" column="1" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/test.html" />
+    <entry file="file://$PROJECT_DIR$/cms-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/test/java/com/rong/cms/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8aa63f62-603e-44f4-b474-e6598c0e5bf6/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://8aa63f62-603e-44f4-b474-e6598c0e5bf6/schema/rong/table/t_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8aa63f62-603e-44f4-b474-e6598c0e5bf6/schema/rong/table/t_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/model/SystemContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.jar!/org/hibernate/query/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+          <folding>
+            <element signature="e#3150#3151#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="3751" column="23" lean-forward="true" selection-start-line="3751" selection-start-column="23" selection-end-line="3751" selection-end-column="23" />
+          <folding>
+            <element signature="e#78362#78501#2" expanded="true" />
+            <element signature="e#80406#80545#2" expanded="true" />
+            <element signature="e#81255#81394#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8aa63f62-603e-44f4-b474-e6598c0e5bf6/schema/rong/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1720">
+          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2351">
+          <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
+          <folding>
+            <element signature="e#4042#4043#0" expanded="true" />
+            <element signature="e#4087#4088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="e#3130#3131#0" expanded="true" />
+            <element signature="e#3171#3172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8aa63f62-603e-44f4-b474-e6598c0e5bf6/schema/rong/table/t_user_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8aa63f62-603e-44f4-b474-e6598c0e5bf6/schema/rong/table/t_user_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-orm/5.1.3.RELEASE/spring-orm-5.1.3.RELEASE-sources.jar!/org/springframework/orm/hibernate5/support/OpenSessionInViewFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-583">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/com/fasterxml/jackson/annotation/JsonIgnoreProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="600">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/383e36f0-21dc-41df-841d-1ccb26c985ec/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/cms-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="4" selection-end-line="48" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://383e36f0-21dc-41df-841d-1ccb26c985ec/schema/rong/table/t_user" />
     <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
+        <state relative-caret-position="4700">
+          <caret line="292" column="12" selection-start-line="292" selection-start-column="12" selection-end-line="294" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#941#942#0" expanded="true" />
@@ -1326,17 +1308,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/IBaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="200">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp">
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/com/fasterxml/jackson/core/jackson-annotations/2.9.8/jackson-annotations-2.9.8.jar!/com/fasterxml/jackson/annotation/JsonIgnoreProperties.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="180">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ResponseBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="74" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/cms-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="105" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="126" column="24" lean-forward="true" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1350,43 +1388,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css">
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="832" column="1" selection-start-line="832" selection-start-column="1" selection-end-line="832" selection-end-column="1" />
+        <state relative-caret-position="399">
+          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
-            <element signature="e#78362#78501#2" expanded="true" />
-            <element signature="e#80406#80545#2" expanded="true" />
-            <element signature="e#81255#81394#2" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css">
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="340">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/addInput.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="4897" column="4" selection-start-line="4897" selection-start-column="4" selection-end-line="4897" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -1444,7 +1482,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cms-core</last-edited>
+          <last-edited>cmsweb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

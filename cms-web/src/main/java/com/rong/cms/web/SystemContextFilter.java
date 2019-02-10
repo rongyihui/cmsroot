@@ -21,8 +21,8 @@ public class SystemContextFilter implements Filter {
                 pageOffset = Integer.parseInt(request.getParameter("page"));
             } catch (NumberFormatException e) {
             }
-            SystemContext.setPageOffset(pageOffset);
             SystemContext.setPageSize(pageSize);
+            SystemContext.setPageOffset(pageOffset);
             chain.doFilter(request, response);
         } finally {
             SystemContext.removePageSize();

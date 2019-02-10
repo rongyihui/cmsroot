@@ -129,4 +129,5 @@ public class UserService implements IUserService {
     public List<Group> listUserGroup(int id) {
         return userDao.listUserGroups(id);
     }
+
 }

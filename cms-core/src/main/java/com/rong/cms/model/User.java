@@ -1,8 +1,8 @@
 package com.rong.cms.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -11,6 +11,7 @@ import java.util.Date;
 
 @Entity
 @Table(name="t_user")
+@JsonIgnoreProperties(value = {"handler","hibernateLazyInitializer","fieldHandler"})
 public class User {
     private int id;
     private String username;

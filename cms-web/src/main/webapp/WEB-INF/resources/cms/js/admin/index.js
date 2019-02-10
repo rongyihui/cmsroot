@@ -1,7 +1,86 @@
-layui.use(['form', 'element'], function () {
-    var form = layui.form //表格
-        , element = layui.element
+/**
+ * 基于Layui http://www.layui.com/
+ *
+ */
+layui.use(['element'], function () {
+    var element = layui.element
         , $ = layui.$;
+    /*当前选中的tab*/
+    var curMenu;
+    /*所有tab*/
+    var menu = [];
+
+    $(function () {
+        /*tab延迟加载*/
+        setTimeout(function () {
+            //会话性储存
+            if (sessionStorage.getItem("menu")) {
+                menu = JSON.parse(sessionStorage.getItem("menu"));
+                for (var i = 0; i < menu.length; i++) {
+                    tab.tabAdd(menu[i].title, menu[i].url, menu[i].id);
+                }
+            } else {
+                return false;
+            }
+            if (sessionStorage.getItem("curMenu")) {
+                $('.layui-tab-title').find('layui-this').removeClass('layui-class');
+                curMenu = JSON.parse(sessionStorage.getItem("curMenu"));
+                id = curMenu.id;
+                if (id) { //因为默认桌面首页不存在lay-id,所以要对此判断
+                    $('.layui-tab-title li[lay-id="' + id + '"]').addClass('layui-this');
+                    tab.tabChange(id);
+                }
+            } else {
+                $(".layui-tab-title li").eq(0).addClass('layui-this'); //未生效
+                $('.layui-tab-content iframe').eq(0).parent().addClass('layui-show');
+            }
+        }, 300);
+        $('#tabName').on('click', 'li', function () {
+            reloadTab(this);
+        });
+    });
+
+    /*Tab加载后刷新*/
+    window.reloadTab = function (which) {
+        var layId = $(which).attr('lay-id');
+        var i = 1;
+        if ($(which).attr('data-bit')) {
+            return false; //判断页面打开后第一次点击，执行刷新
+        } else {
+            $(which).attr('data-bit', i);
+            var frame = $('.weIframe[tab-id=' + layId + ']');
+            frame.attr('src', frame.attr('src'));
+        }
+    }
+
+    /*左侧导航菜单的显示和隐藏*/
+    $('.layui-header .left_open i').click(function (event) {
+        if ($('.layui-bg-black').css('left') == '0px') {
+            $(".left_open i").html('&#xe66b;');
+            //此处左侧菜单是显示状态，点击隐藏
+            $('.layui-side').animate({
+                left: '-200px'
+            }, 100);
+            $('.layui-body').animate({
+                left: '0px'
+            }, 100);
+            $('.layui-footer').animate({
+                left: '0px'
+            }, 100);
+        } else {
+            $(".left_open i").html('&#xe668;');
+            //此处左侧菜单是隐藏状态，点击显示
+            $('.layui-side').animate({
+                left: '0px'
+            }, 100);
+            $('.layui-body').animate({
+                left: '200px'
+            }, 100);
+            $('.layui-footer').animate({
+                left: '200px'
+            }, 100);
+        }
+    });
 
     /*
      * @todo 左侧菜单事件
@@ -54,17 +133,17 @@ layui.use(['form', 'element'], function () {
 
         },
         tabDelete: function (id) {
-            element.tabDelete("wenav_tab", id); //删除
+            element.tabDelete("nav_tab", id); //删除
             removeStorageMenu(id);
 
         },
         tabChange: function (id) {
             //切换到指定Tab项
-            element.tabChange('wenav_tab', id);
+            element.tabChange('nav_tab', id);
         },
         tabDeleteAll: function (ids) { //删除所有
             $.each(ids, function (i, item) {
-                element.tabDelete("wenav_tab", item);
+                element.tabDelete("nav_tab", item);
             })
             sessionStorage.removeItem('menu');
         }
@@ -75,8 +154,7 @@ layui.use(['form', 'element'], function () {
      * @constructor
      */
     function IFrameWH() {
-        var h = $(window).height() - 194;
-        console.log(h);
+        var h = $(window).height() - 190;
         $("iframe").css("height", h + "px");
     }
 
@@ -116,6 +194,50 @@ layui.use(['form', 'element'], function () {
                 url: url,
                 id: id
             }]
+        }
+        sessionStorage.setItem('menu', JSON.stringify(menu));
+    }
+
+    element.on('tab(nav_tab)', function (data) {
+        //console.log(this); //当前Tab标题所在的原始DOM元素
+        setStorageCurMenu();
+    });
+
+    //本地存储记录当前打开窗口
+    function setStorageCurMenu() {
+        var curMenu = sessionStorage.getItem('curMenu');
+        var text = $('.layui-tab-title').find('.layui-this').text();
+        text = text.split('ဆ')[0];
+        var url = $('.layui-tab-content').find('.layui-show').find('.weIframe').attr('src');
+        var id = $('.layui-tab-title').find('.layui-this').attr('lay-id');
+        //console.log(text);
+        curMenu = {
+            title: text,
+            url: url,
+            id: id
+        }
+        sessionStorage.setItem('curMenu', JSON.stringify(curMenu));
+    }
+
+    element.on('tabDelete(nav_tab)', function (data) {
+        var layId = $(this).parent('li').attr('lay-id');
+        removeStorageMenu(layId);
+    });
+
+    //关闭tab移除sessionStorage
+    function removeStorageMenu(id) {
+        var menu = JSON.parse(sessionStorage.getItem('menu'));
+        //var curMenu = JSON.parse(localStorage.getItem('curMenu'));
+        if (menu) {
+            var deep = false;
+            for (var i = 0; i < menu.length; i++) {
+                if (menu[i].id == id) {
+                    deep = true;
+                    menu.splice(i, 1);
+                }
+            }
+        } else {
+            return false;
         }
         sessionStorage.setItem('menu', JSON.stringify(menu));
     }
@@ -189,4 +311,5 @@ layui.use(['form', 'element'], function () {
         })
     }
 
+    element.render('tab', 'nav_tab');
 });

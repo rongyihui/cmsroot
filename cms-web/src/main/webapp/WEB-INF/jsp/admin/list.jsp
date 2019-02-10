@@ -1,61 +1,34 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/1/19
-  Time: 19:53
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!doctype html>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>部门列表</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
     <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/layui/css/layui.css" media="all">
+    <script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
+    <script src="<%=request.getContextPath()%>/resources/cms/js/admin/list.js" charset="utf-8"></script>
 </head>
 <body>
-
-<table class="layui-hide" id="demo" lay-filter="test"></table>
+<script type="text/html" id="toolBar">
+    <div class="layui-btn-group">
+        <button class="layui-btn layui-btn-sm" data-type="addData">增加</button>
+        <button class="layui-btn layui-btn-sm" data-type="updateData">编辑</button>
+        <button class="layui-btn layui-btn-sm" data-type="deleteData">删除</button>
+        <button class="layui-btn layui-btn-sm" data-type="getCheckData">获取选中数据</button>
+        <button class="layui-btn layui-btn-sm" data-type="getCheckLength">选中数目</button>
+        <button class="layui-btn layui-btn-sm" data-type="isAll">是否全选</button>
+    </div>
+</script>
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
-
-<script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
-<script>
-    layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function(){
-        var laydate = layui.laydate //日期
-            ,laypage = layui.laypage //分页
-            ,table = layui.table //表格
-            ,upload = layui.upload //上传
-
-        table.render({
-            elem: '#demo'
-            ,height: 520
-            ,url: '/cms/admin/user' //数据接口
-            ,title: '部门列表'
-            ,page: true //开启分页
-            ,toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
-            ,totalRow: true //开启合计行
-            ,parseData: function(res){
-                return {
-                    "code": 0,
-                    "data":res.data
-                };
-            }
-            ,cols: [[ //表头
-                {type: 'checkbox', fixed: 'left', totalRowText: '合计：'}
-                ,{field: 'id', title: 'ID', width:60, sort: true, fixed: 'left', totalRow: true}
-                ,{field: 'username', title: '用户账号', width:80}
-                ,{field: 'password', title: '密码', width: 80}
-                ,{field:'nickname', title: '用户名称', width:100}
-                ,{field: 'email', title: '邮箱', width:180}
-                ,{field: 'phone', title: '电话', width:130}
-                ,{field: 'status', title: '用户状态', width:100}
-                ,{field: 'bornDate', title: '出生日期', width:120}
-                ,{field: 'createDate', title: '创建日期', width:120}
-            ]]
-        });
-    });
-</script>
+<table class="layui-hide" id="u_table" lay-filter="table_filter"></table>
 </body>
 </html>

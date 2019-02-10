@@ -1,11 +1,10 @@
 package com.rong.cms.controller;
 
 import com.rong.cms.model.Pager;
+import com.rong.cms.model.User;
 import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 
@@ -21,24 +20,37 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping(value = "/user",method = RequestMethod.GET)
+    @RequestMapping(value = "/user", method = RequestMethod.GET)
     @ResponseBody
-    public Pager list(@RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
-                      @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
+    public Pager list() {
         return userService.findUser();
     }
 
-/*    @RequestMapping(value = "/users", method = RequestMethod.GET)
-    public String listAll(
-            @RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
-            @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
+    public String listAll(@RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
+                          @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
         return "admin/list";
     }
 
     @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
+    @ResponseBody
     public String delete(@PathVariable("id") Integer id) {
-        return "redirect:/users";
+        userService.delete(id);
+        return "success";
     }
+
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+    public User showUser(@PathVariable("id") Integer id) {
+        User user = userService.load(id);
+        return user;
+    }
+
+    @RequestMapping(value = "/user/addInput", method = RequestMethod.GET)
+    public String addInput() {
+        return "admin/addInput";
+    }
+
+/*
 
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public String addInput() {

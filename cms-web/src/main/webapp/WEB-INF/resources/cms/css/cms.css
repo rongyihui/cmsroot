@@ -18,6 +18,28 @@ body {
     width: 100%;
     min-height: 100%;
 }
+.layui-header .left_open{
+    height: 45px;
+    float: left;
+    position: absolute;
+    left: 168px;
+    top: 7px;
+}
+.layui-header .left_open i {
+    display: block;
+    background: rgba(255, 255, 255, 0.1) 0 0 no-repeat;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.layui-header .left_open i:hover {
+    background: rgba(255, 255, 255, 0.3) 0 0 no-repeat;
+}
 .rightMenu {
     position: absolute;
     width: 120px;
@@ -38,4 +60,7 @@ body {
 .rightMenu li:hover {
     background: #EEE;
     color: #666;
+}
+.layui-tab-item iframe{
+    width: 100%;
 }
