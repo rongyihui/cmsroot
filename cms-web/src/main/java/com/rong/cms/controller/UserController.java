@@ -1,9 +1,13 @@
 package com.rong.cms.controller;
 
+import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Pager;
 import com.rong.cms.model.User;
+import com.rong.cms.service.IGroupService;
+import com.rong.cms.service.IRoleService;
 import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -14,10 +18,20 @@ import javax.annotation.Resource;
 public class UserController {
 
     private IUserService userService;
+    private IGroupService groupService;
+    private IRoleService roleService;
 
     @Resource
     public void setUserService(IUserService userService) {
         this.userService = userService;
+    }
+    @Resource
+    public void setGroupService(IGroupService groupService) {
+        this.groupService = groupService;
+    }
+    @Resource
+    public void setRoleService(IRoleService roleService) {
+        this.roleService = roleService;
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.GET)
@@ -45,9 +59,9 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping(value = "/user/addInput", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/add", method = RequestMethod.GET)
     public String addInput() {
-        return "admin/addInput";
+        return "admin/add";
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
