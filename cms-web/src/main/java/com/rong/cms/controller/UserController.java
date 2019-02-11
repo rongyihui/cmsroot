@@ -50,6 +50,12 @@ public class UserController {
         return "admin/addInput";
     }
 
+    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    @ResponseBody
+    public String add(User user) {
+        userService.add(user,new Integer[]{1},new Integer[]{1});
+        return "success";
+    }
 /*
 
     @RequestMapping(value = "/user", method = RequestMethod.GET)

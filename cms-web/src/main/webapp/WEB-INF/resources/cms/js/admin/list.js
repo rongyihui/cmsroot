@@ -22,9 +22,9 @@ layui.use(['table', 'layer', 'util'], function () {
             {type: 'numbers', fixed: 'left'}
             , {type: 'checkbox'}
             , {field: 'id', width: 80, title: 'ID', sort: true}
-            , {field: 'username', width: 80, title: '用户账号'}
+            , {field: 'username', width: 100, title: '用户账号'}
             , {field: 'password', width: 80, title: '密码', sort: true}
-            , {field: 'nickname', width: 80, title: '用户名称'}
+            , {field: 'nickname', width: 120, title: '用户名称'}
             , {field: 'email', width: 180, title: '邮箱'}
             , {field: 'phone', width: 150, title: '电话'}
             , {
@@ -104,7 +104,7 @@ layui.use(['table', 'layer', 'util'], function () {
                 area: ['700px', '450px'],
                 fixed: false, //不固定
                 maxmin: true,
-                content: '/cms/admin/user/'+ data.id
+                content: '/cms/admin/user/addInput'
             });
         } else if (obj.event === 'del') {
             layer.confirm('确认删除:' + data.nickname, function (index) {

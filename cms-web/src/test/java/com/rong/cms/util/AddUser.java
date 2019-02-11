@@ -24,18 +24,17 @@ public class AddUser {
     }
 
     @Test
-    public void addUser(){
+    public void addUser (){
         User u =null;
         Random random = null;
         Date date =null;
         Integer[] in = new Integer[]{1};
-        for(int i=7;i<100;i++){
+        for(int i=100;i<300;i++){
             random = new Random();
             date = new Date();
             u = new User("user"+i,"123",getNickName(random.nextInt(2)+2)
                     ,"54188"+random.nextInt(500)+"@qq.com"
                     ,"135487"+random.nextInt(6000),1,date,date);
-            System.out.println(u);
             userService.add(u,in,in);
         }
     }
