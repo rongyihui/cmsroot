@@ -12,6 +12,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 @Service("userService")
@@ -38,6 +39,7 @@ public class UserService implements IUserService {
     public void add(User user, Integer[] rids, Integer[] gids) {
         User tu = userDao.loadByUsername(user.getUsername());
         if(tu!=null) throw new CmsException("用户名已存在");
+        user.setCreateDate(new Date());
         userDao.add(user);
         //添加角色关联
         for (Integer rid:rids) {

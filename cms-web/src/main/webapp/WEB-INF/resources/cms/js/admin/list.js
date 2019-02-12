@@ -44,7 +44,7 @@ layui.use(['table', 'layer', 'util'], function () {
             , {field: 'status', width: 110, title: '用户状态', sort: true}
             , {fixed: 'right', title: '操作', toolbar: '#barDemo', width: 180, align: 'center'}
         ]]
-        , page: true
+        , page: {groups: 8}
     });
 
     /*checkbox监听选择框*/
@@ -59,16 +59,25 @@ layui.use(['table', 'layer', 'util'], function () {
              * */
             layer.open({
                 type: 2,
-                area: ['700px', '450px'],
+                area: ['70%', '80%'],
                 fixed: false, //不固定
                 maxmin: true,
-                content: '/cms/admin/user/addInput'
+                content: '/cms/admin/user/add'
             });
         }
         , updateData: function () {
             /**
              * @todo 弹窗修改用户
              * */
+            var checkStatus = table.checkStatus('u_table')
+                , data = checkStatus.data;
+            layer.open({
+                type: 2,
+                area: ['70%', '80%'],
+                fixed: false, //不固定
+                maxmin: true,
+                content: '/cms/admin/user/update?id='+data.id
+            });
         }
         , deleteData: function () {
             /**

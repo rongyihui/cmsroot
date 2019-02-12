@@ -1,12 +1,8 @@
 package com.rong.cms.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import java.util.Date;
 
 @Entity
@@ -23,7 +19,6 @@ public class User {
      * 0表示管理员，1表示正常用户，-1表示黑名单
      */
     private int status;
-    //@DateTimeFormat(pattern = "yyyy-MM-dd")  建议通过String传递
     private Date bornDate;
     private Date createDate;
 
@@ -36,7 +31,7 @@ public class User {
     public void setId(int id) {
         this.id = id;
     }
-    @NotNull(message = "用户名不能为空")
+
     public String getUsername() {
         return username;
     }
@@ -44,7 +39,7 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
-    @NotNull(message = "用户密码不能为空")
+
     public String getPassword() {
         return password;
     }
@@ -52,7 +47,7 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    @NotNull(message = "用户名称不能为空")
+
     public String getNickname() {
         return nickname;
     }
@@ -60,7 +55,7 @@ public class User {
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
-    @Email(message = "邮件格式不正确")
+
     public String getEmail() {
         return email;
     }
@@ -68,7 +63,7 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-    @Length(min = 11,max = 11,message = "电话长度为11位")
+
     public String getPhone() {
         return phone;
     }

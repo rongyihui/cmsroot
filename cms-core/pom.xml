@@ -18,11 +18,7 @@
             <artifactId>base-hibernate</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!--validator验证-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-        </dependency>
+
         <!--junit-->
         <dependency>
             <groupId>junit</groupId>

@@ -1,7 +1,6 @@
 package com.rong.cms.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 
 
 /**
@@ -26,7 +25,7 @@ public class Role {
     public void setId(int id) {
         this.id = id;
     }
-    @NotNull(message = "角色名称不能为空")
+
     public String getName() {
         return name;
     }

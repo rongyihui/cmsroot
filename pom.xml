@@ -250,8 +250,8 @@
                         <target>${maven.compiler.target}</target>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <!--嵌入式服务-->
+                <!--<plugin>
+                    &lt;!&ndash;嵌入式服务&ndash;&gt;
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
                     <version>9.4.14.v20181114</version>
@@ -265,7 +265,7 @@
                             <idleTimeout>60000</idleTimeout>
                         </httpConnector>
                     </configuration>
-                </plugin>
+                </plugin>-->
             </plugins>
         </pluginManagement>
     </build>

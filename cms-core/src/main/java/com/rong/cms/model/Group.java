@@ -2,7 +2,6 @@ package com.rong.cms.model;
 
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -27,7 +26,7 @@ public class Group {
     public void setId(int id) {
         this.id = id;
     }
-    @NotNull(message = "组名称不能为空")
+
     public String getName() {
         return name;
     }
@@ -35,7 +34,7 @@ public class Group {
     public void setName(String name) {
         this.name = name;
     }
-    @NotNull(message = "描述不能为空")
+
     public String getIntro() {
         return intro;
     }

@@ -21,6 +21,10 @@
     <filter>
         <filter-name>EncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
     </filter>
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
@@ -48,6 +52,14 @@
         <init-param>
             <param-name>pageSize</param-name>
             <param-value>15</param-value>
+        </init-param>
+        <init-param>
+            <param-name>order</param-name>
+            <param-value>asc</param-value>
+        </init-param>
+        <init-param>
+            <param-name>sort</param-name>
+            <param-value>id</param-value>
         </init-param>
     </filter>
     <filter-mapping>

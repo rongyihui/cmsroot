@@ -18,7 +18,7 @@
 </head>
 <body>
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>添加新用户</legend>
+    <legend>修改用户</legend>
 </fieldset>
 <div style="margin-left: 20px;">
 <form class="layui-form layui-form-pane" action="/cms/admin/user" method="post">

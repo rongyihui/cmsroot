@@ -1,5 +1,6 @@
 package com.rong.cms.controller;
 
+import com.rong.cms.dto.UserDto;
 import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Pager;
 import com.rong.cms.model.User;
@@ -8,9 +9,14 @@ import com.rong.cms.service.IRoleService;
 import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
@@ -42,7 +48,7 @@ public class UserController {
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     public String listAll(@RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
-                          @RequestParam(value = "limit", defaultValue = "1", required = false) Integer limit) {
+                          @RequestParam(value = "limit", defaultValue = "15", required = false) Integer limit) {
         return "admin/list";
     }
 
@@ -59,16 +65,29 @@ public class UserController {
         return user;
     }
 
+    private void initAddUser(Model model){
+        model.addAttribute("roles",roleService.findRole());
+        model.addAttribute("groups",groupService.findGroup());
+    }
+
     @RequestMapping(value = "/user/add", method = RequestMethod.GET)
-    public String addInput() {
+    public String addInput(Model model) {
+        model.addAttribute("user",new UserDto());
+        initAddUser(model);
         return "admin/add";
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
-    @ResponseBody
-    public String add(User user) {
-        userService.add(user,new Integer[]{1},new Integer[]{1});
-        return "success";
+    public String add(UserDto userDto, Model model) {
+
+        userService.add(userDto.getUser(),userDto.getRoleIds(),userDto.getGroupIds());
+        return "redirect:/admin/users";
+    }
+
+    @RequestMapping(value = "/user/update", method = RequestMethod.GET)
+    public String updateInput(@PathVariable("id") Integer id,Model model) {
+        //TODO
+        return "admin/update";
     }
 /*
 
