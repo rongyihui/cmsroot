@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/layui/css/layui.css" media="all"
           charset="utf-8">
     <script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
-    <script src="<%=request.getContextPath()%>/resources/cms/js/admin/add.js" charset="utf-8"></script>
+    <script src="<%=request.getContextPath()%>/resources/cms/js/admin/update.js" charset="utf-8"></script>
 </head>
 <body>
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
@@ -71,7 +71,7 @@
         <div class="layui-input-block">
             <input type="radio" name="status" value="-1" title="黑名单用户">
             <input type="radio" name="status" value="0" title="管理员" >
-            <input type="radio" name="status" value="1" title="正常用户" checked>
+            <input type="radio" name="status" value="1" title="正常用户">
         </div>
     </div>
     <div class="layui-form-item">

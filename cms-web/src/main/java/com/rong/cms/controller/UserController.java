@@ -80,19 +80,17 @@ public class UserController {
     @RequestMapping(value = "/user", method = RequestMethod.POST)
     public String add(@Valid UserDto userDto,BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()){
-            System.out.println(bindingResult.getAllErrors().get(1));
             throw new CmsException("非法操作");
         }
         userService.add(userDto.getUser(),userDto.getRoleIds(),userDto.getGroupIds());
         return "redirect:/admin/users";
     }
 
-    @RequestMapping(value = "/user/update", method = RequestMethod.GET)
-    public String updateInput(User user ,Model model) {
-        int userId = user.getId();
-        User u =  userService.load(userId);
-        Integer[] roleIds = userService.listUserRoleId(userId);
-        Integer[] groupIds = userService.listUserGroupId(userId);
+    @RequestMapping(value = "/user/update/{id}", method = RequestMethod.GET)
+    public String updateInput(@PathVariable("id") Integer id ,Model model) {
+        User u =  userService.load(id);
+        Integer[] roleIds = userService.listUserRoleId(id);
+        Integer[] groupIds = userService.listUserGroupId(id);
         model.addAttribute("user",new UserDto(u,roleIds,groupIds));
         initAddUser(model);
         return "admin/update";

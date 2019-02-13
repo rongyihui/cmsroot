@@ -164,6 +164,7 @@ public class UserDaoTest extends BaseDaoTest {
         int uid = 2;
         List<Integer> g =  userDao.listUserGroupsId(uid);
         Integer[] gids = g.toArray(new Integer[g.size()]);
+        System.out.println(gids[0]+":"+gids[1]);
         Assert.assertEquals("通过用户获取角色id失败",2,gids.length);
     }
 }

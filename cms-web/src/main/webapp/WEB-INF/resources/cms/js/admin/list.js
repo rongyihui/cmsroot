@@ -49,7 +49,7 @@ layui.use(['table', 'layer', 'util'], function () {
 
     /*checkbox监听选择框*/
     table.on('checkbox(table_filter)', function (obj) {
-        console.log(obj)
+        //console.log(obj)
     });
 
     var active = {
@@ -72,12 +72,14 @@ layui.use(['table', 'layer', 'util'], function () {
             var checkStatus = table.checkStatus('u_table')
                 , data = checkStatus.data;
 
-            $.get('/cms/admin/user/update', data, function(str){
+            var id = data[0].id;
+            $.get('/cms/admin/user/update/'+id, {}, function(str){
                 layer.open({
                     type: 2,
                     area: ['70%', '80%'],
                     fixed: false, //不固定
-                    maxmin: true
+                    maxmin: true,
+                    content:'/cms/admin/user/update/'+id
                 });
             });
         }

@@ -49,8 +49,8 @@ public class UserDto {
         this.setStatus(user.getStatus());
         this.setBornDate(user.getBornDate());
         this.setCreateDate(user.getCreateDate());
-        this.roleIds = roleIds;
-        this.groupIds = groupIds;
+        this.setRoleIds(roleIds);
+        this.setGroupIds(groupIds);
     }
 
     public int getId() {

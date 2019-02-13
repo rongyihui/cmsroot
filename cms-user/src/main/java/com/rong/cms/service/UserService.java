@@ -8,6 +8,7 @@ import com.rong.cms.model.Group;
 import com.rong.cms.model.Pager;
 import com.rong.cms.model.Role;
 import com.rong.cms.model.User;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -151,6 +152,10 @@ public class UserService implements IUserService {
      * @return
      */
     private Integer[] paseInteger(List<Integer> list){
-        return list.toArray(new Integer[list.size()]);
+        Integer[] id= new Integer[list.size()];
+        for(int i=0;i<list.size();i++){
+            id[i] = list.get(i);
+        }
+        return id;
     }
 }
