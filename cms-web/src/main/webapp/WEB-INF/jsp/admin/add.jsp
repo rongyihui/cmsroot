@@ -26,14 +26,14 @@
         <div class="layui-inline">
             <label class="layui-form-label">用户账号</label>
             <div class="layui-input-inline">
-                <input type="text" name="username" lay-verify="required|username" placeholder="请输入账号" autocomplete="off"
+                <input type="text" name="username" value="" lay-verify="required|username" placeholder="请输入账号" autocomplete="off"
                        class="layui-input">
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">用户名称</label>
             <div class="layui-input-inline">
-                <input type="text" name="nickname" lay-verify="required" placeholder="请输入名称" autocomplete="off"
+                <input type="text" name="nickname" value=""  lay-verify="required" placeholder="请输入名称" autocomplete="off"
                        class="layui-input">
             </div>
         </div>
@@ -42,13 +42,13 @@
         <div class="layui-inline">
             <label class="layui-form-label">密码</label>
             <div class="layui-input-inline">
-                <input type="password" name="password" lay-verify="required|pass" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <input type="password" name="password" value="" lay-verify="required|pass" placeholder="请输入密码" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">出生日期</label>
             <div class="layui-input-inline">
-                <input type="text" name="bornDate" id="bornDate" lay-verify="required|date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                <input type="text" name="bornDate" value="" id="bornDate" lay-verify="required|date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
@@ -56,13 +56,13 @@
         <div class="layui-inline">
             <label class="layui-form-label">手机</label>
             <div class="layui-input-inline">
-                <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                <input type="tel" name="phone" value="" lay-verify="required|phone" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">邮箱</label>
             <div class="layui-input-inline">
-                <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                <input type="text" name="email" value="" lay-verify="email" autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>

@@ -44,19 +44,22 @@ public interface IUserService {
     /**
      * 获取用户信息，并获取角色、组
      */
-    public User load(int id);
+    User load(int id);
 
     /**
      * 查询用户所有的角色
      * @param id
      * @return
      */
-    public List<Role> listUserRoles(int id);
+    List<Role> listUserRoles(int id);
+    Integer[] listUserRoleId(int id);
 
     /**
      * 查询用户所有的组信息
      * @param id
      * @return
      */
-    public List<Group> listUserGroup(int id);
+    List<Group> listUserGroup(int id);
+    Integer[] listUserGroupId(int id);
+
 }

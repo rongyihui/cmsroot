@@ -71,12 +71,14 @@ layui.use(['table', 'layer', 'util'], function () {
              * */
             var checkStatus = table.checkStatus('u_table')
                 , data = checkStatus.data;
-            layer.open({
-                type: 2,
-                area: ['70%', '80%'],
-                fixed: false, //不固定
-                maxmin: true,
-                content: '/cms/admin/user/update?id='+data.id
+
+            $.get('/cms/admin/user/update', data, function(str){
+                layer.open({
+                    type: 2,
+                    area: ['70%', '80%'],
+                    fixed: false, //不固定
+                    maxmin: true
+                });
             });
         }
         , deleteData: function () {

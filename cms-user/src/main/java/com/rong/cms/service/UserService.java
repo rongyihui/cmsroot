@@ -10,6 +10,7 @@ import com.rong.cms.model.Role;
 import com.rong.cms.model.User;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -132,4 +133,24 @@ public class UserService implements IUserService {
         return userDao.listUserGroups(id);
     }
 
+    @Override
+    public Integer[] listUserRoleId(int id) {
+        List<Integer> roleIds = userDao.listUserRolesId(id);
+        return paseInteger(roleIds);
+    }
+
+    @Override
+    public Integer[] listUserGroupId(int id) {
+        List<Integer> groupIds = userDao.listUserGroupsId(id);
+        return paseInteger(groupIds);
+    }
+
+    /**
+     *
+     * @param list 将list转换为Integer[]
+     * @return
+     */
+    private Integer[] paseInteger(List<Integer> list){
+        return list.toArray(new Integer[list.size()]);
+    }
 }

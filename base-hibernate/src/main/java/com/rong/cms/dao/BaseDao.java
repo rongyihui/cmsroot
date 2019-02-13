@@ -68,7 +68,8 @@ public class BaseDao<T> implements IBaseDao<T> {
 
     
     public List listObj(String hql, Object[] args, Map<String, Object> alias) {
-        hql = changeSortHql(hql);
+        //表关联多后此处导致id识别不了
+        //hql = changeSortHql(hql);
         Query q = this.getSession().createQuery(hql);
         return setParametersQuery(q, args, alias).getResultList();
     }
