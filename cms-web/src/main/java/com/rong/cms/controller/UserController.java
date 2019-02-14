@@ -10,13 +10,10 @@ import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
-import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
-import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
@@ -94,6 +91,17 @@ public class UserController {
         model.addAttribute("user",new UserDto(u,roleIds,groupIds));
         initAddUser(model);
         return "admin/update";
+    }
+
+    @RequestMapping(value = "/user", method = RequestMethod.PUT)
+    public String update(@Valid UserDto userDto,BindingResult bindingResult, Model model) {
+        System.out.println("1");
+        if (bindingResult.hasErrors()){
+            throw new CmsException("非法操作");
+        }
+        System.out.println("2");
+        userService.update(userDto.getUser(),userDto.getRoleIds(),userDto.getGroupIds());
+        return "redirect:/admin/users";
     }
 /*
 
