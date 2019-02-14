@@ -59,7 +59,7 @@ public class UserDto {
     public void setId(int id) {
         this.id = id;
     }
-    @NotEmpty(message = "用户名不能为空")
+    @NotEmpty(message = "用户账号不能为空")
     public String getUsername() {
         return username;
     }

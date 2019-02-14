@@ -48,8 +48,10 @@ layui.use(['table', 'layer', 'util'], function () {
     });
 
     /*checkbox监听选择框*/
+    var tr;
     table.on('checkbox(table_filter)', function (obj) {
         //console.log(obj)
+        tr = obj;
     });
 
     var active = {
@@ -72,19 +74,19 @@ layui.use(['table', 'layer', 'util'], function () {
             var checkStatus = table.checkStatus('u_table')
                 , data = checkStatus.data;
 
-            var id = data[0].id;
+            var uid = data[0].id;
             layer.open({
                 type: 2,
                 area: ['70%', '80%'],
                 fixed: false, //不固定
                 maxmin: true,
-                content: '/cms/admin/user/update/' + id
+                content: '/cms/admin/user/update/' + uid
             });
         }
         , deleteData: function () {
-            /**
-             * @todo 弹窗删除用户
-             * */
+            var checkStatus = table.checkStatus('u_table')
+                , data = checkStatus.data;
+            deleteMethod(data[0]);
         }
         , getCheckData: function () { //获取选中数据
             var checkStatus = table.checkStatus('u_table')
@@ -118,26 +120,34 @@ layui.use(['table', 'layer', 'util'], function () {
                 content: '/cms/admin/user/addInput'
             });
         } else if (obj.event === 'del') {
-            layer.confirm('确认删除:' + data.nickname, function (index) {
-                $.ajax({
-                    type: 'delete'
-                    , url: '/cms/admin/user/' + data.id
-                    , success: function (data) {
-                        //这里获取到数据执行显示
-
-                        //删除对应行（tr）的DOM结构，并更新缓存
-                        obj.del();
-                        //弹窗关闭
-                        layer.close(index);
-                        layer.msg('已删除!', {
-                            icon: 1,
-                            time: 3000
-                        });
-                    }
-                });
-            });
+            deleteMethod(data);
         } else if (obj.event === 'edit') {
-            layer.alert('编辑行：<br>' + JSON.stringify(data))
+            var uid = data[0].id;
+            layer.open({
+                type: 2,
+                area: ['70%', '80%'],
+                fixed: false, //不固定
+                maxmin: true,
+                content: '/cms/admin/user/update/' + uid
+            });
         }
     });
+    
+    function deleteMethod(data) {
+        layer.confirm('确认删除:' + data.nickname, function (index) {
+            $.ajax({
+                type: 'delete'
+                , url: '/cms/admin/user/' + data.id
+                , success: function (data) {
+                    //弹窗关闭
+                    tr.del();
+                    layer.close(index);
+                    layer.msg('已删除!', {
+                        icon: 1,
+                        time: 3000
+                    });
+                }
+            });
+        });
+    }
 });

@@ -80,6 +80,8 @@ public class UserService implements IUserService {
 
     @Override
     public void update(User user, Integer[] rids, Integer[] gids) {
+        userDao.update(user);
+        //更新用户绑定的组和角色
         List<Integer> urids = userDao.listUserRolesId(user.getId());
         List<Integer> ugids = userDao.listUserGroupsId(user.getId());
         //添加选中的id

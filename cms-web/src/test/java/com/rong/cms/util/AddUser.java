@@ -29,7 +29,7 @@ public class AddUser {
         Random random = null;
         Date date =null;
         Integer[] in = new Integer[]{1};
-        for(int i=100;i<300;i++){
+        for(int i=0;i<20;i++){
             random = new Random();
             date = new Date();
             u = new User("user"+i,"123",getNickName(random.nextInt(2)+2)

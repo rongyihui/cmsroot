@@ -3,6 +3,7 @@ package com.rong.cms.controller;
 import com.rong.cms.dto.UserDto;
 import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Pager;
+import com.rong.cms.model.Role;
 import com.rong.cms.model.User;
 import com.rong.cms.service.IGroupService;
 import com.rong.cms.service.IRoleService;
@@ -10,10 +11,12 @@ import com.rong.cms.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
@@ -95,11 +98,13 @@ public class UserController {
 
     @RequestMapping(value = "/user", method = RequestMethod.PUT)
     public String update(@Valid UserDto userDto,BindingResult bindingResult, Model model) {
-        System.out.println("1");
         if (bindingResult.hasErrors()){
+            List<ObjectError> errors= bindingResult.getAllErrors();
+            for (ObjectError o :errors){
+                System.out.println(o.getObjectName()+":"+o.getDefaultMessage());
+            }
             throw new CmsException("非法操作");
         }
-        System.out.println("2");
         userService.update(userDto.getUser(),userDto.getRoleIds(),userDto.getGroupIds());
         return "redirect:/admin/users";
     }
