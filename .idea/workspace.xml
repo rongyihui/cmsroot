@@ -7,14 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/GroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/role/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/cms.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/group/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/group/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/role/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/GroupService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,19 +83,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="63" />
+            <state relative-caret-position="368">
+              <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="95" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/cms.core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+            <state relative-caret-position="492">
+              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -96,30 +119,14 @@
         <option value="Interface" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Pager&lt;Object&gt;</find>
-      <find>&lt;T&gt;</find>
-      <find>Pager&lt;?&gt;</find>
-      <find>List&lt;?&gt;</find>
-      <find>tableTestName</find>
-      <find>maxi</find>
-      <find>@Override</find>
-      <find>byObj</find>
-      <find>listbyObj</find>
-      <find>listObj</find>
-      <find>dbcp</find>
-      <find>id</find>
-      <find>layui-nav-child</find>
-      <find>layui-nav-tree</find>
-      <find>layui-tab-title</find>
-      <find>layui-nav</find>
       <find>checkbox</find>
       <find>attr</find>
       <find>console</find>
@@ -133,7 +140,23 @@
       <find>margin-left: 20px;</find>
       <find>changeSortHql</find>
       <find>用户名不能为空</find>
+      <find>util</find>
+      <find>tab</find>
+      <find>tabAdd</find>
       <find>刷新</find>
+      <find>reloadTab</find>
+      <find>data-bit</find>
+      <find>weIframe</find>
+      <find>wind</find>
+      <find>var layId = $(which).attr('lay-id')</find>
+      <find>lay-id</find>
+      <find>当前打开窗口</find>
+      <find>getItem</find>
+      <find>window</find>
+      <find>$.ajax</find>
+      <find>groups</find>
+      <find>laypage</find>
+      <find>layer</find>
     </findStrings>
     <replaceStrings>
       <replace>List&lt;?&gt;</replace>
@@ -150,18 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/intro.txt" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/interceptor/SystemContextInterceptor.java" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/admin/index.js" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/cms.html" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.mobile.css" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/css/cms.css" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/test.html" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp" />
         <option value="$PROJECT_DIR$/cms-web/src/main/resources/beans.xml" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/addInput.jsp" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/addInput.jsp" />
@@ -171,9 +182,7 @@
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/GroupDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/RoleDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IRoleDao.java" />
-        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/GroupService.java" />
         <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IRoleService.java" />
-        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/RoleService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cms-core/pom.xml" />
         <option value="$PROJECT_DIR$/cms-web/pom.xml" />
@@ -186,21 +195,35 @@
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/resources/cms-servlet.xml" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/error.jsp" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/error.jsp" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js" />
         <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/test/java/com/rong/cms/dao/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/update.js" />
         <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/update.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" />
         <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/role/list.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/role/list.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/GroupService.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/list.jsp" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/group/list.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/add.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/group/add.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/GroupController.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/cms.core.js" />
+        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/update.jsp" />
       </list>
     </option>
   </component>
@@ -247,8 +270,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-5" />
     <option name="width" value="1860" />
     <option name="height" value="1087" />
   </component>
@@ -258,7 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -266,6 +289,86 @@
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
@@ -311,6 +414,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
@@ -368,6 +481,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -406,10 +530,24 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,7 +555,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550158206712" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550393023824" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="D:/学习/java/java文件包/layui-lizi/layuiCMS-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -437,11 +575,11 @@
       <recent name="com.rong.cms.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\js\admin" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\group" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\js\group" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources\cms\js\role" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\role" />
       <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rong.cms.service" />
@@ -723,6 +861,9 @@
       <workItem from="1550106802341" duration="5711000" />
       <workItem from="1550126853083" duration="5557000" />
       <workItem from="1550141258320" duration="14843000" />
+      <workItem from="1550235713302" duration="13000" />
+      <workItem from="1550303301442" duration="28010000" />
+      <workItem from="1550381962743" duration="7662000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -858,7 +999,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377828000" />
+    <option name="totallyTimeSpent" value="413513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,10 +1011,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1860" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.13388889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.1719956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -882,8 +1022,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" sideWeight="0.50278085" side_tool="true" weight="0.23005319" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3272921" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969456" visible="true" weight="0.393972" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32723358" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969456" weight="0.19189766" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39827773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -907,7 +1047,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.4478976" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.29944444" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.16538037" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20469083" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32784888" />
     </layout>
@@ -1017,47 +1157,32 @@
     <MESSAGE value="2月12日" />
     <option name="LAST_COMMIT_MESSAGE" value="2月12日" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/GroupController.java</url>
+          <line>28</line>
+          <properties class="com.rong.cms.controller.GroupController" method="list">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://e8c1b859-11ef-45a1-bbc6-7173803e620f/schema/rong/table/t_user_group" />
-    <entry file="das://e8c1b859-11ef-45a1-bbc6-7173803e620f/schema/rong/table/t_user_role" />
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_191/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_191/src.zip!/java/lang/Thread.java" />
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_191/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class" />
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_191/src.zip!/java/lang/reflect/Method.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-sources.jar!/javax/servlet/http/HttpServlet.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.java" />
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/web/SystemContextFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-orm/5.1.3.RELEASE/spring-orm-5.1.3.RELEASE-sources.jar!/org/springframework/orm/hibernate5/support/OpenSessionInViewFilter.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java" />
-    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java" />
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_191/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/update.js" />
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/cms-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/converter/DateConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1076,30 +1201,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1268">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1125,48 +1226,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/RoleType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_user_group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_group" />
+    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_role" />
+    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_user_group" />
     <entry file="file://$PROJECT_DIR$/cms-web/src/test/java/com/rong/cms/util/AddUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1203,9 +1265,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_user_role" />
+    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_user" />
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="1605" column="1" selection-start-line="1605" selection-start-column="1" selection-end-line="1605" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="131" column="18" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/dto/UserDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
+        <state relative-caret-position="623">
           <caret line="126" column="20" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1213,69 +1298,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_user_role">
+    <entry file="das://b2d23241-655f-4c8c-bca8-a654d9c8ab4b/schema/rong/table/t_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://15dfa9ee-24cd-4cc0-8fbe-a5e3bef47a56/schema/rong/table/t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b2d23241-655f-4c8c-bca8-a654d9c8ab4b/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/resources/cms-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="75" lean-forward="true" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/role/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/RoleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven-repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/role/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="89" column="34" lean-forward="true" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+        <state relative-caret-position="199">
+          <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IUserService.java">
+    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="300">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/GroupService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+        <state relative-caret-position="360">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="17249" column="12" selection-start-line="17249" selection-start-column="12" selection-end-line="17249" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/group/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/group/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2201">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/index.js">
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="300" column="35" lean-forward="true" selection-start-line="300" selection-start-column="35" selection-end-line="300" selection-end-column="35" />
+        <state relative-caret-position="1157">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/group/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        <state relative-caret-position="343">
+          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/list.jsp">
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="63" />
+        <state relative-caret-position="368">
+          <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="95" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/list.js">
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/admin/add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+        <state relative-caret-position="419">
+          <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/resources/cms/js/cms.core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
         </state>
       </provider>
     </entry>

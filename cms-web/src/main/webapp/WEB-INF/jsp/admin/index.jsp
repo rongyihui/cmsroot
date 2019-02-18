@@ -55,10 +55,10 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree">
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">所有用户</a>
+                    <a class="" href="javascript:;">用户管理</a>
                     <ul class="layui-nav-child">
                         <li><a _href="users">用户列表</a></li>
-                        <li><a _href="javascript:;">列表二</a></li>
+                        <li><a _href="groups">用户组</a></li>
                         <li><a _href="javascript:;">列表三</a></li>
                         <li><a _href="">超链接</a></li>
                     </ul>

@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>部门列表</title>
+    <title>角色列表</title>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,6 +19,7 @@
         <button class="layui-btn layui-btn-sm" data-type="addData">增加</button>
         <button class="layui-btn layui-btn-sm" data-type="updateData">编辑</button>
         <button class="layui-btn layui-btn-sm" data-type="deleteData">删除</button>
+        <button class="layui-btn layui-btn-sm" data-type="getCheckData">获取选中数据</button>
         <button class="layui-btn layui-btn-sm" data-type="getCheckLength">选中数目</button>
         <button class="layui-btn layui-btn-sm" data-type="isAll">是否全选</button>
     </div>

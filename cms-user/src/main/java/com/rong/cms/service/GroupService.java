@@ -9,6 +9,7 @@ import com.rong.cms.model.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 @Service("groupService")
@@ -29,6 +30,7 @@ public class GroupService implements IGroupService {
 
     @Override
     public void add(Group group) {
+        group.setCreateDate(new Date());
         groupDao.add(group);
     }
 

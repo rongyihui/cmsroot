@@ -6,7 +6,7 @@ layui.use(['table', 'layer', 'util'], function () {
 
     table.render({
         elem: '#u_table'
-        , url: '/cms/admin/user/'
+        , url: '/cms/admin/roles/'
         , toolbar: '#toolBar'
         , cellMinWidth: 80 //全局定义常规单元格的最小宽度
         , limit: 15
@@ -20,9 +20,9 @@ layui.use(['table', 'layer', 'util'], function () {
         }
         , cols: [[
             {type: 'numbers', fixed: 'left'}
-            , {type: 'radio'}
+            , {type: 'checkbox'}
             , {field: 'id', width: 80, title: 'ID', sort: true}
-            , {field: 'username', width: 100, title: '用户账号'}
+            , {field: 'name', width: 100, title: '角色名称'}
             , {field: 'password', width: 80, title: '密码', sort: true}
             , {field: 'nickname', width: 120, title: '用户名称'}
             , {field: 'email', width: 180, title: '邮箱'}
@@ -69,26 +69,28 @@ layui.use(['table', 'layer', 'util'], function () {
     var active = {
         addData: function () {
             /**
-             * 弹窗添加用户
+             * 弹窗添加
              * */
-            showLayer('/cms/admin/user/add');
+            showLayer('/cms/admin/role/add');
         }
         , updateData: function () {
             /**
-             * 弹窗修改用户
+             * 弹窗修改
              * */
             var checkStatus = table.checkStatus('u_table')
                 , data = checkStatus.data;
-            checkActive(data,'请选择需要修改的用户');
             var uid = data[0].id;
             showLayer('/cms/admin/user/update/' + uid);
-
         }
         , deleteData: function () {
             var checkStatus = table.checkStatus('u_table')
                 , data = checkStatus.data;
-            checkActive(data,'请选择需要删除的用户');
             deleteMethod(data[0]);
+        }
+        , getCheckData: function () { //获取选中数据
+            var checkStatus = table.checkStatus('u_table')
+                , data = checkStatus.data;
+            layer.alert(JSON.stringify(data));
         }
         , getCheckLength: function () { //获取选中数目
             var checkStatus = table.checkStatus('u_table')
@@ -100,14 +102,6 @@ layui.use(['table', 'layer', 'util'], function () {
             layer.msg(checkStatus.isAll ? '全选' : '未全选')
         }
     };
-    /*检查是否选择了数据*/
-    function checkActive(data,activeMsg){
-        if (data.length==0){
-            layer.msg(activeMsg);
-            return;
-        }
-    }
-
     //触发头工具栏事件
     $('.layui-btn-group .layui-btn').on('click', function () {
         var type = $(this).data('type');

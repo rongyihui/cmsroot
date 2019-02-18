@@ -6,7 +6,7 @@ layui.use(['table', 'layer', 'util'], function () {
 
     table.render({
         elem: '#u_table'
-        , url: '/cms/admin/user/'
+        , url: '/cms/admin/group/'
         , toolbar: '#toolBar'
         , cellMinWidth: 80 //全局定义常规单元格的最小宽度
         , limit: 15
@@ -22,38 +22,14 @@ layui.use(['table', 'layer', 'util'], function () {
             {type: 'numbers', fixed: 'left'}
             , {type: 'radio'}
             , {field: 'id', width: 80, title: 'ID', sort: true}
-            , {field: 'username', width: 100, title: '用户账号'}
-            , {field: 'password', width: 80, title: '密码', sort: true}
-            , {field: 'nickname', width: 120, title: '用户名称'}
-            , {field: 'email', width: 180, title: '邮箱'}
-            , {field: 'phone', width: 150, title: '电话'}
-            , {
-                field: 'bornDate',
-                width: 150,
-                title: '出生日期',
-                sort: true,
-                templet: '<div>{{layui.util.toDateString(d.bornDate,\'yyyy-MM-dd\')}}</div>'
-            }
+            , {field: 'name', width: 100, title: '组名称'}
+            , {field: 'intro', width: 350, title: '组介绍'}
             , {
                 field: 'createDate',
                 width: 150,
                 title: '创建日期',
                 sort: true,
                 templet: '<div>{{layui.util.toDateString(d.createDate,\'yyyy-MM-dd\')}}</div>'
-            }
-            , {
-            field: 'status',
-                width: 110,
-                title: '用户状态',
-                sort: true,
-                templet:'<div>' +
-                    '{{# if (d.status==-1){ }}' +
-                    '黑名单用户' +
-                    '{{# }else if(d.status==0){ }}' +
-                    '管理员' +
-                    '{{# } else if (d.status==1){}}' +
-                    '正常用户' +
-                    '{{# } }}</div>'
             }
             , {fixed: 'right', title: '操作', toolbar: '#barDemo', width: 180, align: 'center'}
         ]]
@@ -71,7 +47,7 @@ layui.use(['table', 'layer', 'util'], function () {
             /**
              * 弹窗添加用户
              * */
-            showLayer('/cms/admin/user/add');
+            showLayer('/cms/admin/group/add');
         }
         , updateData: function () {
             /**
@@ -81,7 +57,7 @@ layui.use(['table', 'layer', 'util'], function () {
                 , data = checkStatus.data;
             checkActive(data,'请选择需要修改的用户');
             var uid = data[0].id;
-            showLayer('/cms/admin/user/update/' + uid);
+            showLayer('/cms/admin/group/update/' + uid);
 
         }
         , deleteData: function () {
@@ -117,12 +93,12 @@ layui.use(['table', 'layer', 'util'], function () {
     table.on('tool(table_filter)', function (obj) {
         var data = obj.data;
         if (obj.event === 'detail') {
-            showLayer('/cms/admin/user/'+ data.id);
+            showLayer('/cms/admin/group/'+ data.id);
         } else if (obj.event === 'del') {
             deleteMethod(data);
         } else if (obj.event === 'edit') {
             var uid = data.id;
-            showLayer('/cms/admin/user/update/' + uid);
+            showLayer('/cms/admin/group/update/' + uid);
         }
     });
 
@@ -140,7 +116,7 @@ layui.use(['table', 'layer', 'util'], function () {
         layer.confirm('确认删除:' + data.nickname, function (index) {
             $.ajax({
                 type: 'delete'
-                , url: '/cms/admin/user/' + data.id
+                , url: '/cms/admin/group/' + data.id
                 , success: function (data) {
                     //弹窗关闭
                     tr.del();

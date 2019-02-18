@@ -3,7 +3,6 @@ package com.rong.cms.controller;
 import com.rong.cms.dto.UserDto;
 import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Pager;
-import com.rong.cms.model.Role;
 import com.rong.cms.model.User;
 import com.rong.cms.service.IGroupService;
 import com.rong.cms.service.IRoleService;
@@ -60,9 +59,11 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
-    public User showUser(@PathVariable("id") Integer id) {
-        User user = userService.load(id);
-        return user;
+    public String showUser(@PathVariable("id") Integer id,Model model) {
+        model.addAttribute(userService.load(id));
+        model.addAttribute("gs",userService.listUserGroup(id));
+        model.addAttribute("rs",userService.listUserRoles(id));
+        return "admin/show";
     }
 
     private void initAddUser(Model model){

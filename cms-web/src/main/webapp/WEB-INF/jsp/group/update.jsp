@@ -16,20 +16,12 @@
           charset="utf-8">
     <script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
     <script>
-        layui.config({
-            /*定义js的路径*/
-            base: '/cms/resources/cms/js/'
-        }).extend({
-            /*为自定义js设置别名*/
-            cmsCore: 'cms.core'
-        });
-        layui.use(['form', 'laydate', 'layer', 'util', 'element','cmsCore'], function () {
+        layui.use(['form', 'laydate', 'layer', 'util', 'element'], function () {
             var form = layui.form
                 , laydate = layui.laydate
                 , layer = layui.layer
                 , element = layui.element
                 , util = layui.util
-                , cmsCore = layui.cmsCore
                 , $ = layui.$;
 
             var index = parent.layer.getFrameIndex(window.name);
@@ -71,26 +63,21 @@
                 , "phone": '${user.phone}'
                 , "email": '${user.email}'
             })
-            var gDataObj = {
-                page: 1,//当前页面
-                limit: 15
-            };
-            var rDataObj = {
-                page: 1,//当前页面
-                limit: 15
-            };
-
             var array = new Array();
             <c:forEach items="${user.roleIds}" var="r">
             array.push(${r});
             </c:forEach>
-            cmsCore.getPageData('/cms/admin/role',rDataObj,array);
-
+            for (var i = 0; i < array.length; i++) {
+                $('input[type=checkbox][name=roleIds][value=' + array[i] + ']').attr('checked', true);
+            }
             array.length = 0;
             <c:forEach items="${user.groupIds}" var="r">
             array.push(${r});
             </c:forEach>
-            cmsCore.getPageData('/cms/admin/group',gDataObj,array);
+            for (var i = 0; i < array.length; i++) {
+                $('input[type=checkbox][name=groupIds][value=' + array[i] + ']').attr('checked', true);
+            }
+            form.render('checkbox');
         });
     </script>
 </head>
@@ -161,8 +148,9 @@
             <div class="layui-colla-item">
                 <h2 class="layui-colla-title">用户角色</h2>
                 <div class="layui-colla-content layui-show">
-                    <div id="roles"></div>
-                    <div id="rolePage"></div>
+                    <c:forEach items="${roles.data}" var="role">
+                        <input type="checkbox" name="roleIds" title="${role.name}" value="${role.id}">
+                    </c:forEach>
                 </div>
             </div>
         </div>
@@ -170,8 +158,9 @@
             <div class="layui-colla-item">
                 <h2 class="layui-colla-title">用户组</h2>
                 <div class="layui-colla-content layui-show">
-                    <div id="groups"></div>
-                    <div id="groupPage"></div>
+                    <c:forEach items="${groups.data}" var="group">
+                        <input type="checkbox" name="groupIds" title="${group.name}" value="${group.id}">
+                    </c:forEach>
                 </div>
             </div>
         </div>
