@@ -4,17 +4,14 @@ import com.rong.cms.dto.UserDto;
 import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Group;
 import com.rong.cms.model.Pager;
-import com.rong.cms.model.User;
 import com.rong.cms.service.IGroupService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
-import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
@@ -61,7 +58,7 @@ public class GroupController {
     public String updateInput(@PathVariable("id") Integer id ,Model model) {
         //TODO
 
-        return "admin/update";
+        return "group/update";
     }
 
     @RequestMapping(value = "/group", method = RequestMethod.PUT)

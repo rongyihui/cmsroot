@@ -55,9 +55,9 @@ layui.use(['table', 'layer', 'util'], function () {
              * */
             var checkStatus = table.checkStatus('u_table')
                 , data = checkStatus.data;
-            checkActive(data,'请选择需要修改的用户');
-            var uid = data[0].id;
-            showLayer('/cms/admin/group/update/' + uid);
+            checkActive(data,'请选择需要修改的用户组');
+            var gid = data[0].id;
+            showLayer('/cms/admin/group/update/' + gid);
 
         }
         , deleteData: function () {
@@ -113,14 +113,14 @@ layui.use(['table', 'layer', 'util'], function () {
     }
 
     function deleteMethod(data) {
-        layer.confirm('确认删除:' + data.nickname, function (index) {
+        layer.confirm('确认删除:' + data.name, function (index) {
             $.ajax({
                 type: 'delete'
                 , url: '/cms/admin/group/' + data.id
                 , success: function (data) {
                     //弹窗关闭
-                    tr.del();
                     layer.close(index);
+                    parent.location.reload();
                     layer.msg('已删除!', {
                         icon: 1,
                         time: 3000

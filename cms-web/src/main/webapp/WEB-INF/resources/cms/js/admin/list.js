@@ -143,8 +143,8 @@ layui.use(['table', 'layer', 'util'], function () {
                 , url: '/cms/admin/user/' + data.id
                 , success: function (data) {
                     //弹窗关闭
-                    tr.del();
                     layer.close(index);
+                    parent.location.reload();
                     layer.msg('已删除!', {
                         icon: 1,
                         time: 3000

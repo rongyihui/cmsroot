@@ -79,12 +79,13 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
+    @ResponseBody
     public String add(@Valid UserDto userDto,BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()){
             throw new CmsException("非法操作");
         }
         userService.add(userDto.getUser(),userDto.getRoleIds(),userDto.getGroupIds());
-        return "redirect:/admin/users";
+        return "success";
     }
 
     @RequestMapping(value = "/user/update/{id}", method = RequestMethod.GET)

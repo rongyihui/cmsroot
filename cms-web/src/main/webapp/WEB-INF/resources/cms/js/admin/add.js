@@ -5,7 +5,7 @@ layui.config({
     /*为自定义js设置别名*/
     cmsCore: 'cms.core'
 });
-layui.use(['form', 'laydate', 'layer', 'element','cmsCore'], function () {
+layui.use(['form', 'laydate', 'layer', 'element', 'cmsCore'], function () {
     var form = layui.form
         , laydate = layui.laydate
         , layer = layui.layer
@@ -47,11 +47,29 @@ layui.use(['form', 'laydate', 'layer', 'element','cmsCore'], function () {
         page: 1,//当前页面
         limit: 15
     };
-    cmsCore.getPageData('/cms/admin/role',rDataObj)
-    cmsCore.getPageData('/cms/admin/group',gDataObj)
+    cmsCore.getPageData('/cms/admin/role', rDataObj);
+    cmsCore.getPageData('/cms/admin/group', gDataObj);
 
     form.on('submit(submit)', function (data) {
-        parent.layer.close(index);
-        parent.location.reload();
+        $.ajax({
+            type: 'post',
+            url: '/cms/admin/user',
+            data: data.field,
+            success: function (obj) {
+                if (obj == 'success') {
+                    parent.layer.close(index);
+                    parent.location.reload();
+
+                }else{
+                    layer.open({
+                        type: 1,
+                        skin: 'layui-layer-rim', //加上边框
+                        area: ['70%', '80%'], //宽高
+                        content: obj
+                    });
+                }
+            }
+        });
+        return false;
     });
 });
