@@ -14,6 +14,7 @@ public class CmsExceptionHandler implements HandlerExceptionResolver {
         if(e instanceof CmsException){
             mav.setViewName("error");
             mav.addObject("ex", e);
+            //System.out.println(e.getMessage());
             return mav;
         }
         return null;

@@ -5,10 +5,9 @@ layui.config({
     /*为自定义js设置别名*/
     cmsCore: 'cms.core'
 });
-layui.use(['form', 'laydate', 'layer', 'element', 'cmsCore'], function () {
+layui.use(['form', 'laydate', 'element', 'cmsCore'], function () {
     var form = layui.form
         , laydate = layui.laydate
-        , layer = layui.layer
         , element = layui.element
         , cmsCore = layui.cmsCore
         , $ = layui.$;
@@ -31,7 +30,7 @@ layui.use(['form', 'laydate', 'layer', 'element', 'cmsCore'], function () {
                 return '用户名不能全为数字';
             }
         }
-        , pass: [
+        , password: [
             /^[\S]{6,12}$/
             , '密码必须6到12位，且不能出现空格'
         ]
@@ -49,27 +48,5 @@ layui.use(['form', 'laydate', 'layer', 'element', 'cmsCore'], function () {
     };
     cmsCore.getPageData('/cms/admin/role', rDataObj);
     cmsCore.getPageData('/cms/admin/group', gDataObj);
-
-    form.on('submit(submit)', function (data) {
-        $.ajax({
-            type: 'post',
-            url: '/cms/admin/user',
-            data: data.field,
-            success: function (obj) {
-                if (obj == 'success') {
-                    parent.layer.close(index);
-                    parent.location.reload();
-
-                }else{
-                    layer.open({
-                        type: 1,
-                        skin: 'layui-layer-rim', //加上边框
-                        area: ['70%', '80%'], //宽高
-                        content: obj
-                    });
-                }
-            }
-        });
-        return false;
-    });
+    cmsCore.submitAddData('/cms/admin/user',index);
 });

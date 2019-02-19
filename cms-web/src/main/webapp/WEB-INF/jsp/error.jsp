@@ -23,10 +23,10 @@
 </head>
 <body>
 <div id="container">
-    <div id="error">
-        <span><i class="layui-icon layui-icon-face-surprised" style="font-size: 100px; color: red;"></i>  发现错误:</span>
-        <div id="message"><span class="errorContainer">${ex.message}</span></div>
-        <div id="upPage"><a href="javascript:history.go(-1)">返回上一页</a></div>
+    <div id="error" align="center">
+        <span><i class="layui-icon layui-icon-face-surprised" style="font-size: 100px; color: red;"></i></span>
+        <div id="message"><span class="errorContainer" style="font-size: 50px;color: red">发现错误:${ex.message}</span></div>
+        <%--<div id="upPage"><a href="javascript:history.go(-1)">返回上一页</a></div>--%>
     </div>
 </div>
 </body>

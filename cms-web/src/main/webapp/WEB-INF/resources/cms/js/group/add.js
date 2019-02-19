@@ -1,7 +1,14 @@
-layui.use(['form', 'laydate','layer','element'], function () {
+layui.config({
+    /*定义js的路径*/
+    base: '/cms/resources/cms/js/'
+}).extend({
+    /*为自定义js设置别名*/
+    cmsCore: 'cms.core'
+});
+layui.use(['form', 'laydate','element', 'cmsCore'], function () {
     var form = layui.form
-        , layer=layui.layer
         , element =layui.element
+        , cmsCore = layui.cmsCore
         , $ = layui.$;
 
     var index = parent.layer.getFrameIndex(window.name);
@@ -20,10 +27,5 @@ layui.use(['form', 'laydate','layer','element'], function () {
         }
     });
 
-    form.on('submit(submit)', function(data){
-        parent.layer.close(index);
-        /*刷新tab*/
-        parent.location.reload();
-    });
-
+    cmsCore.submitAddData('/cms/admin/group',index);
 });

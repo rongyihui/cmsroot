@@ -21,7 +21,7 @@
     <legend>添加新用户组</legend>
 </fieldset>
 <div style="margin-left: 20px;width: 90%">
-    <form class="layui-form layui-form-pane" action="/cms/admin/group" method="post">
+    <form class="layui-form layui-form-pane">
         <div class="layui-form-item">
             <div class="layui-inline">
                 <label class="layui-form-label">用户组名称</label>
