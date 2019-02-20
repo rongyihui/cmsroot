@@ -30,7 +30,7 @@ layui.use(['form', 'laydate', 'element', 'cmsCore'], function () {
                 return '用户名不能全为数字';
             }
         }
-        , password: [
+        , pass: [
             /^[\S]{6,12}$/
             , '密码必须6到12位，且不能出现空格'
         ]
@@ -48,5 +48,5 @@ layui.use(['form', 'laydate', 'element', 'cmsCore'], function () {
     };
     cmsCore.getPageData('/cms/admin/role', rDataObj);
     cmsCore.getPageData('/cms/admin/group', gDataObj);
-    cmsCore.submitAddData('/cms/admin/user',index);
+    cmsCore.submitData('/cms/admin/user',index,'post');
 });

@@ -27,5 +27,5 @@ layui.use(['form', 'laydate','element', 'cmsCore'], function () {
         }
     });
 
-    cmsCore.submitAddData('/cms/admin/group',index);
+    cmsCore.submitData('/cms/admin/group',index,'post');
 });

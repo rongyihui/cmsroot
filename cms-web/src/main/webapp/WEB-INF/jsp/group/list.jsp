@@ -27,6 +27,7 @@
     <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delAll">清空组</a>
 </script>
 <table class="layui-hide" id="u_table" lay-filter="table_filter"></table>
 </body>

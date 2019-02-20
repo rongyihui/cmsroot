@@ -72,7 +72,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/add", method = RequestMethod.GET)
-    public String addInput(Model model) {
+    public String add(Model model) {
         model.addAttribute("user",new UserDto());
         initAddUser(model);
         return "admin/add";
@@ -89,7 +89,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/update/{id}", method = RequestMethod.GET)
-    public String updateInput(@PathVariable("id") Integer id ,Model model) {
+    public String update(@PathVariable("id") Integer id ,Model model) {
         User u =  userService.load(id);
         Integer[] roleIds = userService.listUserRoleId(id);
         Integer[] groupIds = userService.listUserGroupId(id);
@@ -99,16 +99,13 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.PUT)
+    @ResponseBody
     public String update(@Valid UserDto userDto,BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()){
-            List<ObjectError> errors= bindingResult.getAllErrors();
-            for (ObjectError o :errors){
-                System.out.println(o.getObjectName()+":"+o.getDefaultMessage());
-            }
             throw new CmsException("非法操作");
         }
         userService.update(userDto.getUser(),userDto.getRoleIds(),userDto.getGroupIds());
-        return "redirect:/admin/users";
+        return "success";
     }
 /*
 

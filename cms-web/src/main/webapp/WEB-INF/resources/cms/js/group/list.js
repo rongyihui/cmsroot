@@ -38,7 +38,7 @@ layui.use(['util', 'cmsCore','table'], function () {
                 sort: true,
                 templet: '<div>{{layui.util.toDateString(d.createDate,\'yyyy-MM-dd\')}}</div>'
             }
-            , {fixed: 'right', title: '操作', toolbar: '#barDemo', width: 180, align: 'center'}
+            , {fixed: 'right', title: '操作', toolbar: '#barDemo', width: 280, align: 'center'}
         ]]
         , page: {groups: 8}
     });

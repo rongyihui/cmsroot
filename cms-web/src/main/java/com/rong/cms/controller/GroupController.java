@@ -60,14 +60,30 @@ public class GroupController {
 
     @RequestMapping(value = "/group/update/{id}", method = RequestMethod.GET)
     public String updateInput(@PathVariable("id") Integer id, Model model) {
-        //TODO
-
+        Group group = groupService.load(id);
+        model.addAttribute("group",group);
         return "group/update";
     }
 
     @RequestMapping(value = "/group", method = RequestMethod.PUT)
-    public String update(@Valid UserDto userDto, BindingResult bindingResult, Model model) {
-        //TODO
-        return "redirect:/admin/users";
+    @ResponseBody
+    public String update(@Valid Group group, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()){
+            throw new CmsException("非法操作");
+        }
+        groupService.update(group);
+        return "success";
+    }
+
+    /**
+     * 清空组中的所有用户
+     * @param id 用户id
+     * @return
+     */
+    @RequestMapping(value = "/group/clean/{id}", method = RequestMethod.DELETE)
+    @ResponseBody
+    public String clean (@PathVariable("id") Integer id){
+        groupService.deleteGroupUsers(id);
+        return "success";
     }
 }

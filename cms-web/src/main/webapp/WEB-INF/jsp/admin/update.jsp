@@ -56,10 +56,7 @@
                 ]
             });
 
-            form.on('submit(submit)', function (data) {
-                parent.layer.close(index);
-                parent.location.reload();
-            });
+            cmsCore.submitData('/cms/admin/user',index,'put');
 
             form.val("fromUpdate", {
                 "id": '${user.id}'
@@ -68,6 +65,7 @@
                 , "nickname": '${user.nickname}'
                 , "status": '${user.status}'
                 , "bornDate": layui.util.toDateString('${user.bornDate}', 'yyyy-MM-dd')
+                , "createDate": layui.util.toDateString('${user.createDate}', 'yyyy-MM-dd')
                 , "phone": '${user.phone}'
                 , "email": '${user.email}'
             })
@@ -80,27 +78,26 @@
                 limit: 15
             };
 
-            var array = new Array();
+            var arrayR = new Array();
+            var arrayG = new Array();
             <c:forEach items="${user.roleIds}" var="r">
-            array.push(${r});
+            arrayR.push(${r});
             </c:forEach>
-            cmsCore.getPageData('/cms/admin/role',rDataObj,array);
-
-            array.length = 0;
             <c:forEach items="${user.groupIds}" var="r">
-            array.push(${r});
+            arrayG.push(${r});
             </c:forEach>
-            cmsCore.getPageData('/cms/admin/group',gDataObj,array);
+
+            cmsCore.getPageData('/cms/admin/role',rDataObj,arrayR);
+            cmsCore.getPageData('/cms/admin/group',gDataObj,arrayG);
         });
     </script>
 </head>
 <body>
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>修改用户</legend>
+    <legend>修改用户：${user.username}</legend>
 </fieldset>
 <div style="margin-left: 20px;width:90%">
-    <form class="layui-form layui-form-pane" action="/cms/admin/user" method="post" lay-filter="fromUpdate">
-        <input type="hidden" name="_method" value="PUT">
+    <form class="layui-form layui-form-pane" lay-filter="fromUpdate">
         <input type="hidden" name="id">
         <div class="layui-form-item">
             <div class="layui-inline">

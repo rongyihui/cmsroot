@@ -7,14 +7,12 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
 
     /**
      * 将error异常弹出
-     * @param obj error页面数据
+     * @param datas error页面数据对象
      */
-    var getErrorPage = function (obj){
-        layer.open({
-            type: 1,
-            skin: 'layui-layer-rim', //加上边框
-            area: ['70%', '80%'], //宽高
-            content: obj
+    var getErrorPage = function (datas){
+        layer.msg(datas.message, {
+            icon: 2,
+            time: 3000
         });
     };
 
@@ -42,6 +40,27 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
             layer.msg(activeMsg);
             return;
         }
+    }
+    /**
+     * layui 复选框缺陷，只会选择一个，通过以下方式处理
+     * @param name input的name值
+     * @returns {string}
+     */
+    var getCheckData = function (name) {
+        var objIds="";
+        var objIdsObj = $('input[name="'+name+'"]');
+        var first = true;
+        for(k in objIdsObj){
+            if(objIdsObj[k].checked){
+                if (first){
+                    objIds = objIdsObj[k].value;
+                    first=false;
+                }else {
+                    objIds = objIds+","+objIdsObj[k].value;
+                }
+            }
+        }
+        return objIds;
     }
 
     var obj = {
@@ -84,10 +103,12 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
          *  @param index 表示父类标识，方便关闭父类窗口
          *  @param url add操作需要添加的地址
          * */
-        , submitAddData: function (url, index) {
+        , submitData: function (url, index,type) {
             form.on('submit(submit)', function (data) {
+                data.field.roleIds =getCheckData('roleIds');
+                data.field.groupIds =getCheckData('groupIds');
                 $.ajax({
-                    type: 'post',
+                    type: type,
                     url: url,
                     data: data.field,
                     success: function (datas) {
@@ -108,13 +129,11 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
          * @param url 需要删除的url
          * @param data 需要删除的行数据
          */
-        , submitDelData: function (url,data) {
-            var name = data.name||data.nickname;
-            layer.confirm('确认删除: ' + name+' 吗?', function (index) {
+        , submitDelData: function (url,data,msg) {
+            layer.confirm(msg, function (index) {
                 $.ajax({
-                    type: 'DELETE'
+                    type: 'delete'
                     , url: url +'/'+ data.id
-                    , dataType:'json'
                     , success: function (datas) {
                         if (datas === 'success') {
                             //弹窗关闭
@@ -124,13 +143,9 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
                                 icon: 1,
                                 time: 3000
                             });
+                        }else{
+                            getErrorPage(datas);
                         }
-                    }
-                    ,error:function (datas) {
-                        layer.msg('无法删除', {
-                            icon: 2,
-                            time: 3000
-                        });
                     }
                 });
             });
@@ -163,7 +178,8 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
                 }
                 , deleteData: function () {
                     checkActive(data,'请选择需要删除的'+msg);
-                    obj.submitDelData(url,data[0]);
+                    var name = data[0].name||data[0].nickname;
+                    obj.submitDelData(url,data[0],'确认删除: ' + name+' 吗?');
                 }
                 , getCheckLength: function () { //获取选中数目
                     layer.msg('选中了：' + data.length + ' 个');
@@ -185,10 +201,15 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
                 if (tr.event === 'detail') {
                     showLayer(url+ data.id);
                 } else if (tr.event === 'del') {
-                    obj.submitDelData(url,data);
+                    var name = data.name||data.nickname;
+                    obj.submitDelData(url,data,'确认删除: ' + name+' 吗?');
                 } else if (tr.event === 'edit') {
                     var uid = data.id;
                     showLayer(url + '/update/' + uid);
+                } else if (tr.event === 'delAll') {
+                    var uid = data.id;
+                    var name = data.name||data.nickname;
+                    obj.submitDelData(url + '/clean/',data,'确认清空'+ name+' 吗?');
                 }
             });
         }
