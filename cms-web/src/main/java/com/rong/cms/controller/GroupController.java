@@ -17,18 +17,21 @@ import javax.validation.Valid;
 @RequestMapping("/admin")
 public class GroupController {
     private IGroupService groupService;
+
     @Resource
     public void setGroupService(IGroupService groupService) {
         this.groupService = groupService;
     }
-    @RequestMapping(value = "/group",method = RequestMethod.GET)
+
+    @RequestMapping(value = "/group", method = RequestMethod.GET)
     @ResponseBody
-    public Pager list(){
+    public Pager list() {
         return groupService.findGroup();
     }
-    @RequestMapping(value = "/groups",method = RequestMethod.GET)
+
+    @RequestMapping(value = "/groups", method = RequestMethod.GET)
     public String listAll(@RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
-                          @RequestParam(value = "limit", defaultValue = "15", required = false) Integer limit){
+                          @RequestParam(value = "limit", defaultValue = "15", required = false) Integer limit) {
         return "group/list";
     }
 
@@ -41,28 +44,29 @@ public class GroupController {
 
     @RequestMapping(value = "/group/add", method = RequestMethod.GET)
     public String addInput(Model model) {
-        model.addAttribute("group",new Group());
+        model.addAttribute("group", new Group());
         return "group/add";
     }
 
     @RequestMapping(value = "/group", method = RequestMethod.POST)
+    @ResponseBody
     public String add(@Valid Group group, BindingResult bindingResult, Model model) {
-        if (bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             throw new CmsException("非法操作");
         }
         groupService.add(group);
-        return "redirect:/admin/groups";
+        return "success";
     }
 
     @RequestMapping(value = "/group/update/{id}", method = RequestMethod.GET)
-    public String updateInput(@PathVariable("id") Integer id ,Model model) {
+    public String updateInput(@PathVariable("id") Integer id, Model model) {
         //TODO
 
         return "group/update";
     }
 
     @RequestMapping(value = "/group", method = RequestMethod.PUT)
-    public String update(@Valid UserDto userDto,BindingResult bindingResult, Model model) {
+    public String update(@Valid UserDto userDto, BindingResult bindingResult, Model model) {
         //TODO
         return "redirect:/admin/users";
     }

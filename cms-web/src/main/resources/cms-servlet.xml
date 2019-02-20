@@ -30,20 +30,20 @@
         </property>
     </bean>
     <!--全局异常处理1-->
-    <bean id="exceptionHandler" class="com.rong.cms.controller.CmsExceptionHandler"/>
+    <!--<bean id="exceptionHandler" class="com.rong.cms.controller.CmsExceptionHandler"/>-->
     <!--全局异常处理2-->
-    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
-        &lt;!&ndash; 定义默认的异常处理页面，当该异常类型的注册时使用 &ndash;&gt;
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!-- 定义默认的异常处理页面，当该异常类型的注册时使用 -->
         <property name="defaultErrorView" value="error"/>
-        &lt;!&ndash; 定义异常处理页面用来获取异常信息的变量名，默认名为exception &ndash;&gt;
+        <!-- 定义异常处理页面用来获取异常信息的变量名，默认名为exception -->
         <property name="exceptionAttribute" value="ex"/>
-        &lt;!&ndash; 定义需要特殊处理的异常，用类名或完全路径名作为key，异常也页名作为值 &ndash;&gt;
+        <!-- 定义需要特殊处理的异常，用类名或完全路径名作为key，异常也页名作为值 -->
         <property name="exceptionMappings">
             <props>
                 <prop key="com.rong.cms.exception.CmsException">error</prop>
             </props>
         </property>
-    </bean>-->
+    </bean>
     <!--拦截器-->
     <!--<mvc:interceptors>
         <mvc:interceptor>

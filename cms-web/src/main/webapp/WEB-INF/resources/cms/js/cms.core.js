@@ -90,14 +90,14 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
                     type: 'post',
                     url: url,
                     data: data.field,
-                    success: function (obj) {
-                        if (obj === 'success') {
+                    success: function (datas) {
+                        if (datas === 'success') {
                             parent.layer.close(index);
                             /*刷新tab*/
                             parent.location.reload();
                         } else {
                             /*显示异常界面*/
-                            getErrorPage(obj);
+                            getErrorPage(datas);
                         }
                     }
                 });
@@ -112,24 +112,27 @@ layui.define(['laypage', 'form', 'layer','table'], function (exports) {
             var name = data.name||data.nickname;
             layer.confirm('确认删除: ' + name+' 吗?', function (index) {
                 $.ajax({
-                    type: 'delete'
+                    type: 'DELETE'
                     , url: url +'/'+ data.id
+                    , dataType:'json'
                     , success: function (datas) {
                         if (datas === 'success') {
                             //弹窗关闭
-                            parent.layer.close(index);
+                            layer.close(index);
                             parent.location.reload();
                             layer.msg('已删除!', {
                                 icon: 1,
                                 time: 3000
                             });
-                        }else {
-                            /*显示异常界面*/
-                            getErrorPage(datas);
                         }
                     }
+                    ,error:function (datas) {
+                        layer.msg('无法删除', {
+                            icon: 2,
+                            time: 3000
+                        });
+                    }
                 });
-                return false;
             });
         }
         /**
