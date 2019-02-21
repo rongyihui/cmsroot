@@ -59,7 +59,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
-    public String showUser(@PathVariable("id") Integer id,Model model) {
+    public String show(@PathVariable("id") Integer id,Model model) {
         model.addAttribute(userService.load(id));
         model.addAttribute("gs",userService.listUserGroup(id));
         model.addAttribute("rs",userService.listUserRoles(id));

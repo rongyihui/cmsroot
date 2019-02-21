@@ -15,8 +15,14 @@
           charset="utf-8">
     <script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
     <script>
-        layui.use(['table', 'util', 'element'], function () {
-            var table = layui.table;
+        layui.use(['table', 'util'], function () {
+            var table = layui.table
+                , util = layui.util
+                , $ = layui.$;
+            var bornDate = layui.util.toDateString('${user.bornDate}', 'yyyy年MM月dd日');
+            var createDate = layui.util.toDateString('${user.createDate}', 'yyyy年MM月dd日');
+            $('.bornDate').html(bornDate);
+            $('.createDate').html(createDate);
         });
     </script>
 </head>
@@ -40,15 +46,25 @@
         </tr>
         <tr>
             <td>用户状态：</td>
-            <td>${user.status}</td>
+            <td><c:choose>
+                <c:when test="${user.status eq -1}">
+                    黑名单用户
+                </c:when>
+                <c:when test="${user.status eq 0}">
+                    管理员
+                </c:when>
+                <c:when test="${user.status eq 1}">
+                    正常用户
+                </c:when>
+            </c:choose></td>
         </tr>
         <tr>
             <td>出生日期：</td>
-            <td>${user.bornDate}</td>
+            <td class="bornDate"></td>
         </tr>
         <tr>
             <td>首次创建日期：</td>
-            <td>${user.createDate}</td>
+            <td class="createDate"></td>
         </tr>
         <tr>
             <td>电话：</td>

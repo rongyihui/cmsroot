@@ -19,4 +19,11 @@ public interface IGroupService {
      * @param gid 组id
      */
     void deleteGroupUsers(int gid);
+
+    /**
+     *
+     * @param gid
+     * @return
+     */
+    List listUserGroupDto(int gid);
 }

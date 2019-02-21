@@ -65,4 +65,9 @@ public class GroupService implements IGroupService {
     public void deleteGroupUsers(int gid) {
         groupDao.deleteGroupUsers(gid);
     }
+
+    @Override
+    public List listUserGroupDto(int gid) {
+        return groupDao.listUserGroupDto(gid);
+    }
 }

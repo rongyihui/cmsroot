@@ -1,6 +1,5 @@
 package com.rong.cms.controller;
 
-import com.rong.cms.dto.UserDto;
 import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Group;
 import com.rong.cms.model.Pager;
@@ -85,5 +84,12 @@ public class GroupController {
     public String clean (@PathVariable("id") Integer id){
         groupService.deleteGroupUsers(id);
         return "success";
+    }
+
+    @RequestMapping(value = "/group/{id}", method = RequestMethod.GET)
+    public String show(@PathVariable("id") Integer id,Model model) {
+        model.addAttribute(groupService.load(id));
+        model.addAttribute("users",groupService.listUserGroupDto(id));
+        return "group/show";
     }
 }

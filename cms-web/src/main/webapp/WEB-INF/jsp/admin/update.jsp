@@ -65,7 +65,6 @@
                 , "nickname": '${user.nickname}'
                 , "status": '${user.status}'
                 , "bornDate": layui.util.toDateString('${user.bornDate}', 'yyyy-MM-dd')
-                , "createDate": layui.util.toDateString('${user.createDate}', 'yyyy-MM-dd')
                 , "phone": '${user.phone}'
                 , "email": '${user.email}'
             })

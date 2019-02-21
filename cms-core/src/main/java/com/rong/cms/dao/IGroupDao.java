@@ -9,4 +9,5 @@ public interface IGroupDao extends IBaseDao<Group> {
     List<Group> listGroup();
     Pager findGroup();
     void deleteGroupUsers(int gid);
+    List listUserGroupDto(int gid);
 }

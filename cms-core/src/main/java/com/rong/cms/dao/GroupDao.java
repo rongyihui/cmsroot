@@ -23,4 +23,11 @@ public class GroupDao extends BaseDao<Group> implements IGroupDao {
         String hql = "delete UserGroup ug where ug.group.id=?0";
         this.excuteByHql(hql, gid);
     }
+
+    @Override
+    public List listUserGroupDto(int gid) {
+        String hql = "select new com.rong.cms.dto.UserGroupDto(u.id,u.nickname)" +
+                " from UserGroup ug left join ug.user u where ug.group.id=?0";
+        return this.listObj(hql,gid);
+    }
 }
