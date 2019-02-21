@@ -1,6 +1,7 @@
 package com.rong.cms.dao;
 
 
+import com.rong.cms.dto.UserDto;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -13,10 +14,10 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/beans.xml")
-public class GroupDaoTest extends BaseDaoTest {
+public class RoleDaoTest extends BaseDaoTest {
 
     @Resource
-    private IGroupDao groupDao;
+    private IRoleDao roleDao;
 
     /**
      * 指明进行数据库中哪个表的操作，并且需要创建配置文件data/t_xxx.xml
@@ -34,7 +35,7 @@ public class GroupDaoTest extends BaseDaoTest {
     @Test
     public void listUserGroupDto(){
         int gid = 1;
-        List nicknames = groupDao.listUserGroupDto(gid);
-        Assert.assertEquals("用户组中所有用户名称失败", 2, nicknames.size());
+        List<UserDto> nicknames = roleDao.listUserRoleDto(gid);
+        Assert.assertEquals("用户角色中所有用户名称失败", 2, nicknames.size());
     }
 }

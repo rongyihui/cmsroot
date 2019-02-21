@@ -15,14 +15,27 @@
           charset="utf-8">
     <script src="<%=request.getContextPath()%>/resources/layui/layui.js" charset="utf-8"></script>
     <script>
-        layui.use(['table', 'util'], function () {
+        layui.config({
+            /*定义js的路径*/
+            base: '/cms/resources/cms/js/'
+        }).extend({
+            /*为自定义js设置别名*/
+            cmsCore: 'cms.core'
+        });
+        layui.use(['table', 'util','cmsCore'], function () {
             var table = layui.table
                 , util = layui.util
+                , cmsCore = layui.cmsCore
                 , $ = layui.$;
             var bornDate = layui.util.toDateString('${user.bornDate}', 'yyyy年MM月dd日');
             var createDate = layui.util.toDateString('${user.createDate}', 'yyyy年MM月dd日');
             $('.bornDate').html(bornDate);
             $('.createDate').html(createDate);
+
+
+            $(".group .layui-btn").on('click',function () {
+                cmsCore.showLayer("/cms/admin/group/"+this.value);
+            });
         });
     </script>
 </head>
@@ -77,9 +90,9 @@
         <tr>
             <td>用户角色：</td>
             <td>
-                <div class="layui-btn-container">
+                <div class="layui-btn-container role">
                 <c:forEach items="${rs}" var="r">
-                    <button class="layui-btn layui-btn-xs layui-btn-radius layui-btn-normal">${r.name}</button>
+                    <button class="layui-btn layui-btn-xs layui-btn-radius layui-btn-normal" value="${r.id}">${r.name}</button>
                 </c:forEach>
                 </div>
             </td>
@@ -87,9 +100,9 @@
         <tr>
             <td>用户组：</td>
             <td>
-                <div class="layui-btn-container">
+                <div class="layui-btn-container group">
                     <c:forEach items="${gs}" var="g">
-                        <button class="layui-btn layui-btn-xs layui-btn-radius layui-btn-normal">${g.name}</button>
+                        <button class="layui-btn layui-btn-xs layui-btn-radius layui-btn-normal" value="${g.id}">${g.name}</button>
                     </c:forEach>
                 </div>
             </td>

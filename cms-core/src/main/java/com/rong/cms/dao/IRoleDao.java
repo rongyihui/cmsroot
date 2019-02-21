@@ -10,4 +10,10 @@ public interface IRoleDao extends IBaseDao<Role> {
     Pager findRole();
 
     void deleteRoleUsers(int rid);
+    /**
+     *
+     * @param rid 角色id
+     * @return Dto
+     */
+    List listUserRoleDto(int rid);
 }

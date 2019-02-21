@@ -1,10 +1,10 @@
 package com.rong.cms.dto;
 
-public class UserGroupDto {
+public class UserDto {
     private int id;
     private String nickname;
 
-    public UserGroupDto(int id, String nickname) {
+    public UserDto(int id, String nickname) {
         this.id = id;
         this.nickname = nickname;
     }
@@ -25,6 +25,6 @@ public class UserGroupDto {
         this.nickname = nickname;
     }
 
-    public UserGroupDto() {
+    public UserDto() {
     }
 }

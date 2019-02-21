@@ -9,7 +9,7 @@ import java.util.List;
 @Repository("groupDao")
 public class GroupDao extends BaseDao<Group> implements IGroupDao {
     @Override
-    public List<Group> listGroup() {
+    public List listGroup() {
         return this.listObj("from Group");
     }
 
@@ -26,7 +26,7 @@ public class GroupDao extends BaseDao<Group> implements IGroupDao {
 
     @Override
     public List listUserGroupDto(int gid) {
-        String hql = "select new com.rong.cms.dto.UserGroupDto(u.id,u.nickname)" +
+        String hql = "select new com.rong.cms.dto.UserDto(u.id,u.nickname)" +
                 " from UserGroup ug left join ug.user u where ug.group.id=?0";
         return this.listObj(hql,gid);
     }

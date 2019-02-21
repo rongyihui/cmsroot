@@ -59,7 +59,7 @@
                     <ul class="layui-nav-child">
                         <li><a _href="users">用户列表</a></li>
                         <li><a _href="groups">用户组</a></li>
-                        <li><a _href="javascript:;">列表三</a></li>
+                        <li><a _href="roles">用户角色</a></li>
                         <li><a _href="">超链接</a></li>
                     </ul>
                 </li>

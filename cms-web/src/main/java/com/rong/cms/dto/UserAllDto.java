@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import java.util.Date;
 
-public class UserDto {
+public class UserAllDto {
     private int id;
     private String username;
     private String password;
@@ -37,8 +37,8 @@ public class UserDto {
         return user;
     }
 
-    public UserDto(){}
-    public UserDto(User user,Integer[] roleIds, Integer[] groupIds) {
+    public UserAllDto(){}
+    public UserAllDto(User user, Integer[] roleIds, Integer[] groupIds) {
         this.setId(user.getId());
         this.setUsername(user.getUsername());
         this.setPassword(user.getPassword());

@@ -20,4 +20,10 @@ public interface IRoleService {
      * @param rid 角色id
      */
     void deleteRoleUsers(int rid);
+    /**
+     *
+     * @param rid
+     * @return
+     */
+    List listUserRoleDto(int rid);
 }

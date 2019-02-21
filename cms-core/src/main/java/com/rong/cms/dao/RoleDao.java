@@ -9,7 +9,7 @@ import java.util.List;
 @Repository("roleDao")
 public class RoleDao extends BaseDao<Role> implements IRoleDao {
     @Override
-    public List<Role> listRole() {
+    public List listRole() {
         return this.listObj("from Role");
     }
 
@@ -22,5 +22,12 @@ public class RoleDao extends BaseDao<Role> implements IRoleDao {
     public void deleteRoleUsers(int rid) {
         String hql = "delete UserRole ur where ur.role.id=?0";
         this.excuteByHql(hql,rid);
+    }
+
+    @Override
+    public List listUserRoleDto(int rid) {
+        String hql = "select new com.rong.cms.dto.UserDto(u.id,u.nickname)" +
+                " from UserRole ur left join ur.user u where ur.role.id=?0";
+        return this.listObj(hql,rid);
     }
 }
