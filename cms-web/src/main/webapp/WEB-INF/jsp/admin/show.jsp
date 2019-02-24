@@ -36,6 +36,10 @@
             $(".group .layui-btn").on('click',function () {
                 cmsCore.showLayer("/cms/admin/group/"+this.value);
             });
+
+            $(".role .layui-btn").on('click',function () {
+                cmsCore.showLayer("/cms/admin/role/"+this.value);
+            });
         });
     </script>
 </head>

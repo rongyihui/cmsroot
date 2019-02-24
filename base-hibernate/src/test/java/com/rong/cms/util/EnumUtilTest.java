@@ -1,5 +1,6 @@
 package com.rong.cms.util;
 
+import com.rong.cms.model.ChannelType;
 import com.rong.cms.model.RoleType;
 import org.junit.Assert;
 import org.junit.Test;
@@ -31,5 +32,31 @@ public class EnumUtilTest {
         Assert.assertEquals("转换String错误",RoleType.ROLE_ADMIN.name(),maps.get(0));
         Assert.assertEquals("转换String错误",RoleType.ROLE_PUBLIC.name(),maps.get(1));
         Assert.assertEquals("转换String错误",RoleType.ROLE_BLACK.name(),maps.get(2));
+    }
+
+    @Test
+    public void enumName2List(){
+        List<String> strings = EnumUtils.enumName2List(ChannelType.class,"name");
+        Assert.assertEquals("通过属性名称转换list错误",ChannelType.NAV_CHANNEL.getName(),strings.get(0));
+        Assert.assertEquals("通过属性名称转换list错误",ChannelType.TOP_LIST.getName(),strings.get(1));
+        Assert.assertEquals("通过属性名称转换list错误",ChannelType.TOP_CONTENT.getName(),strings.get(2));
+        Assert.assertEquals("通过属性名称转换list错误",ChannelType.TOP_IMG.getName(),strings.get(3));
+    }
+    @Test
+    public void enumName2Map(){
+        Map<Integer,String> maps = EnumUtils.enumName2Map(ChannelType.class,"name");
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.NAV_CHANNEL.getName(),maps.get(0));
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_LIST.getName(),maps.get(1));
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_CONTENT.getName(),maps.get(2));
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_IMG.getName(),maps.get(3));
+    }
+
+    @Test
+    public void enumName2StringMap(){
+        Map<String,String> maps = EnumUtils.enumName2StringMap(ChannelType.class,"name");
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.NAV_CHANNEL.getName(),maps.get(ChannelType.NAV_CHANNEL.name()));
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_LIST.getName(),maps.get(ChannelType.TOP_LIST.name()));
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_CONTENT.getName(),maps.get(ChannelType.TOP_CONTENT.name()));
+        Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_IMG.getName(),maps.get(ChannelType.TOP_IMG.name()));
     }
 }

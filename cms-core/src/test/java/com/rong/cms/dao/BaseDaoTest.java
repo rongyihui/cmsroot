@@ -6,6 +6,7 @@ import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.database.QueryDataSet;
 import org.dbunit.dataset.DataSetException;
 import org.dbunit.dataset.IDataSet;
+import org.dbunit.dataset.xml.FlatDtdDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
 import org.dbunit.dataset.xml.FlatXmlProducer;
 import org.dbunit.operation.DatabaseOperation;
@@ -35,8 +36,10 @@ public abstract class BaseDaoTest {
     /**
      * 设置table名称
      */
-    protected static String tableName;
+    protected static File tempFile;
+    protected static File tempDtdFile;
     protected static String tableTestName;
+    protected static String tableName;
 
     @Resource
     private DataSource dataSource;
@@ -52,7 +55,7 @@ public abstract class BaseDaoTest {
         Session s = sessionFactory.openSession();
         TransactionSynchronizationManager.bindResource(sessionFactory, new SessionHolder(s));
         //1.备份表
-        backupAllTable(tableName);
+        backupAllTable();
         //2.将测试数据写入数据库
         createDataSet(tableTestName);
     }
@@ -61,25 +64,30 @@ public abstract class BaseDaoTest {
     public abstract void add();
 
     @After
-    public void resetTable() throws SQLException, DatabaseUnitException {
+    public void resetTable() throws SQLException, DatabaseUnitException, IOException {
         //SessionHolder holder = (SessionHolder) TransactionSynchronizationManager.getResource(sessionFactory);
         //Session s = holder.getSession();
         //3.将备份的表恢复到数据库
-        createDataSet(tableName);
+        createDataSet("");
         //s.flush();
         TransactionSynchronizationManager.unbindResource(sessionFactory);
         if (iDatabaseConnection != null) iDatabaseConnection.close();
+        tempFile.deleteOnExit();
+        tempDtdFile.deleteOnExit();
 
     }
     //备份所有的表
-    private void backupAllTable(String name) throws IOException, SQLException, DataSetException {
+    private void backupAllTable() throws IOException, SQLException, DataSetException {
         IDataSet ids = iDatabaseConnection.createDataSet();
         QueryDataSet ds = new QueryDataSet(iDatabaseConnection);
         for(String tablen:ids.getTableNames()){
             if(!"sys_config".equals(tablen))
             ds.addTable(tablen);
         }
-        FlatXmlDataSet.write(ds, new FileOutputStream(new File(this.getClass().getResource("/data/" + name + ".xml").getPath())));
+        tempFile = File.createTempFile("base","xml");
+        tempDtdFile = File.createTempFile("base","dtd");
+        FlatDtdDataSet.write(ds,new FileOutputStream(tempDtdFile));
+        FlatXmlDataSet.write(ds, new FileOutputStream(tempFile));
     }
 
     //备份一张表
@@ -99,10 +107,15 @@ public abstract class BaseDaoTest {
      * @throws DatabaseUnitException
      * @throws SQLException
      */
-    protected IDataSet createDataSet(String name) throws DatabaseUnitException, SQLException {
-        InputStream is = this.getClass().getResourceAsStream("/data/" + name + ".xml");
-        Assert.assertNotNull("数据文件不存在", is);
-        IDataSet ds = new FlatXmlDataSet(new FlatXmlProducer(new InputSource(is)));
+    protected IDataSet createDataSet(String name) throws DatabaseUnitException, SQLException, IOException {
+        InputStream is =null;
+        if (name==null||"".equals(name)){
+            is = new FileInputStream(tempFile);
+        }else{
+            is = this.getClass().getResourceAsStream("/data/" + name + ".xml");
+            Assert.assertNotNull("数据文件不存在", is);
+        }
+        IDataSet ds = new FlatXmlDataSet(new FlatXmlProducer(new InputSource(is),new FlatDtdDataSet(new FileInputStream(tempDtdFile))));
         DatabaseOperation.TRUNCATE_TABLE.execute(iDatabaseConnection, ds);
         DatabaseOperation.INSERT.execute(iDatabaseConnection, ds);
         return ds;
