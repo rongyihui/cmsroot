@@ -9,20 +9,24 @@ import java.util.List;
 public class ChannelDao extends BaseDao<Channel> implements IChannelDao {
     @Override
     public List<Channel> listByParent(Integer pid) {
-        String hql = "select c from Channel c where c.parent_Channel";
+        String hql = "select c from Channel c where c.parentChannel";
         hql = changeHqlByNull(hql,pid);
         return this.listObj(hql);
     }
 
     @Override
     public int getMaxPriorityByParent(Integer pid) {
-        String hql = "select max(c.priority) from Channel c where c.parent_Channel";
+        String hql = "select max(c.priority) from Channel c where c.parentChannel";
         hql = changeHqlByNull(hql,pid);
-        return (Integer) this.queryByHql(hql);
+        Object obj = this.queryByHql(hql);
+        if (obj==null){
+            return 0;
+        }
+        return (Integer)obj;
     }
 
     private String changeHqlByNull(String hql,Integer pid){
-        if (pid==null){
+        if (pid==null||pid==0){
             hql+= " is null";
         }else {
             hql+=".id ="+pid;

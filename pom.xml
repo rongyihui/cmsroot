@@ -13,6 +13,7 @@
         <module>cms-core</module>
         <module>cms-user</module>
         <module>cms-web</module>
+        <module>cms-article</module>
     </modules>
 
     <!--常量定义-->

@@ -214,6 +214,8 @@ public class UserServiceTest {
         Integer[] gids={1,2};
         List<Integer> urids = Arrays.asList(2,3);
         List<Integer> ugids = Arrays.asList(1,3);
+        userDao.update(baseUser);
+        EasyMock.expectLastCall();
         EasyMock.expect(userDao.listUserRolesId(baseUser.getId())).andReturn(urids);
         EasyMock.expect(userDao.listUserGroupsId(baseUser.getId())).andReturn(ugids);
         //验证了添加新关联

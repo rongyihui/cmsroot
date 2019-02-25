@@ -11,6 +11,7 @@
         <module name="cms-core" />
         <module name="cms-user" />
         <module name="cms-web" />
+        <module name="cmsarticle" />
         <module name="cmscore" />
         <module name="cmsuser" />
         <module name="cmsweb" />

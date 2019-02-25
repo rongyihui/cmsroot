@@ -159,7 +159,6 @@ public class Channel {
     }
     @ManyToOne
     @JoinColumn(name = "pid")
-    @Column(name = "parent_Channel")
     public Channel getParentChannel() {
         return parentChannel;
     }

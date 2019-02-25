@@ -40,6 +40,12 @@
             <artifactId>cms-user</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--引入cms-article包-->
+        <dependency>
+            <groupId>com.rong.cms</groupId>
+            <artifactId>cms-article</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--引入cms-core包-->
         <dependency>
             <groupId>com.rong.cms</groupId>

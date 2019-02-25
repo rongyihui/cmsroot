@@ -156,7 +156,7 @@ public class UserDaoTest extends BaseDaoTest {
         int uid = 2;
         List<Integer> r =  userDao.listUserRolesId(uid);
         Integer[] rids = r.toArray(new Integer[r.size()]);
-        Assert.assertEquals("通过用户获取角色id失败",2,rids.length);
+        Assert.assertEquals("通过用户获取角色id失败",3,rids.length);
     }
 
     @Test
@@ -164,7 +164,6 @@ public class UserDaoTest extends BaseDaoTest {
         int uid = 2;
         List<Integer> g =  userDao.listUserGroupsId(uid);
         Integer[] gids = g.toArray(new Integer[g.size()]);
-        System.out.println(gids[0]+":"+gids[1]);
         Assert.assertEquals("通过用户获取角色id失败",2,gids.length);
     }
 }

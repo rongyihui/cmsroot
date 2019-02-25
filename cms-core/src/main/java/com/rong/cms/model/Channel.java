@@ -1,5 +1,6 @@
 package com.rong.cms.model;
 
+import javax.lang.model.element.Name;
 import javax.persistence.*;
 import java.util.Date;
 

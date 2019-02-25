@@ -81,9 +81,9 @@ public class DepartmentDaoTest extends BaseDaoTest{
         //分页测试
         try {
             hql = "from Department";
-            SystemContext.setPageOffset(20);
+            SystemContext.setPageOffset(2);
             deps = departmentDao.findUser(hql);
-            Assert.assertEquals("分页出错",1,deps.getData().size());
+            Assert.assertEquals("分页出错",6,deps.getData().size());
         } finally {
             SystemContext.removePageOffset();
         }

@@ -69,7 +69,7 @@ public class BaseDao<T> implements IBaseDao<T> {
     
     public List listObj(String hql, Object[] args, Map<String, Object> alias) {
         //表关联多后此处导致id识别不了
-        //hql = changeSortHql(hql);
+        hql = changeSortHql(hql);
         Query q = this.getSession().createQuery(hql);
         return setParametersQuery(q, args, alias).getResultList();
     }
@@ -127,7 +127,7 @@ public class BaseDao<T> implements IBaseDao<T> {
     //为分页添加属性
     private Pager getPagerPro() {
         Pager pager = new Pager();
-        int pageSize = 20;
+        int pageSize = 15;
         try {
             pageSize = SystemContext.getPageSize();
         } catch (NullPointerException e) {
@@ -303,9 +303,13 @@ public class BaseDao<T> implements IBaseDao<T> {
         String order = SystemContext.getOrder();
         String sort = SystemContext.getSort();
         if (sort != null && !"".equals(sort)) {
-            hql += " order by " + sort;
-            if ("desc".equals(order)) {
-                hql += " desc";
+            if (sort=="id"){
+                return hql;
+            }else {
+                hql += " order by " + sort;
+                if ("desc".equals(order)) {
+                    hql += " desc";
+                }
             }
         }
         return hql;
