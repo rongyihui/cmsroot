@@ -217,22 +217,22 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     
-    public List listBysql(String sql, Object[] args, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
+    public List listBysql(String sql, Object[] args, Map<String, Object> alias, Class<?> clz, boolean hasEntity) {
         return getSqlQuery(sql, args, alias, clz, hasEntity).list();
     }
 
     
-    public List listBysql(String sql, Map<String, Object> alias, Class<Object> clz, boolean hasEntity) {
+    public List listBysql(String sql, Map<String, Object> alias, Class<?> clz, boolean hasEntity) {
         return listBysql(sql, null, alias, clz, hasEntity);
     }
 
     
-    public List listBysql(String sql, Object arg, Class<Object> clz, boolean hasEntity) {
+    public List listBysql(String sql, Object arg, Class<?> clz, boolean hasEntity) {
         return listBysql(sql, new Object[]{arg}, null, clz, hasEntity);
     }
 
     
-    public List listBysql(String sql, Class<Object> clz, boolean hasEntity) {
+    public List listBysql(String sql, Class<?> clz, boolean hasEntity) {
         return listBysql(sql, null, null, clz, hasEntity);
     }
 

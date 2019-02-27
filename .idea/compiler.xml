@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="base-hibernate" />
         <module name="basehibernate" />
+        <module name="baseutil" />
+        <module name="cms-article" />
         <module name="cms-core" />
         <module name="cms-user" />
         <module name="cms-web" />

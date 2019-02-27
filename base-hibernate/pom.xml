@@ -38,11 +38,6 @@
             <groupId>org.dbunit</groupId>
             <artifactId>dbunit</artifactId>
         </dependency>
-        <!--beanUtils反射工具-->
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-        </dependency>
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>

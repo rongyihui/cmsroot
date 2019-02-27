@@ -1,10 +1,8 @@
 package com.rong.cms.util;
 
-import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 
 import java.lang.reflect.InvocationTargetException;
-import java.nio.channels.Channel;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
