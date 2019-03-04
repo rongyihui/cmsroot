@@ -1,7 +1,8 @@
 package com.rong.cms.controller;
 
-import com.rong.cms.model.Channel;
+import com.rong.cms.dto.BaseTreeDto;
 import com.rong.cms.service.IChannelService;
+import com.rong.cms.util.TreeUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +23,9 @@ public class ChannelController {
 
     @RequestMapping(value = "/channel", method = RequestMethod.GET)
     @ResponseBody
-    public List<Channel> list() {
-        return channelService.listByParent(null);
+    public List<BaseTreeDto> list() {
+        List<BaseTreeDto> datas = channelService.listAllTree();
+        List<BaseTreeDto> trees = new TreeUtil<>().tree2List(datas);
+        return trees;
     }
 }

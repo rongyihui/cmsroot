@@ -1,7 +1,9 @@
 package com.rong.cms.dao;
 
 
+import com.rong.cms.dto.BaseTreeDto;
 import com.rong.cms.model.Channel;
+import com.rong.cms.model.SystemContext;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -46,6 +48,19 @@ public class ChannelDaoTest extends BaseDaoTest {
         Assert.assertEquals("子栏目获取失败",3,channels.get(1).getId());
         Assert.assertEquals("子栏目获取失败",4,channels.get(2).getId());
     }
+
+    @Test
+    public void listAllTree(){
+        String sort = SystemContext.getSort();
+        if (sort==null||"".equals(sort.trim())){
+            SystemContext.setSort("priority");
+        }
+        List<BaseTreeDto> trees = channelDao.listAllTree();
+        Assert.assertEquals("所有栏目获取失败",16,trees.size());
+        //检测排序
+        Assert.assertEquals("所有栏目获取失败",new Integer(1),trees.get(0).getId());
+    }
+
     @Test
     public void getMaxPriorityByParent(){
         int max = channelDao.getMaxPriorityByParent(null);

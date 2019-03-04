@@ -1,6 +1,7 @@
 package com.rong.cms.service;
 
 
+import com.rong.cms.dto.BaseTreeDto;
 import com.rong.cms.model.Channel;
 
 import java.util.List;
@@ -13,6 +14,8 @@ public interface IChannelService {
     void update(Channel channel);
 
     Channel load(int id);
+
+    List<BaseTreeDto> listAllTree();
 
     /**
      * 通过父栏目查询所有的子栏目

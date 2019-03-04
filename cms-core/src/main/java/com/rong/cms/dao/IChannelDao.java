@@ -6,7 +6,7 @@ import com.rong.cms.model.Channel;
 import java.util.List;
 
 public interface IChannelDao extends IBaseDao<Channel> {
-    List<BaseTreeDto> listAllTree(Integer pid, String rootName);
+    List<BaseTreeDto> listAllTree();
 
     List<Channel> listByParent(Integer pid);
 

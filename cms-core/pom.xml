@@ -18,7 +18,12 @@
             <artifactId>base-hibernate</artifactId>
             <version>${project.version}</version>
         </dependency>
-
+        <!--引入base-util包-->
+        <dependency>
+            <groupId>com.rong.cms</groupId>
+            <artifactId>base-util</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--junit-->
         <dependency>
             <groupId>junit</groupId>

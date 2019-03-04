@@ -15,12 +15,10 @@ public class BaseTreeDto implements ITree {
     public BaseTreeDto() {
     }
 
-    public BaseTreeDto(Integer id, String name, Integer pid, String path, List<? extends ITree> children) {
+    public BaseTreeDto(Integer id, String name, Integer pid) {
         this.id = id;
         this.name = name;
         this.pid = pid;
-        this.path = path;
-        this.children = children;
     }
 
     public Integer getId() {

@@ -15,6 +15,7 @@ public  class TreeUtil<T extends BaseTreeDto> {
      * @return 符合layui的list数组
      */
     public List<T> tree2List(List<T> treeList){
+        trees = treeList;
         List<T> treeNodes = new ArrayList<>();
         List<T> rootNodes = getRootNodes();
         for (T rootNode : rootNodes) {
@@ -54,29 +55,14 @@ public  class TreeUtil<T extends BaseTreeDto> {
     }
 
     /**
-     * 判断是否为根节点
-     * @param t
-     * @return
-     */
-    public boolean isRoot(T t){
-        boolean isRootNode = true;
-        for (T node : trees) {
-            if (t.getPid().equals(node.getId())){
-                isRootNode = false;
-                break;
-            }
-        }
-        return isRootNode;
-    }
-
-    /**
-     * 获取所有的根节点
+     * 获取所有的根节点,默认根节点pid为0
       * @return
      */
     public List<T> getRootNodes(){
         List<T> rootNodes = new ArrayList<>();
         for (T n : trees) {
-            if (isRoot(n)) {
+            if (n.getPid()==null) {
+                n.setPid(0);
                 rootNodes.add(n);
             }
         }

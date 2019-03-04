@@ -1,18 +1,20 @@
 package com.rong.cms.service;
 
 import com.rong.cms.dao.IChannelDao;
+import com.rong.cms.dto.BaseTreeDto;
 import com.rong.cms.exception.CmsException;
 import com.rong.cms.model.Channel;
 import com.rong.cms.model.SystemContext;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service("channelService")
 public class ChannelService implements IChannelService {
 
     private IChannelDao channelDao;
-
+    @Resource
     public void setChannelDao(IChannelDao channelDao) {
         this.channelDao = channelDao;
     }
@@ -48,12 +50,24 @@ public class ChannelService implements IChannelService {
         return channelDao.load(id);
     }
 
+
+    //设置通过priority来进行排序
+    private void setSort(){
+        String sort = SystemContext.getSort();
+        if (sort==null||"".equals(sort.trim())){
+            SystemContext.setSort("priority");
+        }
+    }
+
+    @Override
+    public List<BaseTreeDto> listAllTree() {
+        setSort();
+        return channelDao.listAllTree();
+    }
+
     @Override
     public List<Channel> listByParent(Integer pid) {
-        String sort = SystemContext.getSort();
-        if (sort!=null||"".equals(sort.trim())){
-            SystemContext.setOrder("priority");
-        }
+        setSort();
         return channelDao.listByParent(pid);
     }
 
