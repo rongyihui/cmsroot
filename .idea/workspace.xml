@@ -7,27 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dbb096c-ba49-4019-b09f-ed50a67bd33e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/base-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/JsonFastJsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/JsonJacksonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/XpathUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/XstreamUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/model/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/model/ChannelType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/model/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dto/ChannelTreeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/model/ITree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/util/EnumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/EnumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-hibernate/src/test/java/com/rong/cms/util/EnumUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/util/EnumUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/util/EnumUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/util/EnumUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/ChannelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/ChannelDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IChannelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IChannelDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dto/ChannelTreeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/dto/BaseTreeDto.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-article/src/main/java/com/rong/cms/service/ChannelService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="403">
+              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,11 +81,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/ChannelDao.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/dto/BaseTreeDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="510">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +106,8 @@
         <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -168,11 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cms-web/src/main/java/com/rong/cms/controller/GroupController.java" />
-        <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/role/list.jsp" />
-        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dto/UserRoleDto.java" />
-        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IGroupDao.java" />
-        <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/model/RoleType.java" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/add.jsp" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/role/show.jsp" />
         <option value="$PROJECT_DIR$/cms-web/src/main/webapp/WEB-INF/jsp/admin/index.jsp" />
@@ -214,11 +200,16 @@
         <option value="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/XstreamUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/base-util/pom.xml" />
-        <option value="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java" />
         <option value="$PROJECT_DIR$/base-hibernate/src/main/java/com/rong/cms/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IChannelDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/ChannelDao.java" />
         <option value="$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dto/ChannelTreeDto.java" />
+        <option value="$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/util/EnumUtilTest.java" />
+        <option value="$PROJECT_DIR$/base-util/src/main/java/model/ITree.java" />
+        <option value="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/dto/ITree.java" />
+        <option value="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/model/ITree.java" />
+        <option value="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/dto/BaseTreeDto.java" />
+        <option value="$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java" />
       </list>
     </option>
   </component>
@@ -268,11 +259,10 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dfile.encoding=GB2312" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-474" />
-    <option name="y" value="212" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1262" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -280,8 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,37 +280,67 @@
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-article" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-article" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-article" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-article" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-article" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="base-util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
@@ -358,16 +376,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
@@ -379,10 +387,22 @@
               <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cmsroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmsroot" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,7 +410,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551255731003" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551412514586" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="D:/学习/java/java文件包/layui-lizi/layuiCMS-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -409,19 +429,19 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\project\idea-wordspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\project\idea-wordspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.rong.cms.util" />
+      <recent name="com.rong.cms.model" />
       <recent name="com.rong.cms" />
+      <recent name="com.rong.cms.util" />
       <recent name="com.rong.cms.controller" />
       <recent name="com.rong.cms.dao" />
-      <recent name="com.rong.cms.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\idea-wordspace\cmsroot\base-util\src\main\java\com\rong\cms\util" />
+      <recent name="E:\project\idea-wordspace\cmsroot\base-util\src\test\java\com\rong\cms\model" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-article\src\main\java" />
+      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\java\com\rong\cms\model" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources\data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rong.cms.dao" />
@@ -430,12 +450,12 @@
       <recent name="com.rong.cms.filter" />
       <recent name="dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project\idea-wordspace\cmsroot\base-util\src\main\java\com\rong\cms\util" />
-      <recent name="E:\project\idea-wordspace\cmsroot\base-util\src\test\java\com\rong\cms\model" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-article\src\main\java" />
-      <recent name="D:\java\idea-workspace\cmsroot\base-hibernate\src\test\java\com\rong\cms\model" />
-      <recent name="D:\java\idea-workspace\cmsroot\cms-core\src\test\resources\data" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\idea-wordspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp" />
+      <recent name="E:\project\idea-wordspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\jsp\admin" />
+      <recent name="D:\java\idea-workspace\cmsroot\cms-web\src\main\webapp\WEB-INF\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -450,8 +470,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnumUtilTest">
-    <configuration name="EnumUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EnumUtilTest.addTest">
+    <configuration name="EnumUtilTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baseutil" />
       <extension name="coverage">
         <pattern>
@@ -461,6 +481,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.rong.cms.util" />
       <option name="MAIN_CLASS_NAME" value="com.rong.cms.util.EnumUtilTest" />
+      <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -696,14 +718,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.EnumUtilTest.addTest" />
       <item itemvalue="Maven.cms-root [clean,test]" />
       <item itemvalue="Maven.cms-root [clean,jetty:run]" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.12" />
-      <item itemvalue="JUnit.EnumUtilTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EnumUtilTest" />
+        <item itemvalue="JUnit.EnumUtilTest.addTest" />
       </list>
     </recent_temporary>
   </component>
@@ -783,7 +805,10 @@
       <workItem from="1551095935747" duration="508000" />
       <workItem from="1551101376777" duration="6613000" />
       <workItem from="1551146913149" duration="696000" />
-      <workItem from="1551230752200" duration="6061000" />
+      <workItem from="1551230752200" duration="6197000" />
+      <workItem from="1551401724989" duration="3877000" />
+      <workItem from="1551661170005" duration="381000" />
+      <workItem from="1551679868131" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="1月24日 测试功能提交">
       <created>1548311283561</created>
@@ -890,13 +915,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551030318401</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="anp">
+      <created>1551255866231</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1551255866245</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DepartmentDaoTest_find - 2019.02.25 at 22h 39m 16s.xml">
-      <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DepartmentDaoTest_find - 2019.02.25 at 22h 41m 42s.xml">
       <configuration name="DepartmentDaoTest.find" configurationId="JUnit" />
     </history-entry>
@@ -924,9 +953,12 @@
     <history-entry file="EnumUtilTest - 2019.02.27 at 09h 40m 55s.xml">
       <configuration name="EnumUtilTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EnumUtilTest_addTest - 2019.03.01 at 09h 00m 08s.xml">
+      <configuration name="EnumUtilTest.addTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="518804000" />
+    <option name="totallyTimeSpent" value="528087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,9 +970,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-7" y="0" width="1262" height="1087" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.1786108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.19800332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -949,7 +982,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" sideWeight="0.50278085" side_tool="true" weight="0.23005319" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32615715" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3251599" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969456" weight="0.717484" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3976546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -974,7 +1007,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.44762954" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.12789416" />
+      <window_info anchor="right" id="Database" order="8" weight="0.1283896" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.20469083" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32690188" />
     </layout>
@@ -1084,7 +1117,8 @@
     <MESSAGE value="2月12日" />
     <MESSAGE value="2月21日 实现了所有的用户功能" />
     <MESSAGE value="2月25日 dbunit解决关联表的一些问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="2月25日 dbunit解决关联表的一些问题" />
+    <MESSAGE value="anp" />
+    <option name="LAST_COMMIT_MESSAGE" value="anp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1105,13 +1139,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-article/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user/src/main/java/com/rong/cms/service/IGroupService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1367,34 +1394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/util/EnumUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/JsonFastJsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-article/src/main/java/com/rong/cms/service/ChannelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1411,27 +1414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dto/ChannelTreeDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/IChannelDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1439,10 +1421,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/base-util/src/test/java/com/rong/cms/util/EnumUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms-core/src/main/java/com/rong/cms/dao/ChannelDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="238">
+          <caret line="14" column="66" lean-forward="true" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-article/src/main/java/com/rong/cms/service/ChannelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/model/ITree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/dto/BaseTreeDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-util/src/main/java/com/rong/cms/util/TreeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,12 @@
 package com.rong.cms.util;
 
+import com.rong.cms.model.Channel;
 import com.rong.cms.model.ChannelType;
 import com.rong.cms.model.RoleType;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -59,4 +61,5 @@ public class EnumUtilTest {
         Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_CONTENT.getName(),maps.get(ChannelType.TOP_CONTENT.name()));
         Assert.assertEquals("通过属性名称转换map错误",ChannelType.TOP_IMG.getName(),maps.get(ChannelType.TOP_IMG.name()));
     }
+
 }

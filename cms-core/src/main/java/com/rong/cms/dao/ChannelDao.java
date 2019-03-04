@@ -1,6 +1,6 @@
 package com.rong.cms.dao;
 
-import com.rong.cms.dto.ChannelTreeDto;
+import com.rong.cms.dto.BaseTreeDto;
 import com.rong.cms.model.Channel;
 import org.springframework.stereotype.Repository;
 
@@ -12,8 +12,8 @@ public class ChannelDao extends BaseDao<Channel> implements IChannelDao {
     @Override
     public List listAllTree(Integer pid,String rootName) {
         String sql = "select id,name,pid from t_channel";
-        List ctd = this.listBysql(sql,ChannelTreeDto.class,false);
-        ctd.add(new ChannelTreeDto(0,rootName,-1));
+        List ctd = this.listBysql(sql, BaseTreeDto.class,false);
+        ctd.add(new BaseTreeDto(0,rootName,-1));
         return ctd;
     }
 
