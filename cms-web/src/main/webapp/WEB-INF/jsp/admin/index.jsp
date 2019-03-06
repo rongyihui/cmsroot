@@ -60,13 +60,12 @@
                         <li><a _href="users">用户列表</a></li>
                         <li><a _href="groups">用户组</a></li>
                         <li><a _href="roles">用户角色</a></li>
-                        <li><a _href="">超链接</a></li>
                     </ul>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;">解决方案</a>
+                    <a href="javascript:;">栏目管理</a>
                     <ul class="layui-nav-child">
-                        <li><a _href="javascript:;">列表一</a></li>
+                        <li><a _href="channel">栏目树</a></li>
                         <li><a _href="javascript:;">列表二</a></li>
                         <li><a _href="">超链接</a></li>
                     </ul>

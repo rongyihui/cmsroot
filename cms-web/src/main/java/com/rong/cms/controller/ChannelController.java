@@ -21,11 +21,16 @@ public class ChannelController {
         this.channelService = channelService;
     }
 
-    @RequestMapping(value = "/channel", method = RequestMethod.GET)
+    @RequestMapping(value = "/tree", method = RequestMethod.GET)
     @ResponseBody
-    public List<BaseTreeDto> list() {
+    public List<BaseTreeDto> treeList() {
         List<BaseTreeDto> datas = channelService.listAllTree();
         List<BaseTreeDto> trees = new TreeUtil<>().tree2List(datas);
         return trees;
+    }
+
+    @RequestMapping(value = "/channel", method = RequestMethod.GET)
+    public String lists() {
+        return "channel/list";
     }
 }
